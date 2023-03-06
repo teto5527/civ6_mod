@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="FD010D81-FB47-4CAD-876D-A94F3F0FED6B" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]Policies Update[ENDCOLOR]</Name>
+    <Description>(New Policies)Primitive Commune: All cities +1 food. Replace by Liberalism.[NEWLINE](New Policies)Liberalism: All cities +1 food and +1 production.[NEWLINE]Veterancy, Military Research, International Space Agency buffed.</Description>
+    <Teaser>Policies Update</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <InGameActions>
+    <UpdateDatabase id="PoliciesUpdate">
+      <!-- <Properties><LoadOrder>1001</LoadOrder></Properties> -->
+      <File>Policies.xml</File>
+      <File>PoliciesUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="TextPoliciesUpdate">
+      <!-- <Properties><LoadOrder>1501</LoadOrder></Properties> -->
+      <File>TEXT_PoliciesUpdate.sql</File>
+    </UpdateText>
+    <UpdateIcons id="IconsPolicies">
+      <File>IconsPolicies.xml</File>
+    </UpdateIcons>
+  </InGameActions>
+  <Files>
+    <File>PoliciesUpdate.sql</File>
+    <File>Policies.xml</File>
+    <File>IconsPolicies.xml</File>
+    <File>TEXT_PoliciesUpdate.sql</File>
+  </Files>
+</Mod>

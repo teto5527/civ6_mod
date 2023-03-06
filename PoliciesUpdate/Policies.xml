@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<Types>
+		<Row Type="POLICY_PRIMITIVE_COMMUNE" Kind="KIND_POLICY" />
+	</Types>
+
+	<Policies>
+		<Row PolicyType="POLICY_PRIMITIVE_COMMUNE" Name="LOC_POLICY_PRIMITIVE_COMMUNE_NAME" Description="LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION" PrereqCivic="CIVIC_CODE_OF_LAWS" GovernmentSlotType="SLOT_ECONOMIC" />
+	</Policies>
+	
+	<ObsoletePolicies>
+		<Row PolicyType="POLICY_PRIMITIVE_COMMUNE" ObsoletePolicy="POLICY_LIBERALISM" />
+	</ObsoletePolicies>
+
+	<PolicyModifiers>
+		<Row PolicyType="POLICY_PRIMITIVE_COMMUNE" ModifierId="PRIMITIVE_COMMUNE_ALLCITYFOOD"/>
+	</PolicyModifiers>
+
+	<Modifiers>
+		<Row ModifierId="PRIMITIVE_COMMUNE_ALLCITYFOOD" ModifierType="MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_CHANGE" />
+	</Modifiers>
+
+	<ModifierArguments>
+		<Row ModifierId="PRIMITIVE_COMMUNE_ALLCITYFOOD" Name="YieldType" Value="YIELD_FOOD" />
+		<Row ModifierId="PRIMITIVE_COMMUNE_ALLCITYFOOD" Name="Amount" Value="1" />
+	</ModifierArguments>
+</GameData>

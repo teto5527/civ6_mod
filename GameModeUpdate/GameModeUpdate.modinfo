@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a601e521-831f-4bb0-bff7-ce7770a225ef" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]GameMode Update[ENDCOLOR]</Name>
+    <Description>Only enable this mod when you playing with Secret Societies Mode</Description>
+    <Created>1651287670</Created>
+    <Teaser>this mod give the game some balance update</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+    <!-- this DLC proved Secret Societies Mode -->
+    <Mod id="1B394FE9-23DC-4868-8F0A-5220CB8FB427" title="DLC: Ethiopia Pack" />
+    <!-- this DLC proved Monopolies Mode -->
+    <Mod id="A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C" title="DLC: Vietnam and Kublai Khan Pack" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="SecretSocietiesMode">
+      <Properties><LoadOrder>9999</LoadOrder></Properties>
+      <File>SecretSocietiesMode.sql</File>
+    </UpdateDatabase>  
+    <UpdateDatabase id="MonopoliesMode">
+      <Properties><LoadOrder>9998</LoadOrder></Properties>
+      <File>MonopoliesMode.sql</File> 
+    </UpdateDatabase>
+    <UpdateText id="TextGameModeUpdate">
+      <Properties><LoadOrder>9999</LoadOrder></Properties>
+      <File>TEXT_GameModeUpdate.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>TEXT_GameModeUpdate.sql</File>
+    <File>SecretSocietiesMode.sql</File>
+    <File>MonopoliesMode.sql</File>
+  </Files>
+</Mod>

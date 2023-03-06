@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconTextureAtlases>
+    	<Row Name="ICON_ATLAS_LEADERS" IconSize="32"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders32"/>
+    	<Row Name="ICON_ATLAS_LEADERS" IconSize="45"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders45"/>
+    	<Row Name="ICON_ATLAS_LEADERS" IconSize="50"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders50"/>
+		<Row Name="ICON_ATLAS_LEADERS" IconSize="55"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders55"/>
+    	<Row Name="ICON_ATLAS_LEADERS" IconSize="64"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders64"/>
+    	<Row Name="ICON_ATLAS_LEADERS" IconSize="80"  IconsPerRow="8" IconsPerColumn="8" Filename="Leaders80"/>
+		<Row Name="ICON_ATLAS_LEADERS" IconSize="256" IconsPerRow="8" IconsPerColumn="8" Filename="Leaders256"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_LEADER_BARBAROSSA_POLAND" Atlas="ICON_ATLAS_LEADERS" Index="1"/>
+	</IconDefinitions>
+</GameData>

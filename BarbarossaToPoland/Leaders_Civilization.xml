@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_POLAND" LeaderType="LEADER_BARBAROSSA_POLAND" CapitalName="LOC_CITY_NAME_KRAKOW"/>
+	</CivilizationLeaders>
+
+</GameData>

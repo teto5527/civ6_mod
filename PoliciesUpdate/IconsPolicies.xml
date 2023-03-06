@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<IconDefinitions>
+		<Row Name="ICON_POLICY_PRIMITIVE_COMMUNE" Atlas="ICON_ATLAS_POLICIES" Index="2"/>
+		<Row Name="ICON_POLICY_COURT_ENTERTAINMENT" Atlas="ICON_ATLAS_POLICIES" Index="2"/>
+		<Row Name="ICON_POLICY_URBAN_RENEWAL" Atlas="ICON_ATLAS_POLICIES" Index="2"/>
+	</IconDefinitions>
+</GameData>

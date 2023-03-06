@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9e391047-86c2-4da4-96d4-affaab54a3d6" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]General Update[ENDCOLOR]</Name>
+    <Description>Free scout when found capital. [NEWLINE]Slower Barbarian tech. [NEWLINE]Capital +1 Entertainment. [NEWLINE]Farm can build on marsh. [NEWLINE]Trade routes provide more gold. [NEWLINE]City centre minimum yield 2/2. [NEWLINE]Batey provides more culture. [NEWLINE]Moves canals to the construction tech. [NEWLINE]Open borders gain more tourists. [NEWLINE]Water Mill gain +1 Food for each farm resource, +1 Production for each pasture, no longer needs to adjacent to a River. [NEWLINE]Bring forward LUMBER_MILL and QUARRY production yield tech requires. [NEWLINE]Reduce LV 3 government cost. [NEWLINE]Monarchy and Communism more economic slots, less military slots. [NEWLINE]City state higher defence. [NEWLINE] Canals, Industrial zone, Theater, and Aerodrome buffed. [NEWLINE]Reduce the cost of Spaceport, Aqueduct, Dam, Canals Production Cost. [NEWLINE]Earlier Canals. [NEWLINE]Governors need less time to establish. [NEWLINE]Reyna (Tax collector) gains more gold. [NEWLINE]Ibrahim buffed. [NEWLINE]Desert +1 faith. [NEWLINE] Floodplains in capital +1 food. [NEWLINE]Copper, Crabs, and Corn gain 3 gold. [NEWLINE]Lux-resources more placement.</Description>
+    <Created>1651287670</Created>
+    <Teaser>this mod give the game some balance update</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <!-- <UpdateDatabase id="test">
+      <File>test.sql</File>
+    </UpdateDatabase> -->
+    <UpdateDatabase id="MapYieldUpdate">
+      <File>MapYieldUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="GeneralUpdate">
+      <File>GeneralUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="PoliciesUpdate">
+      <File>PoliciesUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="DistrictsandBuilding">
+      <File>DistrictsandBuilding.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="GovernerUpdate">
+      <File>GovernerUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="TextGeneralUpdate">
+      <!-- <Properties><LoadOrder>1501</LoadOrder></Properties> -->
+      <File>TEXT_GeneralUpdate.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>MapYieldUpdate.sql</File>
+    <File>GeneralUpdate.sql</File>
+    <File>TEXT_GeneralUpdate.sql</File>
+    <File>PoliciesUpdate.sql</File>
+    <File>DistrictsandBuilding.sql</File>
+    <File>GovernerUpdate.sql</File>
+    <File>test.sql</File>
+  </Files>
+</Mod>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Players>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_POLAND</CivilizationType>
+			<LeaderType>LEADER_BARBAROSSA_POLAND</LeaderType>
+			<CivilizationName>LOC_CIVILIZATION_POLAND_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_POLAND</CivilizationIcon>
+			<LeaderName>LOC_LEADER_BARBAROSSA_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_BARBAROSSA_POLAND</LeaderIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_POLAND</CivilizationAbilityIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_BARBAROSSA_POLAND</LeaderAbilityIcon>
+			<Portrait>LEADER_BARBAROSSA_NEUTRAL</Portrait>
+			<PortraitBackground>LEADER_BARBAROSSA_BACKGROUND</PortraitBackground>
+		</Row>
+	</Players>
+	<PlayerItems>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_POLAND</CivilizationType>
+			<LeaderType>LEADER_BARBAROSSA_POLAND</LeaderType>
+			<Type>UNIT_POLISH_HUSSAR</Type>
+			<Name>LOC_UNIT_POLISH_HUSSAR_NAME</Name>
+			<Description>LOC_UNIT_POLISH_HUSSAR_DESCRIPTION</Description>
+			<Icon>ICON_UNIT_POLISH_HUSSAR</Icon>
+			<SortIndex>10</SortIndex>
+		</Row>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_POLAND</CivilizationType>
+			<LeaderType>LEADER_BARBAROSSA_POLAND</LeaderType>
+			<Type>BUILDING_SUKIENNICE</Type>
+			<Name>LOC_BUILDING_SUKIENNICE_NAME</Name>
+			<Description>LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION</Description>
+			<Icon>ICON_BUILDING_SUKIENNICE</Icon>
+			<SortIndex>20</SortIndex>
+		</Row>
+	</PlayerItems>
+
+	<GameModePlayerInfoOverrides>
+		<!--
+		<Row GameModeType="GAMEMODE_HEROES" Domain="Players:Expansion2_Players" CivilizationType="CIVILIZATION_POLAND" LeaderType="LEADER_GILGAMESH_POLAND" LeaderAbilityName="LOC_TRAIT_LEADER_GILGAMESH_HEROES_NAME" LeaderAbilityDescription="LOC_TRAIT_LEADER_GILGAMESH_HEROES_DESCRIPTION"/>
+		-->
+		<Row GameModeType="GAMEMODE_HEROES" Domain="Players:Expansion2_Players" CivilizationType="CIVILIZATION_POLAND" LeaderType="LEADER_JADWIGA_POLAND" LeaderAbilityDescription="LOC_TRAIT_LEADER_LITHUANIAN_UNION_HEROES_DESCRIPTION"/>
+	</GameModePlayerInfoOverrides>
+</GameData>

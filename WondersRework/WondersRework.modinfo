@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b87bebfb-e3bc-49f8-85a6-94cb8b07b206" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]Wonders Rework[ENDCOLOR]</Name>
+    <Description>
+    - Wonders provides 1 Entertainment.[NEWLINE]- Taj Mahal's Production Cost from 920 to 720[NEWLINE]- GREAT ZIMBABWE's Production Cost from 920 to 720[NEWLINE]- Chichen Itza: Rainforest no longer -1 appeal for owner's cities[NEWLINE]- Ruhr Valley: owner's cities +1 Production for each Mine and Quarry
+    </Description>
+    <Created>1651223223</Created>
+    <Teaser>UNFINISHED WORK</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="WondersRework">
+      <File>WondersRework.sql</File>
+      <!-- <File>HF_Wonders.sql</File> -->
+    </UpdateDatabase>
+    <UpdateText id="TextWondersRework">
+      <File>TEXT_WondersRework.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>WondersRework.sql</File>
+    <File>HF_Wonders.sql</File>
+    <File>TEXT_WondersRework.sql</File>
+  </Files>
+</Mod>

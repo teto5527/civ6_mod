@@ -1,0 +1,6 @@
+UPDATE Building_YieldsPerEra
+    SET YieldChange=2
+    WHERE BuildingType='BUILDING_DAR_E_MEHR' AND YieldType='YIELD_FAITH';
+
+UPDATE Buildings SET Description = 'LOC_BUILDING_DAR_E_MEHR_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_DAR_E_MEHR';
+UPDATE Beliefs SET Description = 'LOC_BELIEF_DAR_E_MEHR_DESCRIPTION_ZJ' WHERE BeliefType = 'BELIEF_DAR_E_MEHR';

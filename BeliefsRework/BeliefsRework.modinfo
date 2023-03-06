@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="eff937e0-91f9-41ae-aaf7-4972068864e9" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]BeliefsRework[ENDCOLOR]</Name>
+    <Description>STONE CIRCLES: quarry +2 Faith +1 Culture.[NEWLINE][NEWLINE]GODDESS OF FIRE: +2 Faith +1 Science.[NEWLINE][NEWLINE]CITY PATRON GODDESS: +50% Production toward districts in cities without a specialty district.[NEWLINE][NEWLINE]EARTH GODDESS: Breathtaking tiles +2 faith.[NEWLINE][NEWLINE]Zen Meditation: Holy Site district Faith adjacency bonus provides Science as well.[NEWLINE][NEWLINE]DAR_E_MEHR: +2 additional Faith for each era.</Description>
+    <Created>1651223223</Created>
+    <Teaser>Beliefs Rework</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Beliefs">
+      <!-- <Properties><LoadOrder>1000</LoadOrder></Properties> -->
+      <File>PantheonBeliefs.sql</File>
+      <File>WorshipBeliefs.sql</File>
+      <File>FollowerBeliefs.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="TextBeliefsRework">
+      <!-- <Properties><LoadOrder>1500</LoadOrder></Properties> -->
+      <File>TEXT_BeliefsRework.sql</File>
+    </UpdateText>
+  </InGameActions>
+
+  <Files>
+    <File>PantheonBeliefs.sql</File>
+    <File>WorshipBeliefs.sql</File>
+    <File>FollowerBeliefs.sql</File>
+    <File>FounderBeliefs.sql</File>
+    <File>EnhancerBeliefs.sql</File>
+    <File>TEXT_BeliefsRework.sql</File>
+  </Files>
+</Mod>
