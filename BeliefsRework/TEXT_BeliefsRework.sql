@@ -26,4 +26,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.).'),
 
 ('LOC_BUILDING_DAR_E_MEHR_DESCRIPTION_ZJ',
-'+2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.');
+'+2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.'),
+
+('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
+'When chosen receive a Builder in your capital. Builder +1 movement. City growth rate is 10% higher.');
