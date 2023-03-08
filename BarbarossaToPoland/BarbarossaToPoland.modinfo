@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="CD1D6223-2697-65A1-96DF-BD8B0FF66A90" version="1">
+  <Properties>
+    <Name>Barbarossa to Pland</Name>
+    <Description>Barbarossa to Pland</Description>
+    <Created>1617277512</Created>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </Dependencies>
+  <ActionCriteria></ActionCriteria>
+  <FrontEndActions>
+    <UpdateDatabase id="Config">
+      <File>Leaders_Config.xml</File>
+    </UpdateDatabase>
+    <UpdateIcons id="ConfigIcons">
+      <File>Leaders_Icons.xml</File>
+    </UpdateIcons>
+    <UpdateColors id="NewAction">
+      <File>Leaders_Color.xml</File>
+    </UpdateColors>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>Leaders.xml</File>
+      <File>Leaders_Ability.xml</File>
+      <File>Leaders_Civilization.xml</File>
+    </UpdateDatabase>
+    <UpdateIcons id="Icons">
+      <Criteria>LeaderCriteria</Criteria>
+      <File>Leaders_Icons.xml</File>
+    </UpdateIcons>
+    <UpdateColors id="NewAction">
+      <File>Leaders_Color.xml</File>
+    </UpdateColors>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Leader.artdef</File>
+    <File>Leaders.xml</File>
+    <File>Leaders_Ability.xml</File>
+    <File>Leaders_Civilization.xml</File>
+    <File>Leaders_Color.xml</File>
+    <File>Leaders_Config.xml</File>
+    <File>Leaders_Icons.xml</File>
+  </Files>
+</Mod>

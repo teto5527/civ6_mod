@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="b1ec6c5d-cbe2-40d4-80a7-f4e4427e7755" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]MinorCivs Update[ENDCOLOR]</Name>
+    <Description>teamp null</Description>
+    <Teaser>version 0</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </Dependencies>
+
+  <InGameActions>
+    <UpdateDatabase id="MinorCivsUpdate">
+      <!-- <Properties><LoadOrder>1002</LoadOrder></Properties> -->
+      <File>MinorCivsUpdate.sql</File>
+    </UpdateDatabase>
+
+    <UpdateText id="TEXT_MinorCivsUpdate">
+      <!-- <Properties><LoadOrder>1502</LoadOrder></Properties> -->
+      <File>TEXT_MinorCivsUpdate.sql</File>
+    </UpdateText>
+  </InGameActions>
+
+  <Files>
+    <File>MinorCivsUpdate.sql</File>
+    <File>TEXT_MinorCivsUpdate.sql</File>
+  </Files>
+</Mod>

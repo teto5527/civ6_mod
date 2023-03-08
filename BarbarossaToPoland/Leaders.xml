@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Types>
+		<Row Type="LEADER_BARBAROSSA_POLAND" Kind="KIND_LEADER" />
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" Name="LOC_LEADER_BARBAROSSA_NAME" InheritFrom="LEADER_DEFAULT" />
+	</Leaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_BARBAROSSA_QUOTE" QuoteAudio="Play_GERM_FB_MISC_PEP_TALK_B"/>
+	</LeaderQuotes>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" TraitType="TRAIT_LEADER_HOLY_ROMAN_EMPEROR"/>
+	</LeaderTraits>
+	<FavoredReligions>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" ReligionType="RELIGION_CATHOLICISM"/>
+	</FavoredReligions>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" AgendaType="AGENDA_IRON_CROWN"/>
+	</HistoricalAgendas>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_BARBAROSSA_POLAND" ForegroundImage="LEADER_BARBAROSSA_NEUTRAL"	BackgroundImage="LEADER_BARBAROSSA_BACKGROUND" LeaderText="LOC_LOADING_INFO_LEADER_BARBAROSSA"/>
+	</LoadingInfo>
+</GameData>
+	

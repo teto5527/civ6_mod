@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6e21421e-2337-13b6-f78f-15273f865885" version="1">
+  <Properties>
+    <Name>ZJ's [COLOR_FLOAT_FOOD]LeaderPass Balance[ENDCOLOR]</Name>
+    <Description>Only enable this mod when you playing with Leader Pass</Description>
+    <Created>1651287670</Created>
+    <Teaser>this mod give the game some balance update</Teaser>
+    <Authors>James ZHENG</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Saesar">
+      <Properties><LoadOrder>10001</LoadOrder></Properties>
+      <File>Saesar.sql</File>
+    </UpdateDatabase>  
+    <UpdateDatabase id="LeaderPass">
+      <Properties><LoadOrder>10002</LoadOrder></Properties>
+      <File>LeaderPass.sql</File>
+    </UpdateDatabase>  
+    <UpdateText id="TextLeaderPass">
+      <Properties><LoadOrder>10000</LoadOrder></Properties>
+      <File>TEXT_LeaderPass.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>TEXT_LeaderPass.sql</File>
+    <File>Saesar.sql</File>
+    <File>LeaderPass.sql</File>
+  </Files>
+</Mod>
