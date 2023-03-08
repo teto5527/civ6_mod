@@ -84,12 +84,21 @@ UPDATE Buildings
     SET RequiresAdjacentRiver='0'
     WHERE BuildingType='BUILDING_WATER_MILL';
 
---building_granary
+--military_engineer can build Dam, Canal, and Aqueduct faster
+ UPDATE District_BuildChargeProductions SET PercentProductionPerCharge='50' WHERE UnitType='UNIT_MILITARY_ENGINEER';
+
+--reduce DISTRICT_AQUEDUCT cost
+-- UPDATE Districts
+--     SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =18
+--     WHERE DistrictType='DISTRICT_AQUEDUCT';
+-- UPDATE Districts
+--     SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =9
+--     WHERE DistrictType='DISTRICT_BATH';
 
 --Dam cost reduce
 UPDATE Districts SET Cost = 36 WHERE DistrictType='DISTRICT_DAM';
 
---Canals: provide +2 gold to COMMERCIAL_HUB and HARBOR, +2 PRODUCTION TO CITY_CENTER; can build on hills; unlock by TECH_CONSTRUCTION
+--Canals: provide +2 gold to COMMERCIAL_HUB and HARBOR, +2 PRODUCTION TO CITY_CENTER; reduce it's cost; unlock by TECH_CONSTRUCTION
 UPDATE Districts SET PrereqTech='TECH_CONSTRUCTION' WHERE DistrictType='DISTRICT_CANAL';
 UPDATE Districts SET Cost=36 WHERE DistrictType='DISTRICT_CANAL';
 
@@ -98,8 +107,6 @@ UPDATE Moments SET EraScore = 3 WHERE MomentType='MOMENT_DISTRICT_CONSTRUCTED_CA
 INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
 ('Canal_Gold', 'LOC_DISTRICT_CANAL_GOLD_ZJ', 'YIELD_GOLD', '2', 'DISTRICT_CANAL');
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
-('DISTRICT_CITY_CENTER', 'Canal_Production'),
-
 ('DISTRICT_COMMERCIAL_HUB', 'Canal_Gold'),
 ('DISTRICT_SUGUBA', 'Canal_Gold'),
 
@@ -180,13 +187,6 @@ UPDATE Districts
     SET Cost =900
     WHERE DistrictType='DISTRICT_SPACEPORT';
 
---reduce DISTRICT_AQUEDUCT cost
-UPDATE Districts
-    SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =18
-    WHERE DistrictType='DISTRICT_AQUEDUCT';
-UPDATE Districts
-    SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =9
-    WHERE DistrictType='DISTRICT_BATH';
 
 --Preserve
 --========================================================================
