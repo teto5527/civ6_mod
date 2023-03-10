@@ -16,7 +16,10 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+50% [ICON_Production] Production toward districts in cities without a specialty district.'),
 
 ('LOC_BELIEF_EARTH_GODDESS_EXPANSION2_DESCRIPTION_ZJ',
-'+2 [ICON_FAITH] Faith from tiles with Breathtaking Appeal.');
+'+2 [ICON_FAITH] Faith from tiles with Breathtaking Appeal.'),
+
+('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
+'When chosen receive a Builder in your capital. Builder +1 Movement if starting turn in friendly territory. City growth rate is 10% higher.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION_ZJ',
@@ -26,7 +29,4 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.).'),
 
 ('LOC_BUILDING_DAR_E_MEHR_DESCRIPTION_ZJ',
-'+2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.'),
-
-('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
-'When chosen receive a Builder in your capital. Builder +1 movement. City growth rate is 10% higher.');
+'+2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.');
