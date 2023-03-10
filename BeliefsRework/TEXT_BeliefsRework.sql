@@ -19,7 +19,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+2 [ICON_FAITH] Faith from tiles with Breathtaking Appeal.'),
 
 ('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
-'When chosen receive a Builder in your capital. Builder +1 Movement if starting turn in friendly territory. City growth rate is 10% higher.');
+'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION_ZJ',
