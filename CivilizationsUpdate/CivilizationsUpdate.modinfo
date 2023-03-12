@@ -41,7 +41,6 @@
       <File>GeorgiaRework.sql</File>
       <File>PersiaRework.sql</File>
       <File>FranceRework.sql</File>
-      <!-- <File>Districts.xml</File> -->
 
     </UpdateDatabase>
     <UpdateDatabase id="CivsBalance">
@@ -63,7 +62,6 @@
     <File>GeorgiaRework.sql</File>
     <File>PersiaRework.sql</File>
     <File>FranceRework.sql</File>
-    <File>Districts.xml</File>
     <File>test.sql</File>
     <File>TEXT_CivsBalance.sql</File>
   </Files>
