@@ -13,20 +13,21 @@
     <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
   </Dependencies>
   <InGameActions>
+    <!-- <UpdateDatabase id="LeaderPass_xml">
+      <File>LeaderPass.xml</File>
+    </UpdateDatabase>      -->
     <UpdateDatabase id="Saesar">
-      <Properties><LoadOrder>10001</LoadOrder></Properties>
       <File>Saesar.sql</File>
     </UpdateDatabase>  
     <UpdateDatabase id="LeaderPass">
-      <Properties><LoadOrder>10002</LoadOrder></Properties>
       <File>LeaderPass.sql</File>
     </UpdateDatabase>  
     <UpdateText id="TextLeaderPass">
-      <Properties><LoadOrder>10000</LoadOrder></Properties>
       <File>TEXT_LeaderPass.sql</File>
     </UpdateText>
   </InGameActions>
   <Files>
+    <File>LeaderPass.xml</File>
     <File>TEXT_LeaderPass.sql</File>
     <File>Saesar.sql</File>
     <File>LeaderPass.sql</File>
