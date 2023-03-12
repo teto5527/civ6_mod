@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Mod id="5a59060a-c0bc-11ed-a682-546cebc98c7b" version="1">
+	<Properties>
+		<Name>ZJ's [COLOR_FLOAT_FOOD]Test[ENDCOLOR]</Name>
+		<Teaser></Teaser>
+		<Description></Description>
+		<Authors>James ZHENG</Authors>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<Components>
+		<AddGameplayScripts id="AddGameplayScripts">
+			<File>SCRIPT.lua</File>
+		</AddGameplayScripts>
+	</Components>
+	<Files>
+		<File>SCRIPT.lua</File>
+	</Files>
+</Mod>

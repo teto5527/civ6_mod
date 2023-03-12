@@ -26,11 +26,9 @@
     <Mod id="FFDF4E79-DEE2-47BB-919B-F5739106627A" title="DLC: Portugal" />
   </Dependencies>
 
-  <Components>
-    <AddGameplayScripts id="CivsBalance_lua">
-        <File>CivsBalance.lua</File>
-    </AddGameplayScripts>
-  </Components>
+
+
+
 
   <InGameActions>
     <!-- <UpdateDatabase id="test">
