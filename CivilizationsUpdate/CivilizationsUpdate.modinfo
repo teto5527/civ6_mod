@@ -26,25 +26,11 @@
     <Mod id="FFDF4E79-DEE2-47BB-919B-F5739106627A" title="DLC: Portugal" />
   </Dependencies>
 
-  <Components>
-    <AddGameplayScripts id="CivsBalance_lua">
-        <File>CivsBalance.lua</File>
-    </AddGameplayScripts>
-  </Components>
-
   <InGameActions>
     <!-- <UpdateDatabase id="test">
       <File>test.sql</File>
     </UpdateDatabase> -->
-    <UpdateDatabase id="CivsRework">
-      <File>IndonesiaRework.sql</File>
-      <File>EgyptRework.sql</File>
-      <File>ScotlandRework.sql</File>
-      <File>GeorgiaRework.sql</File>
-      <File>PersiaRework.sql</File>
-      <File>FranceRework.sql</File>
 
-    </UpdateDatabase>
     <UpdateDatabase id="CivsBalance">
       <File>CivsBalance.sql</File>
     </UpdateDatabase>
@@ -56,15 +42,11 @@
   </InGameActions>
 
   <Files>
-    <File>CivsBalance.lua</File>
     <File>CivsBalance.sql</File>
-    <File>IndonesiaRework.sql</File>
-    <File>EgyptRework.sql</File>
-    <File>ScotlandRework.sql</File>
-    <File>GeorgiaRework.sql</File>
-    <File>PersiaRework.sql</File>
-    <File>FranceRework.sql</File>
     <File>test.sql</File>
+    
     <File>TEXT_CivsBalance.sql</File>
+
+    <File>CivsBalance.lua</File>
   </Files>
 </Mod>

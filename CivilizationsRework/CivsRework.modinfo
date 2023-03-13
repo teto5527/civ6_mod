@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Mod id="c6b0c782-c192-11ed-b0fa-546cebc98c7b" version="1">
+	<Properties>
+		<Name>ZJ's [COLOR_FLOAT_FOOD]Civilizations Rework[ENDCOLOR]</Name>
+		<Teaser>version 0.1</Teaser>
+		<Description></Description>
+		<Authors>James ZHENG</Authors>
+		<CompatibleVersions>1.2,2.0</CompatibleVersions>
+	</Properties>
+	<Components>
+		<UpdateDatabase id="CivsRework">
+			<File>IndonesiaRework.sql</File>
+			<File>EgyptRework.sql</File>
+			<File>ScotlandRework.sql</File>
+			<File>GeorgiaRework.sql</File>
+			<File>PersiaRework.sql</File>
+			<File>FranceRework.sql</File>
+		</UpdateDatabase>
+		<UpdateText id="TEXT_CivsRework">
+			<File>TEXT_CivsRework.sql</File>
+		</UpdateText>
+	</Components>
+	<Files>
+		<File>ScotlandRework.sql</File>
+		<File>FranceRework.sql</File>
+		<File>PersiaRework.sql</File>
+		<File>GeorgiaRework.sql</File>
+		<File>IndonesiaRework.sql</File>
+		<File>EgyptRework.sql</File>
+
+		<File>TEXT_CivsRework.sql</File>
+	</Files>
+</Mod>

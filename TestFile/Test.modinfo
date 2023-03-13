@@ -9,10 +9,10 @@
 	</Properties>
 	<Components>
 		<AddGameplayScripts id="AddGameplayScripts">
-			<File>SCRIPT.lua</File>
+			<File>Test.lua</File>
 		</AddGameplayScripts>
 	</Components>
 	<Files>
-		<File>SCRIPT.lua</File>
+		<File>Test.lua</File>
 	</Files>
 </Mod>
