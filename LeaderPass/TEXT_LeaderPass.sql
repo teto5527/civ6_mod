@@ -1,4 +1,6 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_LEADER_SEJONG_DESCRIPTION_ZJ',
+'+2 [ICON_Science] Science and +2 [ICON_Culture] Culture from each [ICON_GREATWORK_WRITING] Great Work of Writing. Library provide +1 [ICON_GREATWRITER] Great Writer point. Library +1 slot for [ICON_GREATWORK_WRITING] Great Work of Writing.'),
 ('LOC_TRAIT_LEADER_SUNDIATA_KEITA_DESCRIPTION_ZJ',
 '+2 [ICON_Science] Science (Every time enter Dark Ages or every building in the market of [ICON_TRADEROUTE] Trade Routes start city will increase the number by 2) from international [ICON_TRADEROUTE] Trade Routes.'),
 ('LOC_TRAIT_LEADER_CAESAR_DESCRIPTION_ZJ',
