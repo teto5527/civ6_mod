@@ -1,4 +1,9 @@
 --Indonesia BUFF
+
+INSERT OR REPLACE INTO StartBiasFeatures (CivilizationType, FeatureType, Tier) VALUES
+('CIVILIZATION_INDONESIA', 'FEATURE_REEF', '2');
+
+
 --coast provide stander adjacency
 update ModifierArguments set Value = 1 where ModifierId = 'TRAIT_NUSANTARA_COAST_HOLY_SITE' and Name = 'TilesRequired';
 update ModifierArguments set Value = 1 where ModifierId = 'TRAIT_NUSANTARA_COAST_CAMPUS' and Name = 'TilesRequired';

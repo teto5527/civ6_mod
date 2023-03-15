@@ -9,7 +9,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
 
 ('LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION_ZJ', 
-'When you disperse a Barbarian Outpost, receive a Tribal Village reward in addition to the usual Experience Points. Pay half the usual cost to levy city-state units. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
+'When you disperse a Barbarian Outpost, receive a Tribal Village reward in addition to the usual Experience Points. Pay half the usual cost to levy city-state units.'),
 
 ('LOC_IMPROVEMENT_PYRAMID_DESCRIPTION_ZJ', --Nubia
 'Improvement that unlocks with Masonry and must be built on Desert, Desert Hills or Desert Floodplains. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +1 [ICON_Food] Food if adjacent to a city center. Increase of +1 to the adjacency bonuses being earned by any adjacent district.'),
@@ -29,9 +29,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 
 ('LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION_ZJ', --Phoenicia
 'Begin the game with the Writing technology [ICON_TECHBOOSTED] Eureka and Foreign Trade [ICON_CIVICBOOSTED] Inspiration. Receive 1 [ICON_ENVOY] Envoy every times you founded a coastal city (Exclude Capital City). Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.'),
-
-('LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION_ZJ', --Leader TRAJANS
-'All cities start with an additional City Center building. (Starts with a Monument building in the Ancient era). Monument Grant [ICON_Production] Production, [ICON_Gold] Gold, and [ICON_Faith] Faith when unlock lv.2 Goverment Civs.'),
 
 ('LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION_ZJ',
 'City Centers gain +1 [ICON_Faith] Faith and +1 [ICON_Food] Food for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_Production] Production and +4 [ICON_Gold] Gold. May purchase Commercial Hub and Goverment Plaza district buildings with [ICON_Faith] Faith. -30% [ICON_Production] Production toward constructing buildings or training units.'),

@@ -11,7 +11,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION_ZJ', 
 'Coast and Lake tiles provide a standard adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +1 [ICON_Amenities] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile. Celestial Navigation technologies will unlock Shipbuilding technologie.'),
 ('LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION_ZJ', 
-'Naval units can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. City Centers gain +1 [ICON_Food] Food for every adjacent Coast and Lake tiles, +2 production for every adjacent reef.'),
+'Naval units can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. City Centers gain +1 [ICON_Food] Food for every adjacent Coast and Lake tiles, +2 [ICON_Production] Production for every adjacent reef.'),
 
 
 ('LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ', --Scoland
