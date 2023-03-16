@@ -11,11 +11,14 @@
   <Dependencies>
     <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
     <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+    <Mod id="9ED63236-617C-45A6-BB70-8CB6B0BE8ED2" title="Julius Caesar Leader Pack" />
+    <Mod id="7A66DB58-B354-4061-8C80-95B638DD6F6C" title="Great Negotiators Leader Pack" />
+    <Mod id="F48213B4-56F5-45DD-92F7-AC78E49BDA49" title="Great Commanders Leader Pack" />
+    <Mod id="7D27831B-BAA6-4A8B-A39C-94243BAD3F47" title="Ruler of China Leader Pack" />
+    <Mod id="82AE6F24-930F-4640-833C-FCDFD4845757" title="Ruler of Sahara Leader Pack" />
+    <Mod id="249D9276-0832-48E4-B370-14531FA4E33C" title="Great Builder Leader Pack" />
   </Dependencies>
   <InGameActions>
-    <!-- <UpdateDatabase id="LeaderPass_xml">
-      <File>LeaderPass.xml</File>
-    </UpdateDatabase>      -->
     <UpdateDatabase id="Saesar">
       <File>Saesar.sql</File>
     </UpdateDatabase>  
@@ -25,11 +28,14 @@
     <UpdateText id="TextLeaderPass">
       <File>TEXT_LeaderPass.sql</File>
     </UpdateText>
+    <AddGameplayScripts id="AddGameplayScripts">
+			<File>LeaderPass.lua</File>
+		</AddGameplayScripts>
   </InGameActions>
   <Files>
-    <File>LeaderPass.xml</File>
     <File>TEXT_LeaderPass.sql</File>
     <File>Saesar.sql</File>
     <File>LeaderPass.sql</File>
+    <File>LeaderPass.lua</File>
   </Files>
 </Mod>
