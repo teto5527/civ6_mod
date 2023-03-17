@@ -11,8 +11,8 @@ function OnGoodyHutReward(playerId, unitId, type, subType)
     if playerId ~= Game.GetLocalPlayer() then
         return;
     end
-    local player = Player[playerID];
-    local playerConfig = PlayerConfigurations[playerID];
+    local player = Players[playerId];
+    local playerConfig = PlayerConfigurations[playerId];
 	local leader = playerConfig:GetLeaderTypeName();
     if HasLeaderTrait(leader, 'TRAIT_LEADER_CAESAR') then
         player:GetTreasury():ChangeGoldBalance(75);
