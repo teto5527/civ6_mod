@@ -39,6 +39,10 @@
       <!-- <Properties><LoadOrder>1502</LoadOrder></Properties> -->
       <File>TEXT_CivsBalance.sql</File>
     </UpdateText>
+
+    <AddGameplayScripts id="LUA_CivsBalance">
+			<File>CivsBalance.lua</File>
+		</AddGameplayScripts>
   </InGameActions>
 
   <Files>

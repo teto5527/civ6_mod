@@ -79,7 +79,10 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_ZJ', --Poland
 "Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot. Districts placed on Grass or Plains +1 [ICON_HOUSING] house. Constructs first Sukiennice receive [ICON_Gold] Gold that equl to it's cost."),
 ('LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION_ZJ',
-'A building unique to Poland. International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. Bonus [ICON_Production] Production equal to the adjacency bonus of the Commercial Hub district. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.');
+'A building unique to Poland. International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. Bonus [ICON_Production] Production equal to the adjacency bonus of the Commercial Hub district. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.'),
+
+('LOC_LEADER_ELEANOR_LOYALTY_DESCRIPTION_ZJ',
+"Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. Grant Drama and poetry civic when player unlock thier first civic. One Economic policy slot in the current government is converted to a Wildcard slot.");
 
 
 

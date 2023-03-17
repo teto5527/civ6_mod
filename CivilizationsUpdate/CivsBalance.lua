@@ -13,15 +13,18 @@ end
 
 
 --Eleanor
-function StartGmaeWithDaramPoetry (playerID:number, bFirstTimeThisTurn:boolean)
-	local DRAMA_POETRY_INDEX = GameInfo.Civics['CIVIC_DRAMA_POETRY'].Index;
-  	local player = Players[playerID];
-	local playerConfig = PlayerConfigurations[playerID];
+local DRAMA_POETRY_INDEX = GameInfo.Civics['CIVIC_DRAMA_POETRY'].Index;
+
+function FirstCivicDaramPoetry(playerId, iCivic)
+  	local player = Players[playerId];
+	local playerConfig = PlayerConfigurations[playerId];
 	local leader = playerConfig:GetLeaderTypeName();
     if HasLeaderTrait(leader, 'TRAIT_LEADER_ELEANOR_LOYALTY') then
-        local cost = player:GetCulture():GetCultureCost(DRAMA_POETRY_INDEX);
-        player:GetCulture():SetCulturalProgress(DRAMA_POETRY_INDEX, cost);
+		if not player:GetCulture():HasCivic(DRAMA_POETRY_INDEX) then
+			local cost = player:GetCulture():GetCultureCost(DRAMA_POETRY_INDEX);
+			player:GetCulture():SetCulturalProgress(DRAMA_POETRY_INDEX, cost);
+		end
     end
 end
 
-Events.PlayerTurnActivated.Add(StartGmaeWithDaramPoetry);
+Events.CivicCompleted.Add(FirstCivicDaramPoetry);
