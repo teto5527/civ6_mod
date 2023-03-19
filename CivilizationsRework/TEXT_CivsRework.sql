@@ -32,12 +32,12 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold. +2 Appeal. +1 [ICON_Culture] Culture for each adjacent Holy Site and Theater Square. +1 [ICON_Gold] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza. When a player constructs their first Pairidaeza receive one governor title.'),
 
 ('LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION_ZJ', --France
-"+20% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is +100%. Receives a free Spy (and extra spy capacity) with the Code of Law civic. Build Diplomatic Quarter and it's building in half of the time."),
+"+20% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is +100%. Build Theater Square and it's building in half of the time."),
 
 ('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen
-'Has 1 level of [ICON_VISLIMITED] Diplomatic Visibility greater than normal with every civilization that she has met. +2 sight range for spies and traders. All spies start with a free promotion. Spies take no time to establish their presence. +2 Combat Strength for all units for each level of [ICON_VISLIMITED] Diplomatic Visibility France has over the other civilization, instead of the usual +3 Combat Strength.'),
+'Has 1 level of [ICON_VISLIMITED] Diplomatic Visibility greater than normal with every civilization that she has met. Receives a free Spy (and extra spy capacity) with the Code of Law civic. +2 sight range for spies and traders. All spies start with a free promotion. Spies take no time to establish their presence. +2 Combat Strength for all units for each level of [ICON_VISLIMITED] Diplomatic Visibility France has over the other civilization, instead of the usual +3 Combat Strength.'),
 
-('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen
+('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen (gold)
 'Improved Luxury resources adjacent to Theater Square districts or Châteaux receive +2 [ICON_Culture] Culture. May initiate the Court Festival project in any city with a Theater Square district. Theater Square can trigger culture boom.'),
 ('LOC_TECH_CASTLES_DESCRIPTION_ZJ',
 'Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency.'),
