@@ -28,7 +28,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Sweden gains 50 [ICON_FAVOR] Diplomatic Favor when earning a Great Person (on Standard Speed). Sweden receives +2 [ICON_GREATENGINEER] Great Engineer point from Factories, +2 [ICON_GREATARTIST] Great Artist point from Factories, and +2 [ICON_GREATSCIENTIST] Great Scientist point from Universities. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.'),
 
 ('LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION_ZJ', --Phoenicia
-'Begin the game with the Writing technology [ICON_TECHBOOSTED] Eureka and Foreign Trade [ICON_CIVICBOOSTED] Inspiration. Receive 1 [ICON_ENVOY] Envoy every times you founded a coastal city (Exclude Capital City). Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.'),
+'Meet two other civilization will unlock Writing Technologies. Receive 1 [ICON_ENVOY] Envoy every times you founded a coastal city (Exclude Capital City). Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.'),
 
 ('LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION_ZJ',
 'City Centers gain +1 [ICON_Faith] Faith and +1 [ICON_Food] Food for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_Production] Production and +4 [ICON_Gold] Gold. May purchase Commercial Hub and Goverment Plaza district buildings with [ICON_Faith] Faith. -30% [ICON_Production] Production toward constructing buildings or training units.'),
@@ -69,6 +69,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 
 ('LOC_DISTRICT_HANSA_GOLD_ZJ', --Germany
 '+{1_num} [ICON_Gold] Gold from the adjacent Hansa {1_Num : plural 1?tile; other?district;}.'),
+
+('LOC_DISTRICT_HIPPODROME_FAITH_ZJ',
+'+{1_num} [ICON_Faith] Faith from the adjacent Hippodrome {1_Num : plural 1?tile; other?district;}.'),
 
 ('LOC_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION_ZJ', --Scythia
 'Receive a second light cavalry unit or Saka Horse Archer each time you train a light cavalry unit or Saka Horse Archer. Reveals [ICON_RESOURCE_HORSES] Horse from beginning.'),
