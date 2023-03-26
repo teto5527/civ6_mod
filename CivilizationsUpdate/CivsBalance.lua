@@ -61,4 +61,4 @@ function PhoeniciaWitingOnMeet (player1Id)
 		end
 	end
 end
-Events.DiplomacyMeet.Add(PhoeniciaWitingOnMeet);
+Events.DiplomacyMeetMajors.Add(PhoeniciaWitingOnMeet);
