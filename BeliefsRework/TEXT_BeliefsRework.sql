@@ -25,6 +25,12 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION_ZJ',
 "Holy Site district's [ICON_FAITH] Faith adjacency bonus provides [ICON_SCIENCE] Science as well."),
 
+('LOC_BELIEF_FEED_THE_WORLD_DESCRIPTION_ZJ',
+'Shrines and Temple provide +4 [ICON_Food] Food and +2 [ICON_Housing] Housing each.'),
+
+('LOC_BELIEF_CHORAL_MUSIC_DESCRIPTION_ZJ',
+'Holy Site buildings provide [ICON_CULTURE] Culture equal to their intrinsic [ICON_Faith] Faith output.'),
+
 ('LOC_BELIEF_DAR_E_MEHR_DESCRIPTION_ZJ',
 'Allows construction of Dar-e Mehrs (+3 [ICON_Faith] Faith, +2 additional [ICON_Faith] Faith for each era since constructed or last repaired. Cannot be pillaged by natural disasters.).'),
 
