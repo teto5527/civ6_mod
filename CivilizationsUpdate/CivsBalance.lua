@@ -28,7 +28,6 @@ end
 
 --Eleanor
 local DRAMA_POETRY_INDEX = GameInfo.Civics['CIVIC_DRAMA_POETRY'].Index;
-
 function FirstCivicDaramPoetry(playerId, iCivic)
   	local player = Players[playerId];
 	local playerConfig = PlayerConfigurations[playerId];
@@ -46,7 +45,6 @@ Events.CivicCompleted.Add(FirstCivicDaramPoetry);
 --Phoenicia
 local WRITING_PROGRESS = 0;
 local WRITING_INDEX = GameInfo.Technologies['TECH_WRITING'].Index;
-
 function PhoeniciaWitingOnMeet (player1Id)
 	local player = Players[player1Id];
 	local playerConfig = PlayerConfigurations[player1Id];
@@ -62,3 +60,23 @@ function PhoeniciaWitingOnMeet (player1Id)
 	end
 end
 Events.DiplomacyMeetMajors.Add(PhoeniciaWitingOnMeet);
+
+--Netherlands (copy from HD)
+local EXPLORATION_INDEX = GameInfo.Civics['CIVIC_EXPLORATION'].Index;
+function NetherlandsBuildingAddedToMap (playerId, cityID, buildingID, plotID, bOriginalConstruction)
+	local player = Players[playerId];
+	local playerConfig = PlayerConfigurations[playerId];
+	local civilization = playerConfig:GetCivilizationTypeName();
+	if HasCivilizationTrait(civilization, 'TRAIT_CIVILIZATION_GROTE_RIVIEREN') then
+		local building = GameInfo.Buildings[buildingID];
+		if building.PrereqDistrict == 'DISTRICT_HARBOR' then
+			if not player:GetCulture():HasBoostBeenTriggered(EXPLORATION_INDEX) then
+				player:GetCulture():TriggerBoost(EXPLORATION_INDEX, 1);
+			elseif not player:GetCulture():HasCivic(EXPLORATION_INDEX) then
+				local cost = player:GetCulture():GetCultureCost(EXPLORATION_INDEX);
+				player:GetCulture():SetCulturalProgress(EXPLORATION_INDEX, cost);
+			end
+		end
+	end
+end
+GameEvents.BuildingConstructed.Add(NetherlandsBuildingAddedToMap);

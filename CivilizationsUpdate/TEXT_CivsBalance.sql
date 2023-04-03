@@ -50,7 +50,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Iron, Coal and Aluminum Mines accumulate 2 more resources per turn. +100% [ICON_Production] Production towards Military Engineers. Military Engineers receive +2 charges. Buildings that provide additional yields when [ICON_POWER] Powered receive +5 of that yield. +25% [ICON_Production] Production towards Industrial Zone buildings. Harbor buildings increase Strategic Resource Stockpiles by +10 (on Standard Speed). Reveals [ICON_RESOURCE_COAL] Coal by Apprenticeship, and reveals [ICON_RESOURCE_ALUMINUM] Aluminum by industrialization'),
 
 ('LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION_ZJ',--Neitherlands
-'Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Culture Bomb adjacent tiles when completing a Harbor. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building. Dams are unlocked with the Masonry technology.'),
+"Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Culture Bomb adjacent tiles when completing a Harbor. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building. Dams are unlocked with the Masonry technology. Grant boost [ICON_CIVICBOOSTED] to 'Exploration' each time a Harbor building is built (complete 'Exploration' if already boosted)."),
 
 ('LOC_TRAIT_RADIO_ORANJE_DESCRIPTION_ZJ', --Wilhelmina
 'Your [ICON_TRADEROUTE] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TRADEROUTE] Trade Routes to foreign cities or from foreign cities provide +1 [ICON_Culture] Culture to you. Your cities earn +15% [ICON_Gold] Gold whenever you are not at war with any civilization.'),
