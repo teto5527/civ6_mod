@@ -148,6 +148,19 @@ DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_MILITARY_ENGINEER';
 UPDATE Improvements SET PrereqTech='TECH_MILITARY_ENGINEERING' WHERE ImprovementType='IMPROVEMENT_FORT';
 UPDATE Improvements SET PrereqTech='TECH_GUNPOWDER' WHERE ImprovementType='IMPROVEMENT_MOUNTAIN_TUNNEL';
 
+--Chemistry copy industrial zone to food
+UPDATE Technologies SET Description='LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ' WHERE TechnologyType='TECH_CHEMISTRY';
+
+INSERT INTO TechnologyModifiers (TechnologyType, ModifierId) VALUES 
+('TECH_CHEMISTRY', 'CHEMISTRY_INDUSTRIAL_ZONE_FOOD');
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'MODIFIER_ALL_DISTRICTS_ADJUST_YIELD_BASED_ON_ADJACENCY_BONUS', 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'DistrictType', 'DISTRICT_INDUSTRIAL_ZONE'), 
+('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'YieldTypeToGrant', 'YIELD_FOOD'), 
+('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'YieldTypeToMirror', 'YIELD_PRODUCTION');
 
 --CRATER_LAKE
 -- INSERT INTO DistrictModifiers (DistrictType, ModifierId) VALUES
