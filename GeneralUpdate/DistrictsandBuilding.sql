@@ -9,12 +9,15 @@ UPDATE District_Adjacencies SET YieldChangeId ='DISTRICT_CULTURE_CITY_CENTER_MAJ
 --Industrial zone
 --more citizen slots
 UPDATE Buildings SET CitizenSlots='2' WHERE BuildingType='BUILDING_WORKSHOP';
-UPDATE Buildings SET CitizenSlots='2' WHERE BuildingType='BUILDING_FACTORY';
-UPDATE Buildings SET CitizenSlots='2' WHERE BuildingType='BUILDING_ELECTRONICS_FACTORY';
+UPDATE Buildings SET CitizenSlots='4' WHERE BuildingType='BUILDING_FACTORY';
+UPDATE Buildings SET CitizenSlots='4' WHERE BuildingType='BUILDING_ELECTRONICS_FACTORY';
+UPDATE Buildings SET CitizenSlots='3' WHERE BuildingType='BUILDING_COAL_POWER_PLANT';
+UPDATE Buildings SET CitizenSlots='3' WHERE BuildingType='BUILDING_FOSSIL_FUEL_POWER_PLANT';
+UPDATE Buildings SET CitizenSlots='3' WHERE BuildingType='BUILDING_POWER_PLANT';
 
 --more Building_CitizenYieldChanges
 INSERT OR REPLACE INTO Building_CitizenYieldChanges (BuildingType, YieldType, YieldChange) VALUES
-('BUILDING_WORKSHOP', 'YIELD_PRODUCTION', '2'),
+('BUILDING_WORKSHOP', 'YIELD_PRODUCTION', '1'),
 ('BUILDING_ELECTRONICS_FACTORY', 'YIELD_PRODUCTION', '1'),
 ('BUILDING_FACTORY', 'YIELD_PRODUCTION', '1');
 
