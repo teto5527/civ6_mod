@@ -1,4 +1,6 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_ELIZABETH_DESCRIPTION_ZJ',
+"England's [ICON_TRADEROUTE] Trade Route Capacity is increased by 2 after acquiring your first [ICON_GreatAdmiral] Great Admiral (Must be a Rennaissance Era or earlier [ICON_GreatAdmiral] Great Admiral from the Standard Ruleset). [ICON_TRADEROUTE] Trade Routes to any city-state provide +3  Gold for every specialty district in the origin city. +100% Yields from Plundering [ICON_TRADEROUTE] Trade Routes with Naval Units. Coast cities yield 5 (become 10 if golden age) [ICON_Gold] Gold when you keep peace with all major civilizations."),
 ('LOC_TRAIT_LEADER_SEJONG_DESCRIPTION_ZJ',
 '+2 [ICON_Science] Science and +2 [ICON_Culture] Culture from each [ICON_GREATWORK_WRITING] Great Work of Writing. Library provide +1 [ICON_GREATWRITER] Great Writer point. Library +1 slot for [ICON_GREATWORK_WRITING] Great Work of Writing.'),
 ('LOC_TRAIT_LEADER_SUNDIATA_KEITA_DESCRIPTION_ZJ',
