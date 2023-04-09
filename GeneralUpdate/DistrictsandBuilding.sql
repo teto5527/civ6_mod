@@ -6,6 +6,10 @@ INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, Adj
 ('DISTRICT_CULTURE_CITY_CENTER_MAJOR', 'LOC_DISTRICT_CULTURE_CITY_CENTER_MAJOR_ZJ', 'YIELD_CULTURE', '2', 'DISTRICT_CITY_CENTER');
 UPDATE District_Adjacencies SET YieldChangeId ='DISTRICT_CULTURE_CITY_CENTER_MAJOR' WHERE DistrictType ='DISTRICT_ACROPOLIS' AND YieldChangeId='District_Culture_City_Center';
 
+--LightHouse yiled 1 production
+INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
+('BUILDING_LIGHTHOUSE', 'YIELD_PRODUCTION', '1');
+
 --Industrial zone
 --more citizen slots
 UPDATE Buildings SET CitizenSlots='2' WHERE BuildingType='BUILDING_WORKSHOP';

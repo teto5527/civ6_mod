@@ -130,6 +130,9 @@ UPDATE GlobalParameters
 UPDATE GlobalParameters
     SET Value='50'
     WHERE Name='TOURISM_OPEN_BORDERS_BONUS';
+    
+-- Great work of writing provide more tourism
+UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_WRITING';
 
 --SCOUT EARLY EMBARK
 UPDATE Technologies SET Description = 'LOC_TECH_SAILING_DESCRIPTION_ZJ' WHERE TechnologyType = 'TECH_SAILING';
