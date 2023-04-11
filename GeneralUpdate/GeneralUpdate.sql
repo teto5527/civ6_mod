@@ -20,8 +20,11 @@ INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
 ('FREE_SCOUT_PLAYER_IS_HUMAN', 'REQUIREMENT_PLAYER_IS_HUMAN');
 
--- Slower Barbarian tech.
-update GlobalParameters set Value = 60 where Name = 'BARBARIAN_TECH_PERCENT';
+-- Remove snow barbarian camp.
+delete from Improvement_ValidTerrains where
+	ImprovementType = 'IMPROVEMENT_BARBARIAN_CAMP' and TerrainType = 'TERRAIN_SNOW';
+delete from Improvement_ValidTerrains where
+	ImprovementType = 'IMPROVEMENT_BARBARIAN_CAMP' and TerrainType = 'TERRAIN_SNOW_HILLS';
 
 -- capital free Entertainment
 update Buildings set Entertainment = 2 where BuildingType = 'BUILDING_PALACE';
