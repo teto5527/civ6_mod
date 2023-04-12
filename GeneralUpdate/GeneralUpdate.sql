@@ -133,9 +133,13 @@ UPDATE GlobalParameters
 UPDATE GlobalParameters
     SET Value='50'
     WHERE Name='TOURISM_OPEN_BORDERS_BONUS';
-    
--- Great work of writing provide more tourism
-UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_WRITING';
+
+--More tourism from wonders
+UPDATE GlobalParameters SET Value = '2' WHERE Name = 'TOURISM_ADVANCED_ERA_WONDER';
+
+--Great works (wrting, earier art, and music) provide more tourism
+UPDATE GreatWorks SET Tourism = '3' WHERE Tourism = '2';
+UPDATE GreatWorks SET Tourism = '6' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_MUSIC';
 
 --SCOUT EARLY EMBARK
 UPDATE Technologies SET Description = 'LOC_TECH_SAILING_DESCRIPTION_ZJ' WHERE TechnologyType = 'TECH_SAILING';
