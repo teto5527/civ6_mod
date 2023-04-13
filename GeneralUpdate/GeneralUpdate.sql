@@ -138,8 +138,22 @@ UPDATE GlobalParameters
 UPDATE GlobalParameters SET Value = '2' WHERE Name = 'TOURISM_ADVANCED_ERA_WONDER';
 
 --Great works (wrting, earier art, and music) provide more tourism
-UPDATE GreatWorks SET Tourism = '3' WHERE Tourism = '2';
-UPDATE GreatWorks SET Tourism = '6' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_MUSIC';
+UPDATE GreatWorks SET Tourism = '3' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_WRITING';
+UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_SCULPTURE';
+UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_PORTRAIT';
+UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_LANDSCAPE';
+UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_RELIGIOUS';
+UPDATE GreatWorks SET Tourism = '8' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_MUSIC';
+
+--Great works (wrting) provide more culture
+-- INSERT OR REPLACE INTO GreatWork_YieldChanges(GreatWorkType, YieldChange) VALUES 
+-- SELECT a.GreatWorkType, 3 FROM GreatWorks a WHERE 
+-- a.GreatWorkObjectType IN ('GREATWORKOBJECT_WRITING');
+UPDATE GreatWork_YieldChanges SET YieldChange='3' WHERE YieldChange='2';
+
+-- REPLACE INTO GreatWork_YieldChanges(GreatWorkType, YieldChange) VALUES
+-- SELECT a.GreatWorkObjectType, 4 FROM GreatWorks a WHERE
+-- a.GreatWorkObjectType IN ('GREATWORKOBJECT_SCULPTURE', 'GREATWORKOBJECT_PORTRAIT', 'GREATWORKOBJECT_LANDSCAPE', 'GREATWORKOBJECT_RELIGIOUS');
 
 --SCOUT EARLY EMBARK
 UPDATE Technologies SET Description = 'LOC_TECH_SAILING_DESCRIPTION_ZJ' WHERE TechnologyType = 'TECH_SAILING';
