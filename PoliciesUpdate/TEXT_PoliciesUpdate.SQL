@@ -1,4 +1,10 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Policeis
+('LOC_POLICY_MILITARY_RECLAMATION_NAME',
+'Military Reclamation'),
+
+('LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
+'Buildings in Encampment +2 [ICON_Food] Food and +2 [ICON_Production] Production.'),
+
 ('LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 'Primitive Commune'),
 
@@ -30,7 +36,4 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Policeis
 'Extra [ICON_Culture] Culture from buildings in Theaters: +50% if city [ICON_Citizen] population is 10 or higher, +50% if district has at least +4 adjacency bonus.'),
 
 ('LOC_POLICY_INTEGRATED_SPACE_CELL_DESCRIPTION_ZJ',
-'+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.'),
-
-('LOC_POLICY_MILITARY_RESEARCH_EXPANSION1_DESCRIPTION_ZJ',
-'Military Academies, Seaports, and Renaissance Walls generate +3 [ICON_Science] Science.');
+'+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.');
