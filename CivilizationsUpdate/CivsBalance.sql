@@ -350,6 +350,24 @@ INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, Ow
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('TRAIT_REVEAL_HORSES', 'ResourceType', 'RESOURCE_HORSES');
 
+--Macedon
+UPDATE Units SET Cost='80', Maintenance='3' WHERE UnitType='UNIT_MACEDONIAN_HETAIROI';
+
+INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES 
+('TRAIT_CIVILIZATION_HELLENISTIC_FUSION', 'TRAIT_FREE_BASILIKOI_PAIDES_CLASSICAL');
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES
+('TRAIT_FREE_BASILIKOI_PAIDES_CLASSICAL', 'MODIFIER_PLAYER_CITIES_GRANT_BUILDING_IN_CITY_IGNORE', 0, 0, 0, 'REQUIREMENT_ERA_IS_CLASSICAL', 'CITY_HAS_ENCAMPMENT');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('TRAIT_FREE_BASILIKOI_PAIDES_CLASSICAL', 'BuildingType', 'BUILDING_BASILIKOI_PAIDES');
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
+('REQUIREMENT_ERA_IS_CLASSICAL', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+('REQUIREMENT_ERA_IS_CLASSICAL', 'ERA_IS_CLASSICAL');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
+('ERA_IS_CLASSICAL', 'REQUIREMENT_GAME_ERA_IS');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
+('ERA_IS_CLASSICAL', 'EraType', 'ERA_CLASSICAL');
 
 --Poland
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY';
@@ -386,11 +404,6 @@ INSERT INTO Requirements (RequirementId, RequirementType) VALUES
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
 ('PLOT_IS_GRASS', 'TerrainType', 'TERRAIN_GRASS'),
 ('PLOT_IS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
-
---Ottomans
--- UPDATE Units
---     SET Maintenance=6
---     WHERE UnitsType='UNIT_SULEIMAN_JANISSARY';
 
 --leader_Kublai Khan 
 UPDATE Traits SET Description = 'LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_LEADER_KUBLAI';
