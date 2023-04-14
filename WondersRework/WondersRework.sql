@@ -129,15 +129,5 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 ('REQUIREMENTS_PLOT_HAS_QUARRY', 'REQUIRES_PLOT_HAS_QUARRY');
 
---Kotoku-in, Grants 0 Warrior Monks, worship buildings provide  Culture equal to their intrinsic  Faith output.
--- UPDATE buildings SET Description = 'LOC_BUILDING_KOTOKU_IN_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_KOTOKU_IN';
-
--- INSERT OR REPLACE INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
--- ('BUILDING_KOTOKU_IN', 'KOTOKU_WORSHIP_BUILDINGS_CULTURE');
--- INSERT OR REPLACE INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
--- ('KOTOKU_WORSHIP_BUILDINGS_CULTURE', 'MODIFIER_BUILDING_YIELD_CHANGE', 0, 0, 0, NULL, NULL);
--- INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES 
--- ('KOTOKU_GRANTMONKS', 'Amount', '0'),
--- ('KOTOKU_WORSHIP_BUILDINGS_CULTURE', 'BuildingType', 'BUILDING_CATHEDRAL'),
--- ('KOTOKU_WORSHIP_BUILDINGS_CULTURE', 'YieldType', 'YIELD_CULTURE'),
--- ('KOTOKU_WORSHIP_BUILDINGS_CULTURE', 'Amount', '3');
+--great library more slots
+UPDATE Building_GreatWorks SET NumSlots = 3 WHERE BuildingType = 'BUILDING_GREAT_LIBRARY';
