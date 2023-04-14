@@ -2,18 +2,6 @@
 -- Author: zjhao
 -- DateCreated: 4/30/2022 12:33:31 PM
 --------------------------------------------------------------
---for test
--- UPDATE Units
---     SET BaseMoves=5
---     WHERE UnitType='UNIT_SETTLER';
-
---Korea
-INSERT OR REPLACE INTO Improvement_YieldChanges(ImprovementType, YieldType, YieldChange) VALUES
-('IMPROVEMENT_QUARRY', 'YIELD_SCIENCE', 0);
-INSERT OR REPLACE INTO Improvement_Adjacencies(ImprovementType, YieldChangeId) VALUES
-('IMPROVEMENT_QUARRY', 'Quarry_ScienceSeowonAdjacency');
-INSERT OR REPLACE INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
-('Quarry_ScienceSeowonAdjacency', 'Placeholder', 'YIELD_SCIENCE', 1, 'DISTRICT_SEOWON');
 
 --Canada
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_FACES_OF_PEACE_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_FACES_OF_PEACE';
