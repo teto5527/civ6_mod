@@ -1,4 +1,4 @@
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Policeis
+INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_MILITARY_RECLAMATION_NAME',
 'Military Reclamation'),
 
@@ -37,3 +37,19 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Policeis
 
 ('LOC_POLICY_INTEGRATED_SPACE_CELL_DESCRIPTION_ZJ',
 '+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.');
+
+INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
+("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_NAME',
+'屯垦戍边'),
+("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
+'军营内建筑物+2 [ICON_Food] 食物和 +2 [ICON_Production] 生产力。'),
+("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
+'原始公社'),
+("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION',
+'所有城市+1 [ICON_Food] 食物。'),
+("zh_Hans_CN",  'LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ',
+'所有城市+1 [ICON_Food] 食物和+1 [ICON_Production] 生产力。'),
+("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
+'翻新改造'),
+("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
+'建造市中心建筑时+50% [ICON_Production] 生产力。');

@@ -85,4 +85,4 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --units
 ('LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION_ZJ',
-'Can construct Roads, Railroads, Forts, Airstrips, Missile Silos, and Mountain Tunnel improvements. One of their build charges can also be used to complete 20% of a Canal, Dam or Aqueduct district or a Flood Barrier building.');
+'Can construct Roads, Railroads, Forts, Airstrips, Missile Silos, and Mountain Tunnel improvements. One of their build charges can also be used to complete 50% of a Canal, Dam or Aqueduct district or a Flood Barrier building.');
