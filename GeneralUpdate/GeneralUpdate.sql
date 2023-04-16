@@ -172,6 +172,12 @@ DELETE FROM Unit_BuildingPrereqs WHERE Unit='UNIT_MILITARY_ENGINEER';
 UPDATE Improvements SET PrereqTech='TECH_MILITARY_ENGINEERING' WHERE ImprovementType='IMPROVEMENT_FORT';
 UPDATE Improvements SET PrereqTech='TECH_GUNPOWDER' WHERE ImprovementType='IMPROVEMENT_MOUNTAIN_TUNNEL';
 
+--early lumber mill on rainforest
+UPDATE Civics SET Description = 'LOC_CIVIC_GUILDS_DESCRIPTION_ZJ' WHERE CivicType = 'CIVIC_GUILDS';
+UPDATE Civics SET Description = 'LOC_CIVIC_MERCANTILISM_DESCRIPTION_ZJ' WHERE CivicType = 'CIVIC_MERCANTILISM';
+UPDATE Improvement_ValidFeatures SET PrereqCivic = 'CIVIC_GUILDS' WHERE ImprovementType = 'IMPROVEMENT_LUMBER_MILL' AND FeatureType='FEATURE_JUNGLE';
+
+
 --Chemistry copy industrial zone to food
 UPDATE Technologies SET Description='LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ' WHERE TechnologyType='TECH_CHEMISTRY';
 

@@ -73,7 +73,13 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --buildings
 ('LOC_BUILDING_WATER_MILL_DESCRIPTION_ZJ',
 'Bonus resources improved by Farms gain +1 [ICON_FOOD] Food each. Resources improved by Pastures gain +1 [ICON_Production] Production each.');
 
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
+('LOC_CIVIC_GUILDS_DESCRIPTION_ZJ',
+'Lumber Mills can be built on Rainforest.'),
+
+('LOC_CIVIC_MERCANTILISM_DESCRIPTION_ZJ',
+'Camp improvements receive +1 [ICON_Production] Production and +1 [ICON_Food] Food.'),
+
 ('LOC_GOVT_INHERENT_BONUS_COMMUNISM_XP1_ZJ',
 '+0.6 [ICON_Production] Production per [ICON_Citizen] Citizen.'),
 
