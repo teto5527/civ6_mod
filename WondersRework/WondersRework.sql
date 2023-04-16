@@ -2,10 +2,10 @@
 -- Author: zjhao
 -- DateCreated: 4/29/2022 5:53:50 PM
 --------------------------------------------------------------
---0.tamp test
--- UPDATE Units
---     SET BaseMoves=4
---     WHERE UnitType='UNIT_SETTLER';
+--0.TEXT
+UPDATE Buildings SET  Description = 'LOC_BUILDING_CHICHEN_ITZA_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_CHICHEN_ITZA';
+UPDATE Buildings SET  Description = 'LOC_BUILDING_RUHR_VALLEY_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_RUHR_VALLEY';
+UPDATE Buildings SET Description = 'LOC_BUILDING_STONEHENGE_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_STONEHENGE';
 
 --1.Some wonders can be built in Forest, Rainforest or mountain
 -- Enable Wonders on Mountain(HD)
@@ -81,8 +81,10 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 ('REQUIREMENT_UNIT_IS_SETTLER', 'UNIT_IS_SETTLER');
 
---6.Chichen Itza: Rainforest no longer -1 appeal
- INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+--6.Chichen Itza: Rainforest no longer -1 appeal, rainforest +2 culture to all cities
+UPDATE Modifiers SET ModifierType = 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_CULTURE_MODIFIER';
+
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
 ('BUILDING_CHICHEN_ITZA', 'CHICHEN_ITZA_ADJUST_APPEAL_RAINFOREST');
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
 ('CHICHEN_ITZA_ADJUST_APPEAL_RAINFOREST', 'MODIFIER_PLAYER_CITIES_ADJUST_FEATURE_APPEAL_MODIFIER', 0, 0, 0, NULL, NULL);
@@ -114,8 +116,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('BIOSPHERE_DIPLOVP', 'Amount', '3');
 
 --9.stonehenge, +1 faith to all quarry
-UPDATE Buildings SET Description = 'LOC_BUILDING_STONEHENGE_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_STONEHENGE';
-
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
 ('BUILDING_STONEHENGE', 'STONEHENGE_QUARRY_FAITH');
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
