@@ -9,7 +9,7 @@ INSERT OR REPLACE INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, 
 INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('TRAIT_PALACE_GREAT_GENERAL', 'Amount', '1'),
 ('TRAIT_PALACE_GREAT_GENERAL', 'GreatPersonClassType', 'GREAT_PERSON_CLASS_GENERAL'),
-('TRAIT_CAESAR_GOLD_CAPTURED_CITY_STEEL_MODIFIER', 'Amount', '200'),
+('TRAIT_CAESAR_GOLD_CAPTURED_CITY_STEEL_MODIFIER', 'Amount', '100'),
 ('BARBARIAN_CAMP_GOLD_CAPTURED_CITY_STEEL', 'Amount', '100');
 
 -- RequirementSets
