@@ -1,10 +1,5 @@
 -- Language: en_US
-
--- INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
--- ('LOC_ABILITY_LLANERO_ADJACENCY_STRENGTH_DESCRIPTION',
--- 'Receive double experience from battles.');
-
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+INSERT INTO EnglishText (Tag,Text) VALUES
 ('LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ',
 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
 
@@ -33,9 +28,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION_ZJ',
 'City Centers gain +1 [ICON_Faith] Faith and +1 [ICON_Food] Food for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_Production] Production and +4 [ICON_Gold] Gold. May purchase Commercial Hub and Goverment Plaza district buildings with [ICON_Faith] Faith. -30% [ICON_Production] Production toward constructing buildings or training units.'),
 
-('LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION_ZJ', --Leader Mansa
-'International [ICON_TRADEROUTE] Trade Routes gain +1 [ICON_Gold] Gold for every flat Desert tile in the origin city. Receive +1 [ICON_TRADEROUTE] Trade Capacity first time you enter a Golden Age. +2 [ICON_Gold] Gold from Desert.'),
-
 ('LOC_DISTRICT_SUGUBA_DESCRIPTION_ZJ',
 'A district unique to Mali specializing in finance and trade that replaces the Commercial Hub. Tiles, Units, Buildings, and Districts are 20% cheaper to purchase with [ICON_Gold] Gold and [ICON_Faith] Faith in this City.[NEWLINE][NEWLINE]+2 [ICON_Gold] Gold bonus for each adjacent Holy Site. +2 [ICON_Gold] Gold bonus from a tile containing a River edge. +1 [ICON_Gold] Gold bonus for every two adjacent district tiles.'),
 
@@ -55,14 +47,8 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_RADIO_ORANJE_DESCRIPTION_ZJ', --Wilhelmina
 'Your [ICON_TRADEROUTE] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TRADEROUTE] Trade Routes to foreign cities or from foreign cities provide +1 [ICON_Culture] Culture to you. Your cities earn +15% [ICON_Gold] Gold whenever you are not at war with any civilization.'),
 
-('LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION_ZJ', --leader KUBLAI
-'One extra Economic policy slot in any government. Receive a random [ICON_CIVICBOOSTED] Eureka and [ICON_TECHBOOSTED] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilizations city for the first time. Each Encampment buildings yield 5 [ICON_Gold] Gold, Encampment +1 [ICON_TRADEROUTE] Trade Route capacity.'),
-
 ('LOC_TRAIT_LEADER_MUTAL_DESCRIPTION_ZJ', --Maya
 'Non capital cities within 6 tiles of the [ICON_CAPITAL] Capital gain +20% to all yields. Other non capital cities receive -20% to all yields. +7 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_CAPITAL] Capital.'),
-
-('LOC_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ', --Arabian(Saladin)
-"Automatically receive the final [ICON_GREATPROPHET] Great Prophet when the next-to-last one is claimed (if you have not earned a [ICON_GREATPROPHET] Great Prophet already). +1 [ICON_Science] Science for each foreign city following Arabia's Religion. Holy Site give Culture Bomb."),
 
 ('LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ', --ROME
 'All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_Gold] Gold for passing through Trading Posts in your own cities. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
@@ -85,10 +71,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_ZJ', --Poland
 "Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot. Districts placed on Grass or Plains +1 [ICON_HOUSING] house. Constructs first Sukiennice receive [ICON_Gold] Gold that equl to it's cost."),
 ('LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION_ZJ',
-'A building unique to Poland. International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. Bonus [ICON_Production] Production equal to the adjacency bonus of the Commercial Hub district. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.'),
-
-('LOC_LEADER_ELEANOR_LOYALTY_DESCRIPTION_ZJ',
-"Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. Grant Drama and poetry civic when player unlock thier first civic. One Economic policy slot in the current government is converted to a Wildcard slot.");
+'A building unique to Poland. International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. Bonus [ICON_Production] Production equal to the adjacency bonus of the Commercial Hub district. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.');
 
 
 
