@@ -1,10 +1,12 @@
 -- Language: en_US
 INSERT INTO EnglishText (Tag,Text) VALUES
-('LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ',
+('LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ', --Sumeria
 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
+('LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION_ZJ',
+'Sumerian unique Ancient era unit. Stronger than all other starting units. No penalties against anti-cavalry units. 4 [ICON_MOVEMENT] Movement if this unit starts in open terrain. +7 [ICON_Strength] Combat Strength when fighting Barbarians.'),
 
-('LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION_ZJ', 
-'When you disperse a Barbarian Outpost, receive a Tribal Village reward in addition to the usual Experience Points. Pay half the usual cost to levy city-state units.'),
+('LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ', --Aztec
+'A building unique to the Aztecs. Provides 2 [ICON_Amenities] Amenities, +2 [ICON_Culture] Culture, +2 [ICON_Faith] Faith (duplicate yield each era since constructed or last repaired.), and a [ICON_GREATGENERAL] Great General Point. Provides +1 [ICON_Tourism] Tourism after advancing to the Conservation Civic.')
 
 ('LOC_IMPROVEMENT_PYRAMID_DESCRIPTION_ZJ', --Nubia
 'Improvement that unlocks with Masonry and must be built on Desert, Desert Hills or Desert Floodplains. +1 [ICON_Faith] Faith. Receives additional yields from adjacent districts. +1 [ICON_Food] Food if adjacent to a city center. Increase of +1 to the adjacency bonuses being earned by any adjacent district.'),

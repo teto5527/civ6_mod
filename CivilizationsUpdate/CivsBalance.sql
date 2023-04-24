@@ -31,15 +31,30 @@ UPDATE ModifierArguments
     WHERE ModifierId='TRAIT_MARSH_BUILDINGS_PRODUCTION' AND Name='Amount';
 
 --Sumeria
---ZIGGURAT buff
 UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ' WHERE ImprovementType = 'IMPROVEMENT_ZIGGURAT';
-
+UPDATE Units SET Description = 'LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION_ZJ' WHERE UnitType = 'UNIT_SUMERIAN_WAR_CART';
+--ZIGGURAT buff
 UPDATE Improvement_YieldChanges SET YieldChange=1 WHERE ImprovementType='IMPROVEMENT_ZIGGURAT' AND YieldType='YIELD_CULTURE';
 INSERT OR REPLACE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqTech) VALUES
 ('IMPROVEMENT_ZIGGURAT', 'YIELD_CULTURE', 1, 'TECH_EDUCATION'),
 ('IMPROVEMENT_ZIGGURAT', 'YIELD_SCIENCE', 1, 'TECH_EDUCATION');
 
-UPDATE Units SET Combat=33 WHERE UnitType='UNIT_SUMERIAN_WAR_CART';
+--WAR_CART +7 combat when fighting against bararians
+INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
+('TRAIT_CIVILIZATION_UNIT_SUMERIAN_WAR_CART', 'TRAIT_WAR_CART_INCREASE_COMBAT_BARBARIAN');
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('TRAIT_WAR_CART_INCREASE_COMBAT_BARBARIAN', 'MODIFIER_PLAYER_UNITS_ADJUST_BARBARIAN_COMBAT', 0, 0, 0, NULL, 'REQUIREMENT_UNIT_IS_WAR_CART');
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('TRAIT_WAR_CART_INCREASE_COMBAT_BARBARIAN', 'Amount', '7');
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
+('REQUIREMENT_UNIT_IS_WAR_CART', 'REQUIREMENTSET_TEST_ALL');
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
+('REQUIREMENT_UNIT_IS_WAR_CART', 'UNIT_IS_WAR_CART');
+INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
+('UNIT_IS_WAR_CART', 'REQUIREMENT_UNIT_TYPE_MATCHES');
+INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
+('UNIT_IS_WAR_CART', 'UnitType', 'UNIT_SUMERIAN_WAR_CART');
 
 --Sweden
 UPDATE Traits SET Description='LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION_ZJ' WHERE TraitType='TRAIT_CIVILIZATION_NOBEL_PRIZE';
@@ -105,23 +120,12 @@ insert or replace into ModifierArguments    (ModifierId,    Name,        Value)
     from Districts where DistrictType != 'DISTRICT_CITY_CENTER';
 
 --Aztec
---EAGLE_WARRIOR +7 combat when fighting against bararians
-INSERT INTO TraitModifiers (TraitType, ModifierId) VALUES 
-('TRAIT_CIVILIZATION_UNIT_AZTEC_EAGLE_WARRIOR', 'EAGLE_WARRIOR_INCREASE_COMBAT_BARBARIAN');
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
-('EAGLE_WARRIOR_INCREASE_COMBAT_BARBARIAN', 'MODIFIER_PLAYER_UNITS_ADJUST_BARBARIAN_COMBAT', 0, 0, 0, NULL, 'UNITS_ARE_AZTEC_EAGLE_WARRIORS');
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-('EAGLE_WARRIOR_INCREASE_COMBAT_BARBARIAN', 'Amount', '7');
--- RequirementSets
-INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES 
-('UNITS_ARE_AZTEC_EAGLE_WARRIORS', 'REQUIREMENTSET_TEST_ALL');
-INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES 
-('UNITS_ARE_AZTEC_EAGLE_WARRIORS', 'UNIT_IS_AZTEC_EAGLE_WARRIOR');
--- Requirements
-INSERT INTO Requirements (RequirementId, RequirementType) VALUES 
-('UNIT_IS_AZTEC_EAGLE_WARRIOR', 'REQUIREMENT_UNIT_TYPE_MATCHES');
-INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
-('UNIT_IS_AZTEC_EAGLE_WARRIOR', 'UnitType', 'UNIT_AZTEC_EAGLE_WARRIOR');
+UPDATE Buildings SET Description = 'LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_TLACHTLI';
+
+INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
+('BUILDING_TLACHTLI', 'YIELD_CULTURE', 2),
+('BUILDING_TLACHTLI', 'YIELD_FAITH', 2);
+
 
 --Nubian
 --Nubian_Pyramid from districts adjacent pyramid, to pyramid adjacent districts
