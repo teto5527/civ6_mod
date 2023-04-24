@@ -1,5 +1,5 @@
 -- Language: en_US
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_STONE_CIRCLES_DESCRIPTION_ZJ',
 '+1 [ICON_CULTURE] Culture, +2 [ICON_FAITH] Faith from Quarries.'),
 
@@ -19,9 +19,24 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+2 [ICON_FAITH] Faith from tiles with Breathtaking Appeal.'),
 
 ('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
-'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.');
+'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.'),
+
+('LOC_BELIEF_SONG_OF_SIREN_NAME',
+'Song of Siren'),
+
+('LOC_BELIEF_SONG_OF_SIREN_DESCRIPTION',
+'+1 [ICON_SCIENCE] Science, +1 [ICON_GOLD] Gold from Reefs and Kelps.'),
+
+('LOC_BELIEF_MATHER_OF_WOODS_NAME',
+'Mather of Woods'),
+
+('LOC_BELIEF_MATHER_OF_WOODS_DESCRIPTION',
+'+1 [ICON_FOOD] Food from Lumber Mills over Woods, and +1 [ICON_PRODUCTION] Production from Lumber Mills over Rainforest.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION_ZJ',
+'May purchase Campus, Theater Square and Holy Site district buildings with [ICON_FAITH] Faith.'),
+
 ('LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION_ZJ',
 "Holy Site district's [ICON_FAITH] Faith adjacency bonus provides [ICON_SCIENCE] Science as well."),
 
