@@ -12,13 +12,13 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 '+1 [ICON_Food] Food in all cities.'),
 
 ('LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ', 
-'+1 [ICON_Food] Food and +1 [ICON_Production] Production in all cities.'),
+'+1 [ICON_Food] Food and +1 [ICON_Production] Production in all cities. +1 [ICON_AMENITIES] Amenity to all cities with at least 2 specialty districts.'),
 
-('LOC_POLICY_URBAN_RENEWAL_NAME',
-'Urban Renewal'),
+-- ('LOC_POLICY_URBAN_RENEWAL_NAME',
+-- 'Urban Renewal'),
 
-('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
-'+50% [ICON_Production] Production toward City center buildings.'),
+-- ('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
+-- '+50% [ICON_Production] Production toward City center buildings.'),
 
 ('LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
 '+30% [ICON_Production] Production toward Aerodrome districts, Encampment districts, Harbor districts, and buildings for these districts.'),
@@ -48,8 +48,10 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION',
 '所有城市+1 [ICON_Food] 食物。'),
 ("zh_Hans_CN",  'LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ',
-'所有城市+1 [ICON_Food] 食物和+1 [ICON_Production] 生产力。'),
-("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
-'翻新改造'),
-("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
-'建造市中心建筑时+50% [ICON_Production] 生产力。');
+'所有城市+1 [ICON_Food] 食物和+1 [ICON_Production] 生产力。拥有至少两个独立区域的所有城市+1 [ICON_AMENITIES] 宜居度。'),
+-- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
+-- '翻新改造'),
+-- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
+-- '建造市中心建筑时+50% [ICON_Production] 生产力。'),
+("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
+'建造军营、港口、航空港和这些区域中的建筑时+30% [ICON_Production] 生产力。');
