@@ -137,6 +137,13 @@ UPDATE GlobalParameters
 --More tourism from wonders
 UPDATE GlobalParameters SET Value = '2' WHERE Name = 'TOURISM_ADVANCED_ERA_WONDER';
 
+--Earlier Alliances
+UPDATE DiplomaticActions SET InitiatorPrereqCivic='CIVIC_POLITICAL_PHILOSOPHY', TargetPrereqCivic='CIVIC_POLITICAL_PHILOSOPHY' WHERE DiplomaticActionType LIKE 'DIPLOACTION_ALLIANCE%';
+
+--Lower alliance level's points require
+UPDATE GlobalParameters SET Value = '240' WHERE Name = 'ALLIANCE_LEVEL_TWO_XP';
+UPDATE GlobalParameters SET Value = '720' WHERE Name = 'ALLIANCE_LEVEL_THREE_XP';
+
 --Great works (wrting, earier art, and music) provide more tourism
 UPDATE GreatWorks SET Tourism = '3' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_WRITING';
 UPDATE GreatWorks SET Tourism = '4' WHERE GreatWorkObjectType = 'GREATWORKOBJECT_SCULPTURE';
@@ -154,6 +161,9 @@ UPDATE GreatWork_YieldChanges SET YieldChange='3' WHERE YieldChange='2';
 -- REPLACE INTO GreatWork_YieldChanges(GreatWorkType, YieldChange) VALUES
 -- SELECT a.GreatWorkObjectType, 4 FROM GreatWorks a WHERE
 -- a.GreatWorkObjectType IN ('GREATWORKOBJECT_SCULPTURE', 'GREATWORKOBJECT_PORTRAIT', 'GREATWORKOBJECT_LANDSCAPE', 'GREATWORKOBJECT_RELIGIOUS');
+
+-- Celestial Navigation no longer requires Astrology
+DELETE FROM TechnologyPrereqs WHERE Technology = 'TECH_CELESTIAL_NAVIGATION' AND PrereqTech = 'TECH_ASTROLOGY';
 
 --SCOUT EARLY EMBARK
 UPDATE Technologies SET Description = 'LOC_TECH_SAILING_DESCRIPTION_ZJ' WHERE TechnologyType = 'TECH_SAILING';

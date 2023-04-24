@@ -188,6 +188,22 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
 ('REQUIRES_PLAYER_HAS_6_CITIES', 'Amount', '6'),
 ('REQUIRES_PLAYER_HAS_7_CITIES', 'Amount', '7');
 
+--Diplomatic Quarter buildings grant alliance points
+UPDATE Buildings SET Description = 'LOC_BUILDING_CONSULATE_DESCRIPTION_ZJ' WHERE BuildingType='BUILDING_CONSULATE';
+UPDATE Buildings SET Description = 'LOC_BUILDING_CHANCERY_DESCRIPTION_ZJ' WHERE BuildingType='BUILDING_CHANCERY';
+
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+('BUILDING_CONSULATE', 'CONSULATE_ALLIANCE_POINTS'),
+('BUILDING_CHANCERY', 'CHANCERY_ALLIANCE_POINTS');
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('CONSULATE_ALLIANCE_POINTS', 'MODIFIER_PLAYER_ADJUST_ALLIANCE_POINTS', 0, 0, 0, NULL, NULL),
+('CHANCERY_ALLIANCE_POINTS', 'MODIFIER_PLAYER_ADJUST_ALLIANCE_POINTS', 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('CONSULATE_ALLIANCE_POINTS', 'Amount', '1'),
+('CHANCERY_ALLIANCE_POINTS', 'Amount', '1');
+
 
 --reduce DISTRICT_SPACEPORT cost
 UPDATE Districts

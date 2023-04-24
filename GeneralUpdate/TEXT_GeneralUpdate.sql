@@ -71,7 +71,13 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --buildings
 'Grants +1 [ICON_Science] Science and +1 [ICON_Gold] Gold to adjacent unimproved Charming tiles. Increased to +2 [ICON_Science] Science, +2 [ICON_Gold] Gold, +2 [ICON_Production] Production for adjacent unimproved Breathtaking tiles, and half yield to adjacent Water tiles.'),
 
 ('LOC_BUILDING_WATER_MILL_DESCRIPTION_ZJ',
-'Bonus resources improved by Farms gain +1 [ICON_FOOD] Food each. Resources improved by Pastures gain +1 [ICON_Production] Production each.');
+'Bonus resources improved by Farms gain +1 [ICON_FOOD] Food each. Resources improved by Pastures gain +1 [ICON_Production] Production each.'),
+
+('LOC_BUILDING_CONSULATE_DESCRIPTION_ZJ',
+"+2 Influence Points per turn. +0.25 Alliance Points per turn. Enemy Spy's level is reduced by 1 when targeting this city or cities with Encampments."),
+
+('LOC_BUILDING_CHANCERY_DESCRIPTION_ZJ',
+'+3 Influence Points per turn. +0.25 Alliance Points per turn. When this civilization captures or kills an enemy Spy, receive 50 [ICON_Science] Science for every level of the enemy Spy.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
 ('LOC_CIVIC_GUILDS_DESCRIPTION_ZJ',
