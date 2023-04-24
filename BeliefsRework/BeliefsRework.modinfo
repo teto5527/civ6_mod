@@ -18,6 +18,9 @@
       <File>WorshipBeliefs.sql</File>
       <File>FollowerBeliefs.sql</File>
     </UpdateDatabase>
+    <UpdateIcons id="ICON_BeliefsRework">
+      <File>ICON_BeliefsRework.xml</File>
+    </UpdateIcons>
     <UpdateText id="TextBeliefsRework">
       <!-- <Properties><LoadOrder>1500</LoadOrder></Properties> -->
       <File>TEXT_BeliefsRework.sql</File>
@@ -30,6 +33,7 @@
     <File>FollowerBeliefs.sql</File>
     <File>FounderBeliefs.sql</File>
     <File>EnhancerBeliefs.sql</File>
+    <File>ICON_BeliefsRework.xml</File>
     <File>TEXT_BeliefsRework.sql</File>
   </Files>
 </Mod>
