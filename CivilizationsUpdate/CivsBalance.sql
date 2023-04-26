@@ -95,16 +95,6 @@ INSERT OR REPLACE INTO ModifierArguments(ModifierId, Name, Value) VALUES
 ('SUGUBA_CHEAPER_PLOT_PURCHASE', 'Amount', '-20');
 
 
---Maya
--- UPDATE Traits SET Description = 'LOC_TRAIT_LEADER_MUTAL_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_LEADER_MUTAL';
-
--- INSERT OR REPLACE INTO ModifierArguments(ModifierId, Name, Value) VALUES 
--- ('TRAIT_LEADER_NEARBY_CITIES_GAIN_YIELDS', 'Amount', '20, 20, 20, 20, 20, 20'),
--- ('TRAIT_LEADER_NEARBY_CITIES_LOSE_YIELDS', 'Amount', '20, 20, 20, 20, 20, 20'),
--- ('MUTAL_NEAR_CAPITAL_COMBAT', 'Amount', '7');
-
--- UPDATE Adjacency_YieldChanges SET TilesRequired =1 WHERE ID='Farm_Science';--need update the text
-
 -- Brazil
 -- districts do not remove rainforest(hd)
 insert or replace into TraitModifiers (TraitType, ModifierId) 
@@ -165,7 +155,7 @@ INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 -- ('DISTRICT_THEATER', 'Nubian_Pyramid_Culture'),
 -- ('DISTRICT_INDUSTRIAL_ZONE', 'Nubian_Pyramid_Production');
 
-
+-- Arabia
 INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_MADRASA', 'YIELD_CULTURE', 2);
 
 --Rome

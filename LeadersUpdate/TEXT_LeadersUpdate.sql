@@ -1,4 +1,7 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_LEADER_MUTAL_DESCRIPTION_ZJ', -- Lady six sky
+'Non capital cities within 6 tiles of the [ICON_CAPITAL] Capital gain +20% to all yields. Other non capital cities receive -20% to all yields. +7 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_CAPITAL] Capital.'),
+
 ('LOC_LEADER_ELEANOR_LOYALTY_DESCRIPTION_ZJ', -- Eleanor of Aquitaine
 "Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. Grant Drama and poetry civic when player unlock thier first civic. One Economic policy slot in the current government is converted to a Wildcard slot."),
 

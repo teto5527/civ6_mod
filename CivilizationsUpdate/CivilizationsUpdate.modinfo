@@ -27,17 +27,13 @@
   </Dependencies>
 
   <InGameActions>
-    <!-- <UpdateDatabase id="test">
-      <File>test.sql</File>
-    </UpdateDatabase> -->
-
     <UpdateDatabase id="CivsBalance">
       <File>CivsBalance.sql</File>
     </UpdateDatabase>
 
-    <UpdateText id="TEXT_CivsBalance">
+    <UpdateText id="TEXT_CivsUpdate">
       <!-- <Properties><LoadOrder>1502</LoadOrder></Properties> -->
-      <File>TEXT_CivsBalance.sql</File>
+      <File>TEXT_CivsUpdate.sql</File>
     </UpdateText>
 
     <AddGameplayScripts id="LUA_CivsBalance">
@@ -47,9 +43,8 @@
 
   <Files>
     <File>CivsBalance.sql</File>
-    <File>test.sql</File>
     
-    <File>TEXT_CivsBalance.sql</File>
+    <File>TEXT_CivsUpdate.sql</File>
 
     <File>CivsBalance.lua</File>
   </Files>

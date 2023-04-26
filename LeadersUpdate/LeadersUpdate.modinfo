@@ -7,6 +7,10 @@
 		<Authors>James ZHENG</Authors>
 		<CompatibleVersions>2.0</CompatibleVersions>
 	</Properties>
+	<Dependencies>
+		<Mod id="9DE86512-DE1A-400D-8C0A-AB46EBBF76B9" title="DLC: GranColombia Maya Pack" />
+		<Mod id="A3F42CD4-6C3E-4F5A-BC81-BE29E0C0B87C" title="DLC: Vietnam and Kublai Khan Pack" />
+	</Dependencies>
 	<Components>
 		<UpdateText id="TEXT_LeadersUpdate">
 			<File>TEXT_LeadersUpdate.sql</File>
