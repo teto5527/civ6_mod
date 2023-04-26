@@ -1,4 +1,7 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_RADIO_ORANJE_DESCRIPTION_ZJ', -- Wilhelmina
+"Your [ICON_TRADEROUTE] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TRADEROUTE] Trade Routes to foreign cities or from foreign cities provide +1 [ICON_Culture] Culture to both city."),
+
 ('LOC_TRAIT_LEADER_MUTAL_DESCRIPTION_ZJ', -- Lady six sky
 'Non capital cities within 6 tiles of the [ICON_CAPITAL] Capital gain +20% to all yields. Other non capital cities receive -20% to all yields. +7 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_CAPITAL] Capital.'),
 

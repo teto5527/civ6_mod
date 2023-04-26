@@ -41,9 +41,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION_ZJ',--Neitherlands
 "Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Culture Bomb adjacent tiles when completing a Harbor. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building. Dams are unlocked with the Masonry technology. Grant boost [ICON_CIVICBOOSTED] to 'Exploration' each time a Harbor building is built (complete 'Exploration' if already boosted)."),
 
-('LOC_TRAIT_RADIO_ORANJE_DESCRIPTION_ZJ', --Wilhelmina
-'Your [ICON_TRADEROUTE] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TRADEROUTE] Trade Routes to foreign cities or from foreign cities provide +1 [ICON_Culture] Culture to you. Your cities earn +15% [ICON_Gold] Gold whenever you are not at war with any civilization.'),
-
 ('LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ', --ROME
 'All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_Gold] Gold for passing through Trading Posts in your own cities. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
 
