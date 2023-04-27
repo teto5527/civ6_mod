@@ -8,6 +8,9 @@
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
   <InGameActions>
+    <AddGameplayScripts id="LUA_Policies">
+			<File>Policies.lua</File>
+		</AddGameplayScripts>
     <UpdateDatabase id="PoliciesUpdate">
       <!-- <Properties><LoadOrder>1001</LoadOrder></Properties> -->
       <File>Policies.xml</File>
@@ -25,6 +28,7 @@
     <File>PoliciesUpdate.sql</File>
     <File>Policies.xml</File>
     <File>IconsPolicies.xml</File>
+    <File>Policies.lua</File>
     <File>TEXT_PoliciesUpdate.sql</File>
   </Files>
 </Mod>

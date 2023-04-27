@@ -14,6 +14,12 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ', 
 '+1 [ICON_Food] Food and +1 [ICON_Production] Production in all cities. +1 [ICON_AMENITIES] Amenity to all cities with at least 2 specialty districts.'),
 
+('LOC_POLICY_GIFT_EXCHANGE_NAME',
+'Gift Exchange'),
+
+('LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
+'Receive 15 [ICON_Gold] Gold when you sent a delegation to another player.'),
+
 -- ('LOC_POLICY_URBAN_RENEWAL_NAME',
 -- 'Urban Renewal'),
 
@@ -49,6 +55,10 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 '所有城市+1 [ICON_Food] 食物。'),
 ("zh_Hans_CN",  'LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ',
 '所有城市+1 [ICON_Food] 食物和+1 [ICON_Production] 生产力。拥有至少两个独立区域的所有城市+1 [ICON_AMENITIES] 宜居度。'),
+("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_NAME',
+'礼尚往来'),
+("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
+'向其他玩家派遣代表团时获得15 [ICON_Gold] 金币。'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
 -- '翻新改造'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
