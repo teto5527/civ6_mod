@@ -18,7 +18,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Gift Exchange'),
 
 ('LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'Receive 15 [ICON_Gold] Gold when you sent a delegation to another player.'),
+'Receive 20 [ICON_Gold] Gold when you sent a delegation to another player.'),
 
 -- ('LOC_POLICY_URBAN_RENEWAL_NAME',
 -- 'Urban Renewal'),
@@ -58,7 +58,7 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_NAME',
 '礼尚往来'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'向其他玩家派遣代表团时获得15 [ICON_Gold] 金币。'),
+'向其他玩家派遣代表团时获得20 [ICON_Gold] 金币。'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
 -- '翻新改造'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',

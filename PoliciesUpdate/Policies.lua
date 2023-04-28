@@ -3,7 +3,7 @@ function DelegationAddGold (eReactingPlayer:number, eActingPlayer:number, values
     local policyID = GameInfo.Policies["POLICY_GIFT_EXCHANGE"].Index
     if values.StatementType == -883488896 then
         if player:GetCulture():IsPolicyActive(policyID) then
-            player:GetTreasury():ChangeGoldBalance(15);
+            player:GetTreasury():ChangeGoldBalance(20);
         end
     end
 end
