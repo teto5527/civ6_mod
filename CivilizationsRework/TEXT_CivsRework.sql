@@ -32,6 +32,11 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION_ZJ',
 '+1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold. +2 Appeal. +1 [ICON_Culture] Culture for each adjacent Holy Site and Theater Square. +1 [ICON_Gold] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza. When a player constructs their first Pairidaeza receive one governor title.'),
 
+('LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_ZJ', --Poland
+"Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot. Districts built on flat land +1 [ICON_HOUSING] house."),
+('LOC_BUILDING_SUKIENNICE_DESCRIPTION_ZJ',
+'A building unique to Poland. Bonus [ICON_Food] Food equal to the adjacency bouns of the Commercial Hub.International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. Bonus [ICON_Production] Production equal to the adjacency bonus of the Commercial Hub district. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.'),
+
 ('LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION_ZJ', --France
 "+20% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is +100%. Build Theater Square and it's building in half of the time."),
 
