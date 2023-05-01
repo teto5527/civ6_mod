@@ -31,7 +31,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 'Mather of Woods'),
 
 ('LOC_BELIEF_MATHER_OF_WOODS_DESCRIPTION',
-'+1 [ICON_FOOD] Food from Lumber Mills over Woods, and +1 [ICON_PRODUCTION] Production from Lumber Mills over Rainforest.');
+'+1 [ICON_FOOD] Food from Improvments over Woods, and +1 [ICON_PRODUCTION] Production from Improvements over Rainforest.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION_ZJ',
