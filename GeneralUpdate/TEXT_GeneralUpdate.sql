@@ -98,3 +98,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --units
 ('LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION_ZJ',
 'Requires a Barracks or Stable to produce. Can construct Roads, Railroads, Forts, Airstrips, Missile Silos, and Mountain Tunnel improvements. One of their build charges can also be used to complete 50% of a Canal, Dam or Aqueduct district or a Flood Barrier building.');
+
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Dedications
+('LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE_ZJ',
+'+2 [ICON_MOVEMENT] Movement for all Builders. May purchase civilian units with [ICON_Faith] Faith. Builders and Settlers are 15% cheaper to purchase with [ICON_Faith] Faith and [ICON_Gold] Gold.'),
+('LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE_ZJ',
+'[ICON_CIVICBOOSTED] Inspirations provide an additional 10% of civic costs. Each city receives +2 [ICON_Culture] Culture for each specialty district.');

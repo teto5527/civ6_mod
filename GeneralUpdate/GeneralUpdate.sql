@@ -111,8 +111,7 @@ INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, Ow
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('PALACE_ADJUST_GARRISON_STRENGTH_MINOR_CIVS', 'Amount', '7');
 
---quicker DECLARE_PROTECTORATE_WAR 
-UPDATE DiplomaticActions SET DenouncementTurnsRequired = '0' WHERE DiplomaticActionType = 'DIPLOACTION_DECLARE_PROTECTORATE_WAR';
+
 --Trade routes provide more gold
 UPDATE GlobalParameters
     SET Value='3'
@@ -129,13 +128,22 @@ UPDATE GlobalParameters
     SET Value='2'
     WHERE Name='YIELD_PRODUCTION_CITY_TERRAIN_REPLACE';
 
+--Dedications change
+UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE_ZJ' WHERE CommemorationType = 'COMMEMORATION_INFRASTRUCTURE';
+UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE_ZJ' WHERE CommemorationType = 'COMMEMORATION_CULTURAL';
+
+UPDATE ModifierArguments SET Value = '15' WHERE ModifierId = 'COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value = '2' WHERE ModifierId = 'COMMEMORATION_CULTURAL_DISTRICTCULTURE' AND Name = 'Amount';
+
 --Open borders gain more tourists
-UPDATE GlobalParameters
-    SET Value='50'
-    WHERE Name='TOURISM_OPEN_BORDERS_BONUS';
+UPDATE GlobalParameters SET Value = '50' WHERE Name='TOURISM_OPEN_BORDERS_BONUS';
 
 --More tourism from wonders
+UPDATE GlobalParameters SET Value = '5' WHERE Name = 'TOURISM_BASE_FROM_WONDER';
 UPDATE GlobalParameters SET Value = '2' WHERE Name = 'TOURISM_ADVANCED_ERA_WONDER';
+
+--Immediately Declare Protectorate War
+UPDATE DiplomaticActions SET DenouncementTurnsRequired = '0' WHERE DiplomaticActionType = 'DIPLOACTION_DECLARE_PROTECTORATE_WAR';
 
 --Earlier Alliances
 UPDATE DiplomaticActions SET InitiatorPrereqCivic='CIVIC_POLITICAL_PHILOSOPHY', TargetPrereqCivic='CIVIC_POLITICAL_PHILOSOPHY' WHERE DiplomaticActionType LIKE 'DIPLOACTION_ALLIANCE%';
