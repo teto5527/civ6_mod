@@ -1,6 +1,6 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION_ZJ', -- Jadwiga
-"The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Commercial Hubs gain standard Faith adjacency bonus from adjacent districts. [ICON_Relic] Relics provide +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, +4 [ICON_Gold] Gold. Constructs first Sukiennice receive [ICON_Gold] Gold that equl to it's cost."),
+"The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Commercial Hubs gain standard Faith adjacency bonus from adjacent districts. [ICON_GREATWORK_RELIC] Relics provide +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, +4 [ICON_Gold] Gold. Constructs first Sukiennice receive [ICON_Gold] Gold that equl to it's cost."),
 
 ('LOC_TRAIT_RADIO_ORANJE_DESCRIPTION_ZJ', -- Wilhelmina
 "Your [ICON_TRADEROUTE] Trade Routes to your own cities provide +1 Loyalty per turn for the starting city. [ICON_TRADEROUTE] Trade Routes to foreign cities or from foreign cities provide +2 [ICON_Culture] Culture to both city."),

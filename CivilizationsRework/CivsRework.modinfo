@@ -16,7 +16,7 @@
 			<File>PersiaRework.sql</File>
 			<File>PolandRework.sql</File>
 			<File>FranceRework.sql</File>
-			<File>KoreaRework.sql</File>
+			<!-- <File>KoreaRework.sql</File> -->
 		</UpdateDatabase>
 		<UpdateText id="TEXT_CivsRework">
 			<File>TEXT_CivsRework.sql</File>
