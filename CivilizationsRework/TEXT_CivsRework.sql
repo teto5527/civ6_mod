@@ -43,7 +43,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen
 'Has 1 level of [ICON_VISLIMITED] Diplomatic Visibility greater than normal with every civilization that she has met. Receives a free Spy (and extra spy capacity) with the Code of Law civic. +2 sight range for spies and traders. All spies start with a free promotion. Spies take no time to establish their presence. +2 Combat Strength for all units for each level of [ICON_VISLIMITED] Diplomatic Visibility France has over the other civilization, instead of the usual +3 Combat Strength.'),
 
-('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen (gold)
+('LOC_TRAIT_LEADER_MAGNIFICENCES_DESCRIPTION_ZJ', --black queen (gold)
 'Improved Luxury resources adjacent to Theater Square districts or Châteaux receive +2 [ICON_Culture] Culture. May initiate the Court Festival project in any city with a Theater Square district. Theater Square can trigger culture boom.'),
 ('LOC_TECH_CASTLES_DESCRIPTION_ZJ',
 'Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency.'),
