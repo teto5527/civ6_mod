@@ -21,6 +21,15 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
 'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.'),
 
+('LOC_BELIEF_MAZU_WORSHIP_NAME',
+'Mazu Worship'),
+
+('LOC_BELIEF_MAZU_WORSHIP_DESCRIPTION',
+'International [ICON_TRADEROUTE] Trade Routes gain +1 [ICON_GOLD] Gold for every coast tile in the origin city.'),
+
+('LOC_MAZU_WORSHIP_TRADE_ROUTE_GOLD_PER_COAST',
+'Coast tiles in the city'),
+
 ('LOC_BELIEF_SONG_OF_SIREN_NAME',
 'Song of Siren'),
 
