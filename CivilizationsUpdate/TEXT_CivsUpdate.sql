@@ -1,7 +1,7 @@
 -- Language: en_US
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ', --Sumeria
-'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. +1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
+'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science +1 [ICON_Culture] Culture. Additional 1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
 ('LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION_ZJ',
 'Sumerian unique Ancient era unit. Stronger than all other starting units. No penalties against anti-cavalry units. 4 [ICON_MOVEMENT] Movement if this unit starts in open terrain. +7 [ICON_Strength] Combat Strength when fighting Barbarians.'),
 
