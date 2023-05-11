@@ -10,7 +10,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Govs
 "+10 [ICON_Religion] Religious Strength in theological combat in tiles of this city. All [ICON_Governor] Governor's units heal fully in one turn in tiles of this city."),
 
 ('LOC_GOVERNOR_PROMOTION_CARDINAL_GRAND_INQUISITOR_DESCRIPTION_ZJ',
-'Double adjacency bonuses from Holy Site in the city.'),
+'Double adjacency bonuses from Holy Site within 4 tiles of this city.'),
 
 ('LOC_GOVERNOR_PROMOTION_REINFORCED_INFRASTRUCTURE_DESCRIPTION_ZJ',
 "This city's improvements, buildings, and districts cannot be damaged by Environmental Effects. +1 [ICON_Production] Production (become +2 [ICON_Production] Production after researching Industrialization) per turn for each [ICON_Citizen] Citizen in the city."),
