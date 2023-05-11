@@ -156,7 +156,20 @@ INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 -- ('DISTRICT_INDUSTRIAL_ZONE', 'Nubian_Pyramid_Production');
 
 -- Arabia
+UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ'  WHERE TraitType = 'TRAIT_CIVILIZATION_LAST_PROPHET';
+
 INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_MADRASA', 'YIELD_CULTURE', 2);
+-- Campus and Holy Site +1 if adjacant to each other
+INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
+('Holy_Site_Science', 'LOC_HOLY_SITE_SCIENCE', 'YIELD_SCIENCE', 1, 'DISTRICT_HOLY_SITE'),
+('Campus_Faith', 'LOC_CAMPUS_FAITH', 'YIELD_FAITH', 1, 'DISTRICT_CAMPUS');
+INSERT INTO District_Adjacencies(DistrictType, YieldChangeId) VALUES
+('DISTRICT_CAMPUS', 'Holy_Site_Science'),
+('DISTRICT_HOLY_SITE', 'Campus_Faith');
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'Holy_Site_Science' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
+INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
+    SELECT TraitType, 'Campus_Faith' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
 
 --Rome
 UPDATE Traits SET Description='LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ' WHERE TraitType='TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME';

@@ -38,8 +38,15 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_INDUSTRIAL_REVOLUTION_DESCRIPTION_ZJ', --England
 'Iron, Coal and Aluminum Mines accumulate 2 more resources per turn. +100% [ICON_Production] Production towards Military Engineers. Military Engineers receive +2 charges. Buildings that provide additional yields when [ICON_POWER] Powered receive +5 of that yield. +25% [ICON_Production] Production towards Industrial Zone buildings. Harbor buildings increase Strategic Resource Stockpiles by +10 (on Standard Speed). Reveals [ICON_RESOURCE_COAL] Coal by Apprenticeship, and reveals [ICON_RESOURCE_ALUMINUM] Aluminum by industrialization'),
 
-('LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION_ZJ',--Neitherlands
+('LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION_ZJ', --Neitherlands
 "Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Culture Bomb adjacent tiles when completing a Harbor. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building. Dams are unlocked with the Masonry technology. Grant boost [ICON_CIVICBOOSTED] to 'Exploration' each time a Harbor building is built (complete 'Exploration' if already boosted)."),
+
+('LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ', --Arabia
+"Automatically receive the final [ICON_GreatProphet] Great Prophet when the next-to-last one is claimed (if you have not earned a [ICON_GreatProphet] Great Prophet already). +1 [ICON_Science] Science for each foreign city following Arabia's Religion. Campuses and Holy Sites receive a standard adjacency bonus from each other."),
+('LOC_HOLY_SITE_SCIENCE',
+'+{1_num} [ICON_SCIENCE] Science from an adjacent Holy Site district.'),
+('LOC_CAMPUS_FAITH',
+'+{1_num} [ICON_FAITH] Faith from an adjacent Campus district.'),
 
 ('LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ', --ROME
 'All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_Gold] Gold for passing through Trading Posts in your own cities. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
