@@ -15,6 +15,7 @@
 	
 	<ObsoletePolicies>
 		<Row PolicyType="POLICY_PRIMITIVE_COMMUNE" ObsoletePolicy="POLICY_LIBERALISM" />
+		<Row PolicyType="POLICY_GIFT_EXCHANGE" ObsoletePolicy="POLICY_MACHIAVELLIANISM" />
 	</ObsoletePolicies>
 
 	<PolicyModifiers>

@@ -9,7 +9,7 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_SUKIENNICE', 'YIELD_PRODUCTION', '2');
 
 INSERT OR REPLACE INTO Building_YieldDistrictCopies (BuildingType, OldYieldType, NewYieldType) VALUES
-('BUILDING_SUKIENNICE', 'YIELD_FAITH', 'YIELD_GOLD');
+('BUILDING_SUKIENNICE', 'YIELD_GOLD', 'YIELD_FAITH');
 
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
 ('TRAIT_GOLDEN_LIBERTY_DISTRICTS_PLAINS_HOUSING', 'MODIFIER_PLAYER_DISTRICTS_ADJUST_HOUSING', 0, 0, 0, NULL, 'REQUIREMENTS_DISTRICT_ON_PLAINS'),
