@@ -51,6 +51,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ', --ROME
 'All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_Gold] Gold for passing through Trading Posts in your own cities. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
 
+('LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ',
+'[ICON_TECHBOOSTED] Eurekas provide all of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn. [ICON_GREATSCIENTIST] Great Scientist cannot be earned.'),
+
 ('LOC_DISTRICT_HANSA_GOLD_ZJ', --Germany
 '+{1_num} [ICON_Gold] Gold from the adjacent Hansa {1_Num : plural 1?tile; other?district;}.'),
 
