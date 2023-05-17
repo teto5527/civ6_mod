@@ -116,44 +116,12 @@ INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_TLACHTLI', 'YIELD_CULTURE', 2),
 ('BUILDING_TLACHTLI', 'YIELD_FAITH', 2);
 
+-- Ottoman
+UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION_ZJ'  WHERE TraitType = 'TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD';
+UPDATE Traits SET Description = 'LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION_ZJ'  WHERE TraitType = 'TRAIT_LEADER_SULEIMAN_GOVERNOR';
 
---Nubian
---Nubian_Pyramid from districts adjacent pyramid, to pyramid adjacent districts
--- UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_PYRAMID_DESCRIPTION_ZJ' WHERE ImprovementType='IMPROVEMENT_PYRAMID';
-
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_CampusAdjacency';
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_CommercialHubAdjacency';    
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_HarborAdjacency';
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_HolySiteAdjacency';
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_IndustrialZoneAdjacency';
--- UPDATE Adjacency_YieldChanges 
---     SET YieldChange=0
---     WHERE ID = 'Pyramid_TheaterAdjacency';
-
--- INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, AdjacentImprovement) VALUES
--- ('Nubian_Pyramid_Faith', 'LOC_DISTRICT_PYRAMID_FAITH_ZJ', 'YIELD_FAITH', '1', 'IMPROVEMENT_PYRAMID'),
--- ('Nubian_Pyramid_Science', 'LOC_DISTRICT_PYRAMID_SCIENCE_ZJ', 'YIELD_SCIENCE', '1', 'IMPROVEMENT_PYRAMID'),
--- ('Nubian_Pyramid_Gold', 'LOC_DISTRICT_PYRAMID_GOLD_ZJ', 'YIELD_GOLD', '1', 'IMPROVEMENT_PYRAMID'),
--- ('Nubian_Pyramid_Production', 'LOC_DISTRICT_PYRAMID_PRODUCTION_ZJ', 'YIELD_PRODUCTION', '1', 'IMPROVEMENT_PYRAMID'),
--- ('Nubian_Pyramid_Culture', 'LOC_DISTRICT_PYRAMID_CULTURE_ZJ', 'YIELD_CULTURE', '1', 'IMPROVEMENT_PYRAMID');
-
--- INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
--- ('DISTRICT_CAMPUS', 'Nubian_Pyramid_Science'),
--- ('DISTRICT_HOLY_SITE', 'Nubian_Pyramid_Faith'),
--- ('DISTRICT_COMMERCIAL_HUB', 'Nubian_Pyramid_Gold'),
--- ('DISTRICT_HARBOR', 'Nubian_Pyramid_Gold'),
--- ('DISTRICT_THEATER', 'Nubian_Pyramid_Culture'),
--- ('DISTRICT_INDUSTRIAL_ZONE', 'Nubian_Pyramid_Production');
+UPDATE Governors SET TraitType = 'TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD' WHERE GovernorType = 'GOVERNOR_IBRAHIM';
+INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_GRAND_BAZAAR', 'YIELD_CULTURE', 2);
 
 -- Arabia
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ'  WHERE TraitType = 'TRAIT_CIVILIZATION_LAST_PROPHET';

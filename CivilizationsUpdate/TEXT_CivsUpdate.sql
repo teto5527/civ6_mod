@@ -41,6 +41,11 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION_ZJ', --Neitherlands
 "Major adjacency bonus for Campuses, Theater Squares, and Industrial Zones if next to a river. Culture Bomb adjacent tiles when completing a Harbor. +50% [ICON_Production] Production toward the Dam district and Flood Barrier building. Dams are unlocked with the Masonry technology. Grant boost [ICON_CIVICBOOSTED] to 'Exploration' each time a Harbor building is built (complete 'Exploration' if already boosted)."),
 
+('LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION_ZJ', --Ottoman
+'+50% [ICON_Production] Production toward siege units. All siege units gain +5 [ICON_STRENGTH] Combat Strength against district defenses. Conquered cities do not lose [ICON_CITIZEN] Population. Cities not founded by the Ottomans gain +1 [ICON_AMENITIES] Amenity and +4 Loyalty per turn. Exclusive unique Governor with military and diplomatic abilities.'),
+('LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION_ZJ',
+'Gain the Janissary unique unit and a [ICON_GOVERNOR] Governor Title when the Gunpowder technology is researched.'),
+
 ('LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ', --Arabia
 "Automatically receive the final [ICON_GreatProphet] Great Prophet when the next-to-last one is claimed (if you have not earned a [ICON_GreatProphet] Great Prophet already). +1 [ICON_Science] Science for each foreign city following Arabia's Religion. Campuses and Holy Sites receive a standard adjacency bonus from each other."),
 ('LOC_HOLY_SITE_SCIENCE',
