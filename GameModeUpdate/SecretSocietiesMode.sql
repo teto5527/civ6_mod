@@ -75,7 +75,6 @@ INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('GOVERNOR_PROMOTION_OWLS_OF_MINERVA_1_PER_TRIBUTARY_GOLD', 'Amount', '2');
 
 --LV2
-INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_GILDED_VAULT', 'YIELD_CULTURE', 4);
 INSERT OR REPLACE INTO Building_GreatWorks(BuildingType, GreatWorkSlotType, NumSlots)  VALUES ('BUILDING_GILDED_VAULT', 'GREATWORKSLOT_PALACE', 1);
 INSERT OR REPLACE INTO Building_GreatPersonPoints(BuildingType, GreatPersonClassType, PointsPerTurn) VALUES('BUILDING_GILDED_VAULT', 'GREAT_PERSON_CLASS_ARTIST', 2);
 INSERT OR REPLACE INTO Building_GreatPersonPoints(BuildingType, GreatPersonClassType, PointsPerTurn) VALUES('BUILDING_GILDED_VAULT', 'GREAT_PERSON_CLASS_MUSICIAN', 2);
