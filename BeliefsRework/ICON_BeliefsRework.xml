@@ -2,8 +2,8 @@
 <GameData>
 	<IconDefinitions>
 		<!--Pantheons-->
-		<Row Name="ICON_BELIEF_MAZU_WORSHIP"			Atlas="ICON_ATLAS_BELIEFS_PATHEON" Index="3"/>
+		<Row Name="ICON_BELIEF_MAZU_WORSHIP"			Atlas="ICON_ATLAS_BELIEFS_PATHEON" Index="7"/><!--(17是治愈之神的图标)7.0.14-->
 		<Row Name="ICON_BELIEF_SONG_OF_SIREN"			Atlas="ICON_ATLAS_BELIEFS_PATHEON" Index="0"/>
-		<Row Name="ICON_BELIEF_MATHER_OF_WOODS"			Atlas="ICON_ATLAS_BELIEFS_PATHEON" Index="16"/>
+		<Row Name="ICON_BELIEF_MATHER_OF_WOODS"			Atlas="ICON_ATLAS_BELIEFS_PATHEON" Index="14"/>
     </IconDefinitions>
 </GameData>

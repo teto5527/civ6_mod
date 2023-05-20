@@ -25,7 +25,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 'Mazu Worship'),
 
 ('LOC_BELIEF_MAZU_WORSHIP_DESCRIPTION',
-'International [ICON_TRADEROUTE] Trade Routes gain +1 [ICON_GOLD] Gold for every coast tile in the origin city.'),
+'International [ICON_TRADEROUTE] Trade Routes gain +1 [ICON_GOLD] Gold for every coast tile in the origin city. +100% [ICON_PRODUCTION] Production towards trider units.'),
 
 ('LOC_MAZU_WORSHIP_TRADE_ROUTE_GOLD_PER_COAST',
 'Coast tiles in the city'),
