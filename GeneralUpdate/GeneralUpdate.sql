@@ -55,9 +55,9 @@ UPDATE Resource_Harvests SET PrereqTech='TECH_MINING' WHERE ResourceType='RESOUR
 --FISHING BOAT grant more yield
 UPDATE Civics SET Description='LOC_CIVIC_COLONIALISM_DESCRIPTION_ZJ' WHERE CivicType='CIVIC_COLONIALISM';
 UPDATE Technologies SET Description='LOC_TECH_CELESTIAL_NAVIGATION_DESCRIPTION_ZJ' WHERE TechnologyType='TECH_CELESTIAL_NAVIGATION';
+UPDATE Improvement_BonusYieldChanges SET BonusYieldChange=2 WHERE ImprovementType='IMPROVEMENT_FISHING_BOATS' AND YieldType='YIELD_PRODUCTION';
 
 INSERT OR REPLACE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqTech, PrereqCivic) VALUES
-('IMPROVEMENT_FISHING_BOATS', 'YIELD_PRODUCTION', 2, NULL, 'CIVIC_COLONIALISM'),
 ('IMPROVEMENT_FISHING_BOATS', 'YIELD_GOLD', 1, 'TECH_CELESTIAL_NAVIGATION', NULL);
 
 --reduce civic_divine_right cost (from 340)
