@@ -3,7 +3,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Military Reclamation'),
 
 ('LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
-'Buildings in Encampment +2 [ICON_Food] Food and +2 [ICON_Production] Production.'),
+'Buildings in Encampment +2 [ICON_Food] Food and +2 [ICON_Production] Production if at peace with all civilization.'),
 
 ('LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 'Primitive Commune'),
@@ -18,7 +18,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Gift Exchange'),
 
 ('LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'Receive 20 [ICON_Gold] Gold when you sent a delegation to another player.'),
+'Receive 30 [ICON_Gold] Gold when you sent a delegation to another player.'),
 
 -- ('LOC_POLICY_URBAN_RENEWAL_NAME',
 -- 'Urban Renewal'),
@@ -48,7 +48,7 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_NAME',
 '屯垦戍边'),
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
-'军营内建筑物+2 [ICON_Food] 食物和 +2 [ICON_Production] 生产力。'),
+'当不与任何文明发生战争时，军营内建筑物+2 [ICON_Food] 食物和 +2 [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 '原始公社'),
 ("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION',
@@ -58,7 +58,7 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_NAME',
 '礼尚往来'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'向其他玩家派遣代表团时获得20 [ICON_Gold] 金币。'),
+'向其他玩家派遣代表团时获得30 [ICON_Gold] 金币。'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
 -- '翻新改造'),
 -- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
