@@ -1,6 +1,6 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BUILDING_CHICHEN_ITZA_DESCRIPTION_ZJ',
-'+2 [ICON_Culture] Culture to all Rainforest tiles nationwide. +1 [ICON_Production] Production to all Rainforest tiles for this city. Must be built on Rainforest.'),
+'+2 [ICON_Culture] Culture to all Rainforest tiles nationwide. Rainforest no longer -1 appeal to the adjacent tiles. Must be built on Rainforest.'),
 
 ('LOC_BUILDING_RUHR_VALLEY_DESCRIPTION_ZJ',
 '+20% [ICON_Production] Production in this city, and +1 [ICON_Production] Production for each Mine and Quarry nationwide. Must be built along a River adjacent to an Industrial Zone district with a Factory.'),

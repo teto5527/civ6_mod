@@ -42,14 +42,10 @@ insert or replace into Building_YieldChanges (BuildingType, YieldType, YieldChan
 ('BUILDING_MACHU_PICCHU', 'YIELD_FOOD', 2);
 
 --4a.Taj Mahal's: Production Cost from 920 to 720
-UPDATE Buildings
-SET Cost = Cost-200
-WHERE BuildingType = 'BUILDING_TAJ_MAHAL';
+UPDATE Buildings SET Cost = 720 WHERE BuildingType = 'BUILDING_TAJ_MAHAL';
 
 --4b.GREAT_ZIMBABWE: Production Cost from 920 to 720
-UPDATE Buildings
-SET Cost = Cost-200
-WHERE BuildingType = 'BUILDING_GREAT_ZIMBABWE';
+UPDATE Buildings SET Cost = 720 WHERE BuildingType = 'BUILDING_GREAT_ZIMBABWE';
 
 --5.Statue of Liberty: New Cities gain +2 Citizen Population, Settler +3 movement
 -- UPDATE ModifierArguments
@@ -81,7 +77,9 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 ('REQUIREMENT_UNIT_IS_SETTLER', 'UNIT_IS_SETTLER');
 
---6.Chichen Itza: Rainforest no longer -1 appeal, rainforest +2 culture to all cities
+--6.Chichen Itza: Rainforest no longer -1 appeal, rainforest +2 culture to all cities, cost from 710 to 920, no longer +1 production for the city
+UPDATE Buildings SET Cost = 920 WHERE BuildingType = 'BUILDING_CHICHEN_ITZA';
+DELETE FROM BuildingModifiers WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_PRODUCTION';
 UPDATE Modifiers SET ModifierType = 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_CULTURE_MODIFIER';
 
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
