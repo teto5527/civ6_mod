@@ -88,6 +88,13 @@ insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType
 ('GOVERNMENT_MONARCHY',	'SLOT_DIPLOMATIC', 1),
 ('GOVERNMENT_MONARCHY',	'SLOT_WILDCARD', 2);
 
+--Merchant republic slots change to 1113 (from 1122)
+insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType, NumSlots) values
+('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_MILITARY', 1),
+('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_ECONOMIC', 1),
+('GOVERNMENT_MERCHANT_REPUBLIC',	'SLOT_DIPLOMATIC', 1),
+('GOVERNMENT_MERCHANT_REPUBLIC',	'SLOT_WILDCARD', 3);
+
 --Communism slots change to 2411 (from 3311)
 insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType, NumSlots) values
 ('GOVERNMENT_COMMUNISM', 'SLOT_MILITARY', 2),
