@@ -3,7 +3,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Military Reclamation'),
 
 ('LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
-'Buildings in Encampment +2 [ICON_Food] Food and +2 [ICON_Production] Production if at peace with all civilization.'),
+'If at peace, Buildings in Encampment +2 [ICON_Food] Food and +2 [ICON_Production] Production.'),
 
 ('LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 'Primitive Commune'),
@@ -20,11 +20,11 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
 'Receive 30 [ICON_Gold] Gold when you sent a delegation to another player.'),
 
--- ('LOC_POLICY_URBAN_RENEWAL_NAME',
--- 'Urban Renewal'),
+('LOC_POLICY_URBAN_RENEWAL_NAME',
+'Urban Renewal'),
 
--- ('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
--- '+50% [ICON_Production] Production toward City center buildings.'),
+('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
+'+30% [ICON_Production] Production toward City center buildings.'),
 
 ('LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
 '+30% [ICON_Production] Production toward Aerodrome districts, Encampment districts, Harbor districts, and buildings for these districts.'),
@@ -48,7 +48,7 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_NAME',
 '屯垦戍边'),
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_DESCRIPTION',
-'当不与任何文明发生战争时，军营内建筑物+2 [ICON_Food] 食物和 +2 [ICON_Production] 生产力。'),
+'和平时期，军营内建筑物+2 [ICON_Food] 食物和 +2 [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 '原始公社'),
 ("zh_Hans_CN",  'LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION',
@@ -59,9 +59,9 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 '礼尚往来'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
 '向其他玩家派遣代表团时获得30 [ICON_Gold] 金币。'),
--- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
--- '翻新改造'),
--- ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
--- '建造市中心建筑时+50% [ICON_Production] 生产力。'),
+("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
+'翻新改造'),
+("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
+'建造市中心建筑时+30% [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
 '建造军营、港口、航空港和这些区域中的建筑时+30% [ICON_Production] 生产力。');
