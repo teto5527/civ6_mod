@@ -6,6 +6,7 @@
 UPDATE Buildings SET  Description = 'LOC_BUILDING_CHICHEN_ITZA_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_CHICHEN_ITZA';
 UPDATE Buildings SET  Description = 'LOC_BUILDING_RUHR_VALLEY_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_RUHR_VALLEY';
 UPDATE Buildings SET Description = 'LOC_BUILDING_STONEHENGE_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_STONEHENGE';
+UPDATE Buildings SET Description = 'LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_GREAT_LIGHTHOUSE';
 
 --1.Some wonders can be built in Forest, Rainforest or mountain
 -- Enable Wonders on Mountain(HD)
@@ -127,5 +128,14 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 ('REQUIREMENTS_PLOT_HAS_QUARRY', 'REQUIRES_PLOT_HAS_QUARRY');
 
---great library more slots
+--Great library more slots
 UPDATE Building_GreatWorks SET NumSlots = 3 WHERE BuildingType = 'BUILDING_GREAT_LIBRARY';
+
+--Great lighthouse: nolonger needs light house building
+DELETE FROM BuildingPrereqs WHERE Building = 'BUILDING_GREAT_LIGHTHOUSE' AND PrereqBuilding = 'BUILDING_LIGHTHOUSE';
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+('BUILDING_GREAT_LIGHTHOUSE', 'GREAT_LIGHTHOUSE_GRANT_LIGHTHOUSE');
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('GREAT_LIGHTHOUSE_GRANT_LIGHTHOUSE', 'MODIFIER_SINGLE_CITY_GRANT_BUILDING_IN_CITY_IGNORE', 0, 0, 0, NULL, NULL);
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('GREAT_LIGHTHOUSE_GRANT_LIGHTHOUSE', 'BuildingType', 'BUILDING_LIGHTHOUSE');
