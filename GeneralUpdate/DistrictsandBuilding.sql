@@ -1,3 +1,8 @@
+--Districts start with 1 CitizenSlots
+UPDATE Districts
+SET CitizenSlots = 1
+WHERE DistrictType IN (SELECT DistrictType FROM District_CitizenYieldChanges GROUP BY DistrictType);
+
 --Theater
 --ADD MORE ADJUSTMENT for Theater
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
