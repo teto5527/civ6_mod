@@ -27,7 +27,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 '+30% [ICON_Production] Production toward City center buildings.'),
 
 ('LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
-'+30% [ICON_Production] Production toward Aerodrome districts, Encampment districts, Harbor districts, and buildings for these districts.'),
+'+35 % [ICON_Production] Production toward Aerodrome districts, Encampment districts, Harbor districts, and buildings for these districts.'),
 
 ('LOC_POLICY_FREE_MARKET_DESCRIPTION_ZJ',
 'Extra [ICON_Gold] Gold or [ICON_Production] Production from buildings in Commercial Hubs and Harbors: +50% if city [ICON_Citizen] population is 10 or higher, +50% if district has at least +4 adjacency bonus.'),
@@ -64,4 +64,4 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
 '建造市中心建筑时+30% [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
-'建造军营、港口、航空港和这些区域中的建筑时+30% [ICON_Production] 生产力。');
+'建造军营、港口、航空港和这些区域中的建筑时+35% [ICON_Production] 生产力。');
