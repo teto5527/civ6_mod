@@ -151,7 +151,7 @@ INSERT OR REPLACE INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, 
 INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('TRAIT_INCREASE_COMBAT_BARBARIAN', 'Amount', '4');
 
- --Hammurabi
+--Hammurabi
 UPDATE Traits SET Description='LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ' WHERE TraitType='TRAIT_CIVILIZATION_BABYLON';
 
 INSERT INTO ExcludedGreatPersonClasses(GreatPersonClassType, TraitType)VALUES
@@ -312,3 +312,8 @@ INSERT INTO Requirements (RequirementId, RequirementType) VALUES
 INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES 
 ('PLOT_HAS_FEATURE_GEOTHERMAL_FISSURE', 'FeatureType', 'FEATURE_GEOTHERMAL_FISSURE');
 
+--Norway
+UPDATE Buildings SET Description = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_STAVE_CHURCH';
+UPDATE Building_YieldChanges SET YieldChange = 0 WHERE BuildingType='BUILDING_STAVE_CHURCH' AND YieldType='YIELD_FAITH';
+INSERT INTO Building_YieldDistrictCopies (BuildingType, OldYieldType, NewYieldType) VALUES
+('BUILDING_STAVE_CHURCH', 'YIELD_FAITH', 'YIELD_FAITH');

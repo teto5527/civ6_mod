@@ -72,4 +72,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'All Diplomatic policy slots in the current government are converted to Wildcard slots. +1 [ICON_FAVOR] Diplomatic Favor per turn for every Wildcard slot in their government. Reduces the cost of purchasing a tile by 25%.'),
 
 ('LOC_CIVILIZATION_PEARL_DANUBE_DESCRIPTION_ZJ', --Hungary
-'+50% [ICON_Production] Production to Districts and Buildings constructed across a river from a City Center. The city build on Geothermal Fissure +2 [ICON_Food] Food , +2 [ICON_Production] Production, +1 [ICON_Housing] Housing. Constructs the first Sukiennice grant a free trader.');
+'+50% [ICON_Production] Production to Districts and Buildings constructed across a river from a City Center. The city build on Geothermal Fissure +2 [ICON_Food] Food , +2 [ICON_Production] Production, +1 [ICON_Housing] Housing. Constructs the first Sukiennice grant a free trader.'),
+
+('LOC_BUILDING_STAVE_CHURCH_DESCRIPTION_ZJ', --Norway
+'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get an additional standard adjacency bonus from Woods. +1 [ICON_Production] Production to each coastal resource tile in this city.');
