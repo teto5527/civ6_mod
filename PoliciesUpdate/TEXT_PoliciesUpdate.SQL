@@ -23,6 +23,12 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_URBAN_RENEWAL_NAME',
 'Urban Renewal'),
 
+('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
+'Religious Industrialization'),
+
+('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_DESCRIPTION',
+'Industrial zone buildings can be bought with [ICON_Faith] Faith.'),
+
 ('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
 '+35% [ICON_Production] Production toward City center buildings.'),
 
@@ -59,6 +65,10 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 '礼尚往来'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
 '向其他玩家派遣代表团时获得30 [ICON_Gold] 金币。'),
+('zh_Hans_CN', 'LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
+'宗教工业化'),
+('zh_Hans_CN', 'LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_DESCRIPTION',
+'[ICON_Faith] 信仰值可用来购买工业区建筑。'),
 ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_NAME',
 '翻新改造'),
 ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
