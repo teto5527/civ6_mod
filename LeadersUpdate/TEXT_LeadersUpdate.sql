@@ -1,4 +1,7 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION_ZJ',
+'Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. In Snow, Tundra, Snow Hills, and Tundra Hills all Lumber Mills provide +2 [ICON_Production] Production, Camps provide +2 [ICON_Food] Food, Farms provide +2 [ICON_Food] Food. Reduces the purchase cost of tiles in these terrain types by 50%. Additional Diplomatic policy slot.'),
+
 ('LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION_ZJ', -- Jadwiga
 "The Religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Commercial Hubs gain standard Faith adjacency bonus from adjacent districts. [ICON_GREATWORK_RELIC] Relics provide +2 [ICON_Faith] Faith, +2 [ICON_Culture] Culture, +4 [ICON_Gold] Gold. Constructs first Sukiennice receive [ICON_Gold] Gold that equl to it's cost."),
 
