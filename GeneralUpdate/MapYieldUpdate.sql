@@ -40,10 +40,14 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
 ('REQUIRES_FLOODPLAINS_PLAINS_IN_PLOT', 'FeatureType', 'FEATURE_FLOODPLAINS_PLAINS');
 
 --Copper, Crabs, and Corn gain 3 gold
-INSERT OR REPLACE INTO Resource_YieldChanges(ResourceType, YieldType, YieldChange) VALUES 
-('RESOURCE_COPPER', 'YIELD_GOLD', '3'),
-('RESOURCE_MAIZE', 'YIELD_GOLD', '3'),
-('RESOURCE_CRABS', 'YIELD_GOLD', '3');
+-- INSERT OR REPLACE INTO Resource_YieldChanges(ResourceType, YieldType, YieldChange) VALUES 
+-- ('RESOURCE_COPPER', 'YIELD_GOLD', '3'),
+-- ('RESOURCE_MAIZE', 'YIELD_GOLD', '3'),
+-- ('RESOURCE_CRABS', 'YIELD_GOLD', '3');
+
+--Marsh can be on plains
+INSERT INTO Feature_ValidTerrains(FeatureType, TerrainType) VALUES
+('FEATURE_MARSH', 'TERRAIN_PLAINS');
 
 --resources more Placement
 -- UPDATE Resources SET Frequency='12' WHERE ResourceType='RESOURCE_STONE';

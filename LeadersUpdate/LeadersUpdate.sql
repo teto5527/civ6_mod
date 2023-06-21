@@ -13,7 +13,7 @@ UPDATE ExcludedAdjacencies SET YieldChangeId = 'District_Gold' WHERE TraitType =
 
 UPDATE Modifiers SET SubjectRequirementSetId = 'PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS' WHERE ModifierId = 'AGENDA_BILLIONAIRE_TRADE';
 UPDATE ModifierArguments SET Value = '3' WHERE ModifierId = 'AGENDA_BILLIONAIRE_TRADE' AND Name = 'NoTradePenalty';
-UPDATE ModifierArguments SET Value = '12' WHERE ModifierId = 'AGENDA_BILLIONAIRE_TRADE' AND Name = 'TradeBonus';
+UPDATE ModifierArguments SET Value = '6' WHERE ModifierId = 'AGENDA_BILLIONAIRE_TRADE' AND Name = 'TradeBonus';
 
 INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES 
 ('TRAIT_LEADER_LITHUANIAN_UNION', 'TRAIT_SUKIENNICE_GRANT_GOLD'),
