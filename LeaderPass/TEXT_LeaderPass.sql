@@ -1,5 +1,7 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
-('LOC_TRAIT_ELIZABETH_DESCRIPTION_ZJ',
+('LOC_TRAIT_LEADER_VICTORIA_ALT_DESCRIPTION_ZJ',
+'+10% [ICON_Production] Production in Cities for every Industrial Zone building in that city. Workshop and Factory provide [ICON_Food] Food equal to their intrinsic [ICON_Production] Production output.'),
+('LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION_ZJ',
 "England's [ICON_TRADEROUTE] Trade Route Capacity is increased by 2 after acquiring your first [ICON_GreatAdmiral] Great Admiral (Must be a Rennaissance Era or earlier [ICON_GreatAdmiral] Great Admiral from the Standard Ruleset). [ICON_TRADEROUTE] Trade Routes to any city-state provide +3  Gold for every specialty district in the origin city. +100% Yields from Plundering [ICON_TRADEROUTE] Trade Routes with Naval Units. Coast cities yield 5 (become 10 if golden age) [ICON_Gold] Gold when you keep peace with all major civilizations."),
 ('LOC_COAST_CITY_GOLD_DESCRIPTION',
 'From coast city.'),
