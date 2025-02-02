@@ -52,7 +52,6 @@ DELETE FROM Feature_ValidTerrains WHERE FeatureType = 'RESUORCES_LEY_LINE' AND T
 DELETE FROM Feature_ValidTerrains WHERE FeatureType = 'RESUORCES_LEY_LINE' AND TerrainType = 'TERRAIN_SNOW_HILLS';
 
 --LV2
--- INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_ALCHEMICAL_SOCIETY', 'YIELD_SCIENCE', 6);
 INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_ALCHEMICAL_SOCIETY', 'YIELD_PRODUCTION', 4);
 
 --Support my other mod

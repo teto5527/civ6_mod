@@ -1,17 +1,18 @@
---scotland(Ecstatic cities triple all these amounts)
-UPDATE ModifierArguments
-    SET Value=10
-    WHERE ModifierId='TRAIT_SCIENCE_HAPPY' AND Name='Amount';
-UPDATE ModifierArguments
-    SET Value=10
-    WHERE ModifierId='TRAIT_PRODUCTION_HAPPY' AND Name='Amount';
+UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT';
+UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ' WHERE ImprovementType = 'IMPROVEMENT_GOLF_COURSE';
 
 UPDATE ModifierArguments
-    SET Value=20
+    SET Value=15
     WHERE ModifierId='TRAIT_SCIENCE_ECSTATIC' AND Name='Amount';
 UPDATE ModifierArguments
-    SET Value=20
+    SET Value=15
     WHERE ModifierId='TRAIT_PRODUCTION_ECSTATIC' AND Name='Amount';
+UPDATE ModifierArguments
+    SET Value=3
+    WHERE ModifierId='TRAIT_SCIENTIST_ECSTATIC' AND Name='Amount';
+UPDATE ModifierArguments
+    SET Value=3
+    WHERE ModifierId='TRAIT_ENGINEER_ECSTATIC' AND Name='Amount';
 
 --golf proved more culture and gold
 UPDATE Improvement_YieldChanges
@@ -29,6 +30,3 @@ INSERT OR REPLACE INTO Improvement_ValidFeatures(ImprovementType, FeatureType)VA
 ('IMPROVEMENT_GOLF_COURSE', 'FEATURE_FLOODPLAINS_GRASSLAND'),
 ('IMPROVEMENT_GOLF_COURSE', 'FEATURE_FLOODPLAINS_PLAINS'),
 ('IMPROVEMENT_GOLF_COURSE', 'FEATURE_MARSH');
-
-UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT';
-UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ' WHERE ImprovementType = 'IMPROVEMENT_GOLF_COURSE';

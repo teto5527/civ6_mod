@@ -1,11 +1,15 @@
---Caguana: Batey provide more culture
--- UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_BATEY_DESCRIPTION_ZJ' WHERE BuildingType = 'IMPROVEMENT_BATEY';
--- UPDATE Improvement_YieldChanges
---     SET YieldChange=2
---     WHERE ImprovementType = 'IMPROVEMENT_BATEY';
-
---
+--TEXT
+UPDATE Improvements SET Description = 'LOC_IMPROVEMENT_BATEY_DESCRIPTION_ZJ' WHERE BuildingType = 'IMPROVEMENT_BATEY';
+UPDATE Civilizations SET Description = 'LOC_CIVILIZATION_PRESLAV_DESCRIPTION_ZJ' WHERE CivilizationType = 'CIVILIZATION_PRESLAV';
 UPDATE Technologies SET Description='LOC_TECH_BUTTRESS_DESCRIPTION_ZJ' WHERE TechnologyType='TECH_BUTTRESS';
+
+--Caguana: Batey provide more culture
+UPDATE Improvement_YieldChanges SET YieldChange = 2 WHERE ImprovementType = 'IMPROVEMENT_BATEY';
+
+--Preslav: cities +8 loyalty
+DELETE FROM Modifiers WHERE ModifierId IN ('MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_ARMORY_IDENTITY_BONUS', 'MINOR_CIV_PRESLAV_ARMORY_IDENTITY_BONUS', 'MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILITARY_ACADEMY_IDENTITY_BONUS', 'MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS');
+UPDATE Modifiers SET SubjectRequirementSetId = NULL WHERE ModifierId = 'MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS';
+UPDATE ModifierArguments SET Value = '8' WHERE ModifierId = 'MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS' AND Name = 'Amount';
 
 --Improvements can be built on features
 REPLACE INTO Improvement_ValidFeatures (ImprovementType, FeatureType, PrereqTech, PrereqCivic) VALUES 

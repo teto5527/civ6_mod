@@ -9,6 +9,7 @@
 	</Properties>
 	<Components>
 		<UpdateDatabase id="CivsRework">
+			<File>ChinaRework.sql</File>
 			<File>IndonesiaRework.sql</File>
 			<File>EgyptRework.sql</File>
 			<File>ScotlandRework.sql</File>
@@ -19,10 +20,12 @@
 			<File>KoreaRework.sql</File>
 		</UpdateDatabase>
 		<UpdateText id="TEXT_CivsRework">
+			<Properties><LoadOrder>9997</LoadOrder></Properties>
 			<File>TEXT_CivsRework.sql</File>
 		</UpdateText>
 	</Components>
 	<Files>
+		<File>ChinaRework.sql</File>
 		<File>ScotlandRework.sql</File>
 		<File>FranceRework.sql</File>
 		<File>PersiaRework.sql</File>

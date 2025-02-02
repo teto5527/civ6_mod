@@ -1,7 +1,7 @@
 -- Language: en_US
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Govs
 ('LOC_GOVERNOR_PROMOTION_MERCHANT_TAX_COLLECTOR_DESCRIPTION_ZJ',
-'+4 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city.'),
+'+3 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city.'),
 
 ('LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION_ZJ',
 'Religious pressure to adjacent cities is 100% stronger from this city. +3 [ICON_Faith] Faith for every specialty district in this city.'),

@@ -8,17 +8,17 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_PRIMITIVE_COMMUNE_NAME',
 'Primitive Commune'),
 
-('LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION', 
+('LOC_POLICY_PRIMITIVE_COMMUNE_DESCRIPTION',
 '+1 [ICON_Food] Food in all cities.'),
 
-('LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ', 
+('LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ',
 '+1 [ICON_Food] Food and +1 [ICON_Production] Production in all cities. +1 [ICON_AMENITIES] Amenity to all cities with at least 2 specialty districts.'),
 
-('LOC_POLICY_GIFT_EXCHANGE_NAME',
-'Gift Exchange'),
+('LOC_POLICY_TRIBUTE_NAME',
+'Tribute'),
 
-('LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'Receive 30 [ICON_Gold] Gold when you sent a delegation to another player.'),
+('LOC_POLICY_TRIBUTE_DESCRIPTION',
+'Receive 50 [ICON_Gold] Gold when you sent a delegation to another player.'),
 
 ('LOC_POLICY_URBAN_RENEWAL_NAME',
 'Urban Renewal'),
@@ -26,10 +26,13 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
 'Religious Industrialization'),
 
+('LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
+'Sci-Tech Prosperity'),
+
 ('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_DESCRIPTION',
 'Industrial zone buildings can be bought with [ICON_Faith] Faith.'),
 
-('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION', 
+('LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
 '+35% [ICON_Production] Production toward City center buildings.'),
 
 ('LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
@@ -48,7 +51,10 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Extra [ICON_Culture] Culture from buildings in Theaters: +50% if city [ICON_Citizen] population is 10 or higher, +50% if district has at least +4 adjacency bonus.'),
 
 ('LOC_POLICY_INTEGRATED_SPACE_CELL_DESCRIPTION_ZJ',
-'+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.');
+'+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.'),
+
+('LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
+'+50% [ICON_Production] Production toward Campus district or its buildings. But temporarily remove intrinsic [ICON_Science] Science output from Campus buildings.');
 
 INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_NAME',
@@ -62,9 +68,11 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_LIBERALISM_DESCRIPTION_ZJ',
 '所有城市+1 [ICON_Food] 食物和+1 [ICON_Production] 生产力。拥有至少两个独立区域的所有城市+1 [ICON_AMENITIES] 宜居度。'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_NAME',
-'礼尚往来'),
+'朝贡'),
+('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
+'科教兴国'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
-'向其他玩家派遣代表团时获得30 [ICON_Gold] 金币。'),
+'向其他玩家派遣代表团时获得50 [ICON_Gold] 金币。'),
 ('zh_Hans_CN', 'LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
 '宗教工业化'),
 ('zh_Hans_CN', 'LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_DESCRIPTION',
@@ -74,4 +82,6 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
 '建造市中心建筑时+35% [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
-'建造军营、港口、航空港和这些区域中的建筑时+35% [ICON_Production] 生产力。');
+'建造军营、港口、航空港和这些区域中的建筑时+35% [ICON_Production] 生产力。'),
+('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
+'建造学院区域或其中建筑时+50% [ICON_Production] 生产力，但暂时取消学院区建筑固定产出的 [ICON_Science] 科技值。');

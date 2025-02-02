@@ -1,7 +1,7 @@
 function HasLeaderTrait(LeaderType, traitType)
 	for row in GameInfo.LeaderTraits() do
 		if (row.LeaderType == LeaderType and row.TraitType == traitType) then
-			return true 
+			return true
 		end
 	end
 	return false
@@ -15,7 +15,7 @@ end
 --Eleanor
 local DRAMA_POETRY_INDEX = GameInfo.Civics['CIVIC_DRAMA_POETRY'].Index;
 function FirstCivicDaramPoetry(playerId, iCivic)
-  	local player = Players[playerId];
+	local player = Players[playerId];
 	local playerConfig = PlayerConfigurations[playerId];
 	local leader = playerConfig:GetLeaderTypeName();
     if HasLeaderTrait(leader, 'TRAIT_LEADER_ELEANOR_LOYALTY') then

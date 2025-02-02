@@ -1,4 +1,9 @@
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION_ZJ', --China
+'[ICON_TECHBOOSTED] Eurekas and [ICON_CIVICBOOSTED] Inspirations provide 50% of civics and technologies instead of 40%. Builders receive an additional charge.'),
+('LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION_ZJ',
+'When building Ancient and Classical wonders you may spend Builder charges to complete 15% of the original wonder cost. When completing a wonder receive a random [ICON_TECHBOOSTED] Eureka and [ICON_CIVICBOOSTED] Inspiration from the era of the wonder, if available. Canals are unlocked with the Masonry technology.'),
+
 ('LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION_ZJ', --Korea
 'Rainforest receive +1 [ICON_Science] Science for adjacent Seowon district. Woods receive +1 [ICON_Culture] Culture for adjacent Seowon district.'),
 
@@ -11,14 +16,15 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_CITY_CENTER_COAST_PRODUCTION_ZJ',
 '+{1_num} [ICON_Production] Production from the adjacent Coast or Reef {1_Num : plural 1?tile; other?tiles;}.'),
 
-('LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION_ZJ', 
+('LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION_ZJ',
 'Coast and Lake tiles provide a standard adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +1 [ICON_Amenities] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile. Celestial Navigation technologies will unlock Shipbuilding technologie.'),
-('LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION_ZJ', 
+('LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION_ZJ',
 'Naval units can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. City Centers gain +1 [ICON_Food] Food for every adjacent Coast and Lake tiles, +2 [ICON_Production] Production for every adjacent reef.'),
 
 
 ('LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ', --Scoland
-'Happy cities receive an additional +10% [ICON_Science] Science and +10% [ICON_Production] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities double all these amounts.'),
+'Happy cities receive an additional +5% [ICON_Science] Science and +5% [ICON_Production] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities triple all these amounts.'),
+
 ('LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ',
 'Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+2 [ICON_Amenities] Amenities and +4 [ICON_Gold] Gold, +2 [ICON_Culture] Culture. +1 [ICON_Culture] Culture if adjacent to a City Center district and +1 [ICON_Culture] Culture if adjacent to an Entertainment Complex district. Additional [ICON_Tourism] Tourism and [ICON_Housing] Housing as you advance through the Civics and Technology Tree. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.'),
 

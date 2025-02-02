@@ -3,7 +3,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_STONE_CIRCLES_DESCRIPTION_ZJ',
 '+1 [ICON_CULTURE] Culture, +2 [ICON_FAITH] Faith from Quarries.'),
 
-('LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION_ZJ',  
+('LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION_ZJ',
 '+1 [ICON_SCIENCE] Science, +2 [ICON_FAITH] Faith from Geothermal Fissures and Volcanic Soil.'),
 
 ('LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION_ZJ',
@@ -42,12 +42,12 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_MATHER_OF_WOODS_DESCRIPTION',
 '+1 [ICON_FOOD] Food from Improvments over Woods, and +1 [ICON_PRODUCTION] Production from Improvements over Rainforest.');
 
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Religions
 ('LOC_BELIEF_JESUIT_EDUCATION_DESCRIPTION_ZJ',
 'May purchase Campus, Theater Square and Holy Site district buildings with [ICON_FAITH] Faith.'),
 
 ('LOC_BELIEF_ZEN_MEDITATION_DESCRIPTION_ZJ',
-"Holy Site district's [ICON_FAITH] Faith adjacency bonus provides [ICON_SCIENCE] Science as well."),
+" Cities earn [ICON_FOOD] Food and [ICON_PRODUCTION] Production per turn equal to 20% of their [ICON_FAITH] Faith per turn rate."),
 
 ('LOC_BELIEF_FEED_THE_WORLD_DESCRIPTION_ZJ',
 'Shrines and Temple provide +4 [ICON_Food] Food and +2 [ICON_Housing] Housing each.'),

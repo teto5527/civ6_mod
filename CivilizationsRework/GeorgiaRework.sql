@@ -11,6 +11,10 @@ INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChang
 INSERT INTO BuildingModifiers(BuildingType, ModifierId) VALUES 
 ('BUILDING_TSIKHE', 'TSIKHE_CULTURE_GOLDEN_AGE');
 
+
+--
+UPDATE Units SET PrereqTech = 'NULL', PrereqCivic = 'CIVIC_DIVINE_RIGHT' WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI';
+
 --technologys automatically grant cities walls
 INSERT OR REPLACE INTO Types(Type, Kind) VALUES
 ('MODIFIER_PLAYER_CITIES_GRANT_BUILDING_IN_CITY_IGNORE', 'KIND_MODIFIER');
