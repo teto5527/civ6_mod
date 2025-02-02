@@ -141,18 +141,6 @@ INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
 INSERT INTO ExcludedAdjacencies(TraitType, YieldChangeId)
     SELECT TraitType, 'Campus_Faith' FROM CivilizationTraits WHERE CivilizationType != 'CIVILIZATION_ARABIA' GROUP BY CivilizationType;
 
---Rome
-UPDATE Traits SET Description='LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ' WHERE TraitType='TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME';
-INSERT INTO StartBiasResources (CivilizationType, ResourceType, Tier) VALUES
-('CIVILIZATION_ROME', 'RESOURCE_IRON', '2');
-
-INSERT OR REPLACE INTO TraitModifiers (TraitType, ModifierId) VALUES 
-('TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME', 'TRAIT_INCREASE_COMBAT_BARBARIAN');
-INSERT OR REPLACE INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
-('TRAIT_INCREASE_COMBAT_BARBARIAN', 'MODIFIER_PLAYER_UNITS_ADJUST_BARBARIAN_COMBAT', 0, 0, 0, NULL, NULL);
-INSERT OR REPLACE INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-('TRAIT_INCREASE_COMBAT_BARBARIAN', 'Amount', '4');
-
 --Hammurabi
 UPDATE Traits SET Description='LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ' WHERE TraitType='TRAIT_CIVILIZATION_BABYLON';
 
@@ -329,3 +317,6 @@ INSERT INTO Building_YieldDistrictCopies (BuildingType, OldYieldType, NewYieldTy
 
 --India
 UPDATE ModifierArguments SET Value = '500' WHERE ModifierId = 'TRAIT_ORIGIN_DESTINATION_RELIGIOUS_PRESSURE' AND Name = 'Amount';
+
+--Cree
+UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES';
