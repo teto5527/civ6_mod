@@ -19,18 +19,12 @@
     <Mod id="249D9276-0832-48E4-B370-14531FA4E33C" title="Great Builder Leader Pack" />
   </Dependencies>
   <InGameActions>
-    <!-- <UpdateDatabase id="Saesar">
-      <File>Saesar.sql</File>
-    </UpdateDatabase>   -->
     <UpdateDatabase id="LeaderPass">
       <File>LeaderPass.sql</File>
-    </UpdateDatabase>  
+    </UpdateDatabase>
     <UpdateText id="TextLeaderPass">
       <File>TEXT_LeaderPass.sql</File>
     </UpdateText>
-    <!-- <AddGameplayScripts id="AddGameplayScripts">
-			<File>LeaderPass.lua</File>
-		</AddGameplayScripts> -->
   </InGameActions>
   <Files>
     <File>TEXT_LeaderPass.sql</File>
