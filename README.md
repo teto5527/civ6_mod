@@ -1,5 +1,5 @@
-# **Civ6 Mod: [Your Mod Name]**  
-_A custom Civilization VI mod that enhances gameplay with new mechanics._  
+# **Civ6 Mods**  
+_Custom Civilization VI mods that enhances gameplay with new mechanics._  
 
 ## **📥 Manual Installation Guide**  
 
