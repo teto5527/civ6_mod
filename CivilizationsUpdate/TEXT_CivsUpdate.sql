@@ -53,9 +53,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_CAMPUS_FAITH',
 '+{1_num} [ICON_FAITH] Faith from an adjacent Campus district.'),
 
-('LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION_ZJ', --ROME
-'All cities you found or conquer start with a Trading Post. If in [ICON_TRADEROUTE] Trade Route range of your [ICON_CAPITAL] Capital, they also start with a road to it. Your [ICON_TRADEROUTE] Trade Routes earn +1 [ICON_Gold] Gold for passing through Trading Posts in your own cities. +4 [ICON_Strength] Unit Combat Strength when fighting Barbarians.'),
-
 ('LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ',
 '[ICON_TECHBOOSTED] Eurekas provide all of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn. [ICON_GREATSCIENTIST] Great Scientist cannot be earned.'),
 
@@ -75,4 +72,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+50% [ICON_Production] Production to Districts and Buildings constructed across a river from a City Center. The city build on Geothermal Fissure +2 [ICON_Food] Food , +2 [ICON_Production] Production, +1 [ICON_Housing] Housing. Constructs the first Sukiennice grant a free trader.'),
 
 ('LOC_BUILDING_STAVE_CHURCH_DESCRIPTION_ZJ', --Norway
-'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get an additional standard adjacency bonus from Woods. +1 [ICON_Production] Production to each coastal resource tile in this city.');
+'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get an additional standard adjacency bonus from Woods. +1 [ICON_Production] Production to each coastal resource tile in this city.'),
+
+('LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION_ZJ', --Cree
+'+1 [ICON_TRADEROUTE] Trade Route capacity and a free Trader with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them. +50 [ICON_Gold] Gold from goodyhunt.');
