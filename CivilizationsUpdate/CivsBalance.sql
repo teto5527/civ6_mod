@@ -315,8 +315,5 @@ UPDATE Building_YieldChanges SET YieldChange = 0 WHERE BuildingType='BUILDING_ST
 INSERT INTO Building_YieldDistrictCopies (BuildingType, OldYieldType, NewYieldType) VALUES
 ('BUILDING_STAVE_CHURCH', 'YIELD_FAITH', 'YIELD_FAITH');
 
---India
-UPDATE ModifierArguments SET Value = '500' WHERE ModifierId = 'TRAIT_ORIGIN_DESTINATION_RELIGIOUS_PRESSURE' AND Name = 'Amount';
-
 --Cree
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES';
