@@ -128,7 +128,7 @@ INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChan
 -- Arabia
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ'  WHERE TraitType = 'TRAIT_CIVILIZATION_LAST_PROPHET';
 
-INSERT OR REPLACE INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES('BUILDING_MADRASA', 'YIELD_CULTURE', 2);
+UPDATE Buildings SET Cost = 200 WHERE BuildingType = 'BUILDING_MADRASA';
 -- Campus and Holy Site +1 if adjacant to each other
 INSERT INTO Adjacency_YieldChanges(ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
 ('Holy_Site_Science', 'LOC_HOLY_SITE_SCIENCE', 'YIELD_SCIENCE', 1, 'DISTRICT_HOLY_SITE'),
