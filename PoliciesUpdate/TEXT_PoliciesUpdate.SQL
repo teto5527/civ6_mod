@@ -29,6 +29,12 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
 'Sci-Tech Prosperity'),
 
+('LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_NAME',
+'Tech-Industrial Integration'),
+
+('LOC_POLICY_BREAD_AND_CIRCUSES_NAME',
+'Bread and Circuses'),
+
 ('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_DESCRIPTION',
 'Industrial zone buildings can be bought with [ICON_Faith] Faith.'),
 
@@ -54,7 +60,13 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 '+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.'),
 
 ('LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
-'+50% [ICON_Production] Production toward Campus district or its buildings. But temporarily remove intrinsic [ICON_Science] Science output from Campus buildings.');
+'+100% [ICON_Production] Production toward Campus district or its buildings. But temporarily remove intrinsic [ICON_Science] Science output from Campus buildings.'),
+
+('LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_DESCRIPTION',
+"Industrial district's [ICON_Production] Production adjacency bonus provides [ICON_Science] Science as well."),
+
+('LOC_POLICY_BREAD_AND_CIRCUSES_DESCRIPTION',
+'+0.6 [ICON_Culture] Culture per [ICON_Citizen] Citizen, but cities -1 [ICON_AMENITIES] Amenity.');
 
 INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_MILITARY_RECLAMATION_NAME',
@@ -71,6 +83,10 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 '朝贡'),
 ('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
 '科教兴国'),
+('zh_Hans_CN', 'LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_NAME',
+'工业科技整合'),
+('zh_Hans_CN', 'LOC_POLICY_BREAD_AND_CIRCUSES_NAME',
+'面包与马戏'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
 '向其他玩家派遣代表团时获得50 [ICON_Gold] 金币。'),
 ('zh_Hans_CN', 'LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
@@ -84,4 +100,8 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
 '建造军营、港口、航空港和这些区域中的建筑时+35% [ICON_Production] 生产力。'),
 ('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
-'建造学院区域或其中建筑时+50% [ICON_Production] 生产力，但暂时取消学院区建筑固定产出的 [ICON_Science] 科技值。');
+'建造学院区域或其中建筑时+100% [ICON_Production] 生产力，但暂时取消学院区建筑固定产出的 [ICON_Science] 科技值。'),
+('zh_Hans_CN', 'LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_DESCRIPTION',
+'工业区的 [ICON_Production] 生产力相邻加成也能提供 [ICON_Science] 科技值。'),
+('zh_Hans_CN', 'LOC_POLICY_BREAD_AND_CIRCUSES_DESCRIPTION',
+'每位 [ICON_Citizen] 公民将提供0.6点 [ICON_Culture] 文化值，但所有城市-1 [ICON_AMENITIES] 宜居度。');
