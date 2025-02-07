@@ -52,6 +52,32 @@ function NetherlandsBuildingAddedToMap (playerId, cityID, buildingID, plotID, bO
 end
 GameEvents.BuildingConstructed.Add(NetherlandsBuildingAddedToMap);
 
+--Aztec (version 2)
+-- local GAMES_RECREATION_INDEX = GameInfo.Civics['CIVIC_GAMES_RECREATION'].Index;
+-- local bAztecCivicGranted = false;
+
+-- function AztecStartingCivic()
+--     if bAztecCivicGranted then return end
+    
+--     if Game.GetCurrentGameTurn() ~= GameConfiguration.GetStartTurn() then return end
+    
+--     for _, player in ipairs(Players) do
+--         if player and player:IsAlive() and player:IsMajor() then
+--             local playerConfig = PlayerConfigurations[player:GetID()];
+--             local civilization = playerConfig:GetCivilizationTypeName();
+--             if HasCivilizationTrait(civilization, 'TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS') then
+--                 if not player:GetCulture():HasCivic(GAMES_RECREATION_INDEX) then
+--                     local cost = player:GetCulture():GetCultureCost(GAMES_RECREATION_INDEX);
+--                     player:GetCulture():SetCulturalProgress(GAMES_RECREATION_INDEX, cost);
+--                     bAztecCivicGranted = true;
+--                 end
+--             end
+--         end
+--     end
+-- end
+
+-- GameEvents.OnGameTurnStarted.Add(AztecStartingCivic);
+
 --Cree
 function OnGoodyHutReward(playerId, unitId, type, subType)
     if playerId ~= Game.GetLocalPlayer() then
