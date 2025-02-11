@@ -48,9 +48,12 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Technologies
 ('LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ',
 "Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Food] Food as well.");
 
-INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --buildings
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES -- District and Buildings
 ('LOC_DISTRICT_CULTURE_CITY_CENTER_MAJOR_ZJ',
 '+{1_num} [ICON_Culture] Culture from the adjacent City Center.'),
+
+('LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION',
+'+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +2 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.'),
 
 ('LOC_DISTRICT_AERODROME_NAME_ZJ',
 'A district that allows you to build and store aircraft. Cannot be built on Hills.[NEWLINE]+100% [ICON_Tourism] Tourism from improvements, National Parks, and Wonders in this city.'),

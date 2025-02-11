@@ -3,13 +3,13 @@ UPDATE Districts
 SET CitizenSlots = 1
 WHERE DistrictType IN (SELECT DistrictType FROM District_CitizenYieldChanges GROUP BY DistrictType);
 
---Theater
---ADD MORE ADJUSTMENT for Theater
+--Theater more ADJUSTMENT
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
 ('DISTRICT_THEATER', 'District_Culture_City_Center');
 INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
 ('DISTRICT_CULTURE_CITY_CENTER_MAJOR', 'LOC_DISTRICT_CULTURE_CITY_CENTER_MAJOR_ZJ', 'YIELD_CULTURE', '2', 'DISTRICT_CITY_CENTER');
 UPDATE District_Adjacencies SET YieldChangeId ='DISTRICT_CULTURE_CITY_CENTER_MAJOR' WHERE DistrictType ='DISTRICT_ACROPOLIS' AND YieldChangeId='District_Culture_City_Center';
+UPDATE Districts SET Description = 'LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION' WHERE DistrictType = 'DISTRICT_ACROPOLIS';
 
 --LightHouse yiled 1 production
 INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
