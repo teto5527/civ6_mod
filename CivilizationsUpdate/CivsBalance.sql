@@ -116,6 +116,16 @@ INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_TLACHTLI', 'YIELD_CULTURE', 2),
 ('BUILDING_TLACHTLI', 'YIELD_FAITH', 2);
 
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
+('BUILDING_TLACHTLI', 'TLACHTLI_GRANT_BUILDER');
+
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('TLACHTLI_GRANT_BUILDER', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 0, 0, 0, NULL, NULL);
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
+('TLACHTLI_GRANT_BUILDER', 'Amount', '1'), 
+('TLACHTLI_GRANT_BUILDER', 'UnitType', 'UNIT_BUILDER');
+
 UPDATE Units SET Combat = 32 WHERE UnitType = 'UNIT_AZTEC_EAGLE_WARRIOR';
 
 -- Ottoman
