@@ -34,7 +34,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+50% [ICON_Production] Production towards wonders if placed next to a River. Wonders before medieval age give one [ICON_TradeRoute] trade route capacity and a free trader. Does not receive damage from Floods.'),
 
 ('LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION_ZJ', --Persia
-'+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for routes between your own cities. +1 [ICON_Culture] Culture for each Pairidaeza in the destination city. Roads built in your territory are one level more advanced than usual.'),
+'+1 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +1 [ICON_Gold] Gold and +1 [ICON_Culture] Culture for each Pairidaeza in the destination city when trading between your own cities. Roads built in your territory are one level more advanced than usual.'),
 ('LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION_ZJ',
 '+1 [ICON_Culture] Culture and +2 [ICON_Gold] Gold. +2 Appeal. +1 [ICON_Culture] Culture for each adjacent Holy Site and Theater Square. +1 [ICON_Gold] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza. When a player constructs their first Pairidaeza receive one governor title.'),
 
