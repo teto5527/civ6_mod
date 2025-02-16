@@ -103,11 +103,8 @@ insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType
 ('GOVERNMENT_COMMUNISM', 'SLOT_WILDCARD', 1);
 
 --Communism buff
-UPDATE Policies SET Description = 'LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2_ZJ' WHERE PolicyType = 'POLICY_COLLECTIVIZATION';
 UPDATE Governments SET InherentBonusDesc = 'LOC_GOVT_INHERENT_BONUS_COMMUNISM_XP1_ZJ' WHERE GovernmentType = 'GOVERNMENT_COMMUNISM';
-
-UPDATE Modifiers SET SubjectRequirementSetId=NULL WHERE ModifierId = 'COMMUNISM_PRODUCTIVE_PEOPLE';
-UPDATE ModifierArguments SET Value=4 WHERE ModifierId='COLLECTIVIZATION_INTERNAL_TRADE_PRODUCTION' AND Name='Amount';
+UPDATE Modifiers SET SubjectRequirementSetId = NULL WHERE ModifierId = 'COMMUNISM_PRODUCTIVE_PEOPLE';
 
 
 --city state higher defence

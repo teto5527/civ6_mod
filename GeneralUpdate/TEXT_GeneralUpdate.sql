@@ -92,9 +92,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
 ('LOC_GOVT_INHERENT_BONUS_COMMUNISM_XP1_ZJ',
 '+0.6 [ICON_Production] Production per [ICON_Citizen] Citizen.'),
 
-('LOC_POLICY_COLLECTIVIZATION_DESCRIPTION_XP2_ZJ',
-'+4 [ICON_Production] Production and +4 [ICON_Food] Food from domestic [ICON_TradeRoute] Trade Routes.'),
-
 ('LOC_DISTRICT_CANAL_GOLD_ZJ',
 '+2 [ICON_Gold] Gold from the adjacent Canal.');
 
