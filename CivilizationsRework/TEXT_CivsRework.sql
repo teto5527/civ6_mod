@@ -55,7 +55,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency.'),
 
 ('LOC_TRAIT_CIVILIZATION_GOLDEN_AGE_QUESTS_DESCRIPTION_ZJ', --Georgia
--- Receives a permanent extra Wildcard Policy Slot once if enters a Golden Age or Heroic Age for the first time.
-'Begin the game with the Masonry technology [ICON_TECHBOOSTED] Eureka. When making Dedications at the beginning of a Golden Age or Heroic Age, receive the Normal Age bonus towards improving Era Score in addition to the other bonus. May use Dark Age Policies during a Golden Age or Heroic Age. All the cities you build will grant the highest level wall.'),
+'When making Dedications at the beginning of a Golden Age or Heroic Age, receive the Normal Age bonus towards improving Era Score in addition to the other bonus. All the cities you build will grant the highest level wall.'),
 ('LOC_BUILDING_TSIKHE_DESCRIPTION_XP2_ZJ',
-'A building unique to Georgia. Higher outer defenses than Renaissance Walls. Provides +3 [ICON_Tourism] Tourism after advancing to the Conservation Civic. Provides +4 [ICON_Faith] Faith, +2 [ICON_Culture] Culture. When in a Golden Age the [ICON_Tourism] Tourism, [ICON_Faith] Faith and [ICON_Culture] Culture are +100%.');
+'A building unique to Georgia. Higher outer defenses than Renaissance Walls. Provides +3 [ICON_Tourism] Tourism after advancing to the Conservation Civic. Provides +4 [ICON_Faith] Faith, +1 [ICON_Culture] Culture. When in a Golden Age the [ICON_Tourism] Tourism, [ICON_Faith] Faith and [ICON_Culture] Culture are +100%.');
