@@ -6,14 +6,25 @@ WHERE DistrictType IN (SELECT DistrictType FROM District_CitizenYieldChanges GRO
 --Theater more ADJUSTMENT
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
 ('DISTRICT_THEATER', 'District_Culture_City_Center');
+
 INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
 ('DISTRICT_CULTURE_CITY_CENTER_MAJOR', 'LOC_DISTRICT_CULTURE_CITY_CENTER_MAJOR_ZJ', 'YIELD_CULTURE', '2', 'DISTRICT_CITY_CENTER');
-UPDATE District_Adjacencies SET YieldChangeId ='DISTRICT_CULTURE_CITY_CENTER_MAJOR' WHERE DistrictType ='DISTRICT_ACROPOLIS' AND YieldChangeId='District_Culture_City_Center';
+UPDATE District_Adjacencies SET YieldChangeId = 'DISTRICT_CULTURE_CITY_CENTER_MAJOR' WHERE DistrictType = 'DISTRICT_ACROPOLIS' AND YieldChangeId = 'District_Culture_City_Center'
+AND EXISTS (SELECT 1 FROM District_Adjacencies WHERE DistrictType = 'DISTRICT_ACROPOLIS');
 UPDATE Districts SET Description = 'LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION' WHERE DistrictType = 'DISTRICT_ACROPOLIS';
 
 --LightHouse yiled 1 production
 INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_LIGHTHOUSE', 'YIELD_PRODUCTION', '1');
+
+--Bank yiled more gold
+UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_BANK' AND YieldType = 'YIELD_GOLD';
+
+UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_GRAND_BAZAAR' AND YieldType = 'YIELD_GOLD'
+AND EXISTS (SELECT 1 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_GRAND_BAZAAR');
+
+UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_GILDED_VAULT' AND YieldType = 'YIELD_GOLD'
+AND EXISTS (SELECT 1 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_GILDED_VAULT');
 
 --Industrial zone
 --more citizen slots
@@ -36,8 +47,9 @@ UPDATE Buildings SET Cost=300 WHERE BuildingType='BUILDING_ELECTRONICS_FACTORY';
 
 --POWER_PLANTS
 INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
-('BUILDING_COAL_POWER_PLANT', 'YIELD_PRODUCTION', '4'),
-('BUILDING_FOSSIL_FUEL_POWER_PLANT', 'YIELD_PRODUCTION', '4');
+('BUILDING_COAL_POWER_PLANT', 'YIELD_PRODUCTION', '3'),
+('BUILDING_FOSSIL_FUEL_POWER_PLANT', 'YIELD_PRODUCTION', '5'),
+('BUILDING_POWER_PLANT', 'YIELD_PRODUCTION', '5');
 UPDATE Resource_Consumption SET PowerProvided=6 WHERE ResourceType='RESOURCE_OIL';
 
 --Aerodrome
@@ -97,7 +109,7 @@ UPDATE Buildings
     WHERE BuildingType='BUILDING_WATER_MILL';
 
 --military_engineer can build Dam, Canal, and Aqueduct faster
- UPDATE District_BuildChargeProductions SET PercentProductionPerCharge='50' WHERE UnitType='UNIT_MILITARY_ENGINEER';
+ UPDATE District_BuildChargeProductions SET PercentProductionPerCharge='35' WHERE UnitType='UNIT_MILITARY_ENGINEER';
 
 --reduce DISTRICT_AQUEDUCT cost
 -- UPDATE Districts
@@ -110,7 +122,7 @@ UPDATE Buildings
 --Dam cost reduce
 UPDATE Districts SET Cost = 36 WHERE DistrictType='DISTRICT_DAM';
 
---Canals: provide +2 gold to COMMERCIAL_HUB and HARBOR, +2 PRODUCTION TO CITY_CENTER; reduce it's cost; unlock by TECH_CONSTRUCTION
+--Canals: provide +2 gold to COMMERCIAL_HUB and HARBOR, reduce it's cost; unlock by TECH_CONSTRUCTION
 UPDATE Districts SET PrereqTech='TECH_CONSTRUCTION' WHERE DistrictType='DISTRICT_CANAL';
 UPDATE Districts SET Cost=36 WHERE DistrictType='DISTRICT_CANAL';
 
