@@ -45,12 +45,8 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
 -- ('RESOURCE_MAIZE', 'YIELD_GOLD', '3'),
 -- ('RESOURCE_CRABS', 'YIELD_GOLD', '3');
 
---Marsh can be on plains
-INSERT INTO Feature_ValidTerrains(FeatureType, TerrainType) VALUES
-('FEATURE_MARSH', 'TERRAIN_PLAINS');
-
 --resources more Placement
--- UPDATE Resources SET Frequency='12' WHERE ResourceType='RESOURCE_STONE';
+UPDATE Resources SET Frequency = '12' WHERE ResourceType = 'RESOURCE_STONE';
 
 INSERT INTO Resource_ValidFeatures(ResourceType, FeatureType) VALUES
 ('RESOURCE_COPPER', 'FEATURE_JUNGLE'),
@@ -70,5 +66,7 @@ UPDATE Improvement_ValidResources SET MustRemoveFeature='0' WHERE ResourceType='
 
 DELETE FROM Resource_ValidTerrains WHERE ResourceType='RESOURCE_JADE' AND TerrainType='TERRAIN_TUNDRA';
 INSERT INTO Resource_ValidTerrains(ResourceType, TerrainType) VALUES 
+('RESOURCE_CATTLE', 'TERRAIN_PLAINS'),
+('RESOURCE_CATTLE', 'TERRAIN_TUNDRA'),
 ('RESOURCE_MERCURY', 'TERRAIN_PLAINS_HILLS'),
 ('RESOURCE_OLIVES', 'TERRAIN_GRASS_HILLS');
