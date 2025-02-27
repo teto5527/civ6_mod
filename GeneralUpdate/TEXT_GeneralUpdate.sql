@@ -4,7 +4,10 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Govs
 '+3 [ICON_Gold] Gold per turn for each [ICON_Citizen] Citizen in the city.'),
 
 ('LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION_ZJ',
-'Religious pressure to adjacent cities is 100% stronger from this city. +3 [ICON_Faith] Faith for every specialty district in this city.'),
+'Religious pressure to adjacent cities is 100% stronger from this city. +2 [ICON_Faith] Faith for every specialty district in this city. Gain [ICON_Faith] Faith equal to 15% of the construction cost when finishing buildings.'),
+
+('LOC_GOVERNOR_PROMOTION_CARDINAL_CITADEL_OF_GOD_DESCRIPTION_ZJ',
+"City ignores religious pressure from Religions not founded by the [ICON_Governor] Governor's player. Your [ICON_TRADEROUTE] Trade Routes ending here provide +2 [ICON_Faith] Faith to this city."),
 
 ('LOC_GOVERNOR_GOVERNOR_PROMOTION_CARDINAL_LAYING_ON_OF_HANDS_DESCRIPTION_ZJ',
 "+10 [ICON_Religion] Religious Strength in theological combat in tiles of this city. All [ICON_Governor] Governor's units heal fully in one turn in tiles of this city."),
