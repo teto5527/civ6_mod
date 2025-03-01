@@ -18,13 +18,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION_ZJ',
 'Naval units can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. City Centers gain +1 [ICON_Food] Food for every adjacent Coast and Lake tiles, +2 [ICON_Production] Production for every adjacent reef.'),
 
-
-('LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ', --Scoland
-'Happy cities receive an additional +5% [ICON_Science] Science and +5% [ICON_Production] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities triple all these amounts.'),
-
-('LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ',
-'Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+2 [ICON_Amenities] Amenities and +4 [ICON_Gold] Gold, +2 [ICON_Culture] Culture. +1 [ICON_Culture] Culture if adjacent to a City Center district and +1 [ICON_Culture] Culture if adjacent to an Entertainment Complex district. Additional [ICON_Tourism] Tourism and [ICON_Housing] Housing as you advance through the Civics and Technology Tree. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.'),
-
 ('LOC_IMPROVEMENT_SPHINX_DESCRIPTION_ZJ', --Egypt
 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith and +2 [ICON_Culture] Culture. +2 Appeal. +2 [ICON_Faith] Faith and +1 [ICON_Culture] Culture if next to a wonder. +1 [ICON_Culture] Culture if built on Floodplains. Additional 2 [ICON_Culture] Culture once Natural History is discovered. Provides [ICON_Tourism] Tourism after researching Flight. Cannot be built next to another Sphinx. Cannot be built on Snow or Snow Hills.'),
 ('LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION_ZJ',

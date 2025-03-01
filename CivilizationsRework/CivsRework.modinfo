@@ -12,7 +12,6 @@
 			<File>ChinaRework.sql</File>
 			<File>IndonesiaRework.sql</File>
 			<File>EgyptRework.sql</File>
-			<File>ScotlandRework.sql</File>
 			<File>GeorgiaRework.sql</File>
 			<File>PersiaRework.sql</File>
 			<File>PolandRework.sql</File>
@@ -25,7 +24,6 @@
 	</Components>
 	<Files>
 		<File>ChinaRework.sql</File>
-		<File>ScotlandRework.sql</File>
 		<File>FranceRework.sql</File>
 		<File>PersiaRework.sql</File>
 		<File>PolandRework.sql</File>

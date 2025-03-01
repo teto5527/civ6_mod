@@ -21,6 +21,12 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_DISTRICT_PYRAMID_CULTURE_ZJ',
 '+1 [ICON_Culture] Culture from the adjacent Nubian Pyramid.'),
 
+('LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ', --Scoland
+'Happy cities receive an additional +5% [ICON_Science] Science and +5% [ICON_Production] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities triple all these amounts.'),
+
+('LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ',
+'Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+2 [ICON_Amenities] Amenities and +4 [ICON_Gold] Gold. +1 [ICON_Culture] Culture if adjacent to a City Center district and +1 [ICON_Culture] Culture if adjacent to an Entertainment Complex district. Additional [ICON_Tourism] Tourism and [ICON_Housing] Housing as you advance through the Civics and Technology Tree. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.'),
+
 ('LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION_ZJ', --Sweden
 'Sweden gains 50 [ICON_FAVOR] Diplomatic Favor when earning a Great Person (on Standard Speed). Sweden receives +2 [ICON_GREATENGINEER] Great Engineer point from Factories, +2 [ICON_GREATARTIST] Great Artist point from Factories, and +2 [ICON_GREATSCIENTIST] Great Scientist point from Universities. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.'),
 
