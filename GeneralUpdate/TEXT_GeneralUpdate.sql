@@ -48,6 +48,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Technologies
 ('LOC_TECH_CELESTIAL_NAVIGATION_DESCRIPTION_ZJ',
 'Allows Traders to embark, and allows harvesting of [ICON_RESOURCE_Fish] Fish and [ICON_RESOURCE_Crabs] Crabs. Fishing Boats improvements receive +1 [ICON_GOLD] Gold.'),
 
+('LOC_TECH_BUTTRESS_DESCRIPTION_ZJ',
+'Most Unique Improvements can build on floodplains.'),
+
 ('LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ',
 "Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Food] Food as well.");
 

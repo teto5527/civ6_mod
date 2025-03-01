@@ -196,6 +196,9 @@ INSERT OR REPLACE INTO Unit_BuildingPrereqs (Unit, PrereqBuilding, NumSupported)
 UPDATE Improvements SET PrereqTech='TECH_MILITARY_ENGINEERING' WHERE ImprovementType='IMPROVEMENT_FORT';
 UPDATE Improvements SET PrereqTech='TECH_GUNPOWDER' WHERE ImprovementType='IMPROVEMENT_MOUNTAIN_TUNNEL';
 
+--Add Description
+UPDATE Technologies SET Description='LOC_TECH_BUTTRESS_DESCRIPTION_ZJ' WHERE TechnologyType='TECH_BUTTRESS';
+
 --early lumber mill on rainforest
 UPDATE Civics SET Description = 'LOC_CIVIC_GUILDS_DESCRIPTION_ZJ' WHERE CivicType = 'CIVIC_GUILDS';
 UPDATE Civics SET Description = 'LOC_CIVIC_MERCANTILISM_DESCRIPTION_ZJ' WHERE CivicType = 'CIVIC_MERCANTILISM';
@@ -215,6 +218,3 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'DistrictType', 'DISTRICT_INDUSTRIAL_ZONE'), 
 ('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'YieldTypeToGrant', 'YIELD_FOOD'), 
 ('CHEMISTRY_INDUSTRIAL_ZONE_FOOD', 'YieldTypeToMirror', 'YIELD_PRODUCTION');
-
---Quadrireme range change to 2
-UPDATE Units SET Range = '2' WHERE UnitType = 'UNIT_QUADRIREME';
