@@ -17,7 +17,6 @@
 			<File>PersiaRework.sql</File>
 			<File>PolandRework.sql</File>
 			<File>FranceRework.sql</File>
-			<File>KoreaRework.sql</File>
 		</UpdateDatabase>
 		<UpdateText id="TEXT_CivsRework">
 			<Properties><LoadOrder>9997</LoadOrder></Properties>
@@ -33,7 +32,6 @@
 		<File>GeorgiaRework.sql</File>
 		<File>IndonesiaRework.sql</File>
 		<File>EgyptRework.sql</File>
-		<File>KoreaRework.sql</File>
 
 		<File>TEXT_CivsRework.sql</File>
 	</Files>

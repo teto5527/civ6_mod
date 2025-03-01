@@ -4,9 +4,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION_ZJ',
 'When building Ancient and Classical wonders you may spend Builder charges to complete 15% of the original wonder cost. When completing a wonder receive a random [ICON_TECHBOOSTED] Eureka and [ICON_CIVICBOOSTED] Inspiration from the era of the wonder, if available. Canals are unlocked with the Masonry technology.'),
 
-('LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION_ZJ', --Korea
-'Rainforest receive +1 [ICON_Science] Science for adjacent Seowon district. Woods receive +1 [ICON_Culture] Culture for adjacent Seowon district.'),
-
 ('LOC_DISTRICT_NUSANTARA_GOLD_ZJ', --Indonesia
 '+{1_num} [ICON_Gold] Gold from the adjacent Coast or Lake {1_Num : plural 1?tile; other?tiles;}.'),
 ('LOC_CITY_CENTER_COAST_FAITH_ZJ',
