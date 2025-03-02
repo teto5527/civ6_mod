@@ -61,8 +61,8 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES -- District and Buildings
 ('LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION',
 '+1 [ICON_Culture] Culture bonus for each adjacent district and an additional +2 [ICON_Culture] Culture bonus for adjacent City Center. +2 [ICON_Culture] Culture bonus for each adjacent wonder, Entertainment Complex, and Water Park. Can only be built on Hills.'),
 
-('LOC_DISTRICT_AERODROME_NAME_ZJ',
-'A district that allows you to build and store aircraft. Cannot be built on Hills.[NEWLINE]+100% [ICON_Tourism] Tourism from improvements, National Parks, and Wonders in this city.'),
+('LOC_BUILDING_AIRPORT_DESCRIPTION_ZJ',
+'+50% combat experience for air units trained in this city. +1 air unit slot in Aerodrome district. Allows the ability to airlift land units between Aerodrome districts with Airports after the Rapid Deployment civic is unlocked.[NEWLINE][NEWLINE]+100% [ICON_Tourism] Tourism from improvements, National Parks, and Wonders in this city.'),
 
 ('LOC_DISTRICT_AERODROME_PRODUCTION_ZJ',
 '+{1_num} [ICON_Production] Production from the adjacent Aerodrome {1_Num : plural 1?tile; other?district;}.'),
@@ -110,3 +110,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Dedications
 '+2 [ICON_MOVEMENT] Movement for all Builders. May purchase civilian units with [ICON_Faith] Faith. Builders and Settlers are 15% cheaper to purchase with [ICON_Faith] Faith and [ICON_Gold] Gold.'),
 ('LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE_ZJ',
 '[ICON_CIVICBOOSTED] Inspirations provide an additional 10% of civic costs. Each city receives +2 [ICON_Culture] Culture for each specialty district.');
+
+INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Great Person
+('MIMAR_SINAN_DESCRIPTION_ZJ',
+"This Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Science] Science as well.");
