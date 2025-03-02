@@ -1,4 +1,4 @@
-UPDATE GreatPersonIndividuals SET BirthEffectTextOverride='MIMAR_SINAN_DESCRIPTION_ZJ' WHERE GreatPersonIndividualType='GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
+UPDATE GreatPersonIndividuals SET ActionEffectTextOverride = 'MIMAR_SINAN_DESCRIPTION_ZJ' WHERE GreatPersonIndividualType = 'GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
 
 UPDATE GreatPersonIndividuals SET ActionCharges = 2 WHERE GreatPersonIndividualType = 'GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
 
