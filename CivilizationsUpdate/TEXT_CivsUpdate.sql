@@ -22,7 +22,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+1 [ICON_Culture] Culture from the adjacent Nubian Pyramid.'),
 
 ('LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION_ZJ', --Scoland
-'Happy cities receive an additional +5% [ICON_Science] Science and +5% [ICON_Production] Production. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus and +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone. Ecstatic cities triple all these amounts.'),
+'Happy cities receive an additional +5% [ICON_Science] Science, +5% [ICON_Production] Production, and +5% [ICON_Gold] Gold. Happy cities generate +1 [ICON_GreatScientist] Great Scientist point per Campus, +1 [ICON_GreatEngineer] Great Engineer point per Industrial Zone, and +1 [ICON_GreatMerchant] Great Merchant point per Commercial Hub. Ecstatic cities double all these amounts.'),
 
 ('LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION_ZJ',
 'Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+2 [ICON_Amenities] Amenities and +4 [ICON_Gold] Gold. +1 [ICON_Culture] Culture if adjacent to a City Center district and +1 [ICON_Culture] Culture if adjacent to an Entertainment Complex district. Additional [ICON_Tourism] Tourism and [ICON_Housing] Housing as you advance through the Civics and Technology Tree. One per city. Tiles with Golf Courses cannot be swapped. +1 Appeal.'),
