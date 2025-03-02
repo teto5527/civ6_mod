@@ -17,7 +17,6 @@
   <InGameActions>
     <UpdateDatabase id="WondersRework">
       <File>WondersRework.sql</File>
-      <!-- <File>HF_Wonders.sql</File> -->
     </UpdateDatabase>
     <UpdateText id="TextWondersRework">
       <File>TEXT_WondersRework.sql</File>
@@ -25,7 +24,6 @@
   </InGameActions>
   <Files>
     <File>WondersRework.sql</File>
-    <File>HF_Wonders.sql</File>
     <File>TEXT_WondersRework.sql</File>
   </Files>
 </Mod>
