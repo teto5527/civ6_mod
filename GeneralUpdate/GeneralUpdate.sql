@@ -60,26 +60,19 @@ UPDATE Improvement_BonusYieldChanges SET BonusYieldChange=2 WHERE ImprovementTyp
 INSERT OR REPLACE INTO Improvement_BonusYieldChanges (ImprovementType, YieldType, BonusYieldChange, PrereqTech, PrereqCivic) VALUES
 ('IMPROVEMENT_FISHING_BOATS', 'YIELD_GOLD', 1, 'TECH_CELESTIAL_NAVIGATION', NULL);
 
---reduce civic_divine_right cost (from 340)
-UPDATE Civics
-    SET Cost =450
-    WHERE CivicType='CIVIC_DIVINE_RIGHT';
+--Railroads need no coal
+DELETE FROM Route_ResourceCosts WHERE ResourceType = 'RESOURCE_COAL' AND RouteType = 'ROUTE_RAILROAD';
 
---reduce civic_exploration cost
-UPDATE Civics
-    SET Cost =220
-    WHERE CivicType='CIVIC_EXPLORATION';
+--Seaside Resorts minimum appeal change
+UPDATE Improvements SET MinimumAppeal = 3 WHERE ImprovementType = 'IMPROVEMENT_BEACH_RESORT';
 
---reduce civic_reformed_church cost
-UPDATE Civics
-    SET Cost =220
-    WHERE CivicType='CIVIC_REFORMED_CHURCH';
+--LV 3 GOVERNMENT pre-civic cost less
+UPDATE Civics SET Cost = 640 WHERE CivicType='CIVIC_IDEOLOGY';
 
---LV 3 GOVERNMENT cost reorganize
--- UPDATE Civics SET Cost = 640 WHERE CivicType='CIVIC_IDEOLOGY';
-UPDATE Civics SET Cost = 820 WHERE CivicType='CIVIC_SUFFRAGE';
-UPDATE Civics SET Cost = 820 WHERE CivicType='CIVIC_TOTALITARIANISM';
-UPDATE Civics SET Cost = 820 WHERE CivicType='CIVIC_CLASS_STRUGGLE';
+--LV 4 GOVERNMENT cost more
+UPDATE Civics SET Cost = 6200 WHERE CivicType='CIVIC_DIGITAL_DEMOCRACY';
+UPDATE Civics SET Cost = 6200 WHERE CivicType='BUILDING_AIRPORTCIVIC_SYNTHETIC_TECHNOCRACY';
+UPDATE Civics SET Cost = 6200 WHERE CivicType='CIVIC_CORPORATE_LIBERTARIANISM';
 
 --Monarchy slots change to 1212 (from 2112)
 insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType, NumSlots) values
