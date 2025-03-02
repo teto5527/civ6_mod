@@ -99,7 +99,19 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
 '+0.6 [ICON_Production] Production per [ICON_Citizen] Citizen.'),
 
 ('LOC_DISTRICT_CANAL_GOLD_ZJ',
-'+2 [ICON_Gold] Gold from the adjacent Canal.');
+'+2 [ICON_Gold] Gold from the adjacent Canal.'),
+
+('LOC_BOOST_TRIGGER_STEEL_ZJ',
+'Build 3 Renaissance Walls.'),
+
+('LOC_BOOST_TRIGGER_LONGDESC_STEEL_ZJ',
+'Behind towering walls, your people seek not just defense, but the strength to forge an unbreakable future.'),
+
+('LOC_BOOST_TRIGGER_IDEOLOGY_ZJ',
+'Grow your civilization to at least 60 population.'),
+
+('LOC_BOOST_TRIGGER_LONGDESC_IDEOLOGY_ZJ',
+'As society advances and cultures evolve, the people stand at a crossroads — what path will they choose?');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --units
 ('LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION_ZJ',
