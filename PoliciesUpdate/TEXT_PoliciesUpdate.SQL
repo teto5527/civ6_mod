@@ -29,8 +29,8 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
 'Sci-Tech Prosperity'),
 
-('LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_NAME',
-'Tech-Industrial Integration'),
+('LOC_POLICY_FOUR_YEAR_PLAN_NAME',
+'Four year plan'),
 
 ('LOC_POLICY_BREAD_AND_CIRCUSES_NAME',
 'Bread and Circuses'),
@@ -62,8 +62,8 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 ('LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
 '+100% [ICON_Production] Production toward Campus district or its buildings. But temporarily remove intrinsic [ICON_Science] Science output from Campus buildings.'),
 
-('LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_DESCRIPTION',
-"Industrial district's [ICON_Production] Production adjacency bonus provides [ICON_Science] Science as well."),
+('LOC_POLICY_FOUR_YEAR_PLAN_DESCRIPTION',
+"Encampment +1 [ICON_RESOURCE_OIL] Oil once revealed.[NEWLINE]Harbor +1 [ICON_RESOURCE_COAL] Coal once revealed.[NEWLINE]Aerodrome +1 [ICON_RESOURCE_ALUMINUM] Aluminum once revealed."),
 
 ('LOC_POLICY_BREAD_AND_CIRCUSES_DESCRIPTION',
 '+0.6 [ICON_Culture] Culture per [ICON_Citizen] Citizen, but cities -1 [ICON_AMENITIES] Amenity.');
@@ -83,8 +83,8 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 '朝贡'),
 ('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_NAME',
 '科教兴国'),
-('zh_Hans_CN', 'LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_NAME',
-'工业科技整合'),
+('zh_Hans_CN', 'LOC_POLICY_FOUR_YEAR_PLAN_NAME',
+'四年计划'),
 ('zh_Hans_CN', 'LOC_POLICY_BREAD_AND_CIRCUSES_NAME',
 '面包与马戏'),
 ("zh_Hans_CN",  'LOC_POLICY_GIFT_EXCHANGE_DESCRIPTION',
@@ -98,10 +98,10 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_URBAN_RENEWAL_DESCRIPTION',
 '建造市中心建筑时+35% [ICON_Production] 生产力。'),
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
-'建造军营、港口、航空港和这些区域中的建筑时+35% [ICON_Production] 生产力。'),
+'建造军营、港口、航空港和这些区域中的建筑时+30% [ICON_Production] 生产力。'),
 ('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
 '建造学院区域或其中建筑时+100% [ICON_Production] 生产力，但暂时取消学院区建筑固定产出的 [ICON_Science] 科技值。'),
-('zh_Hans_CN', 'LOC_POLICY_TECH_INDUSTRIAL_INTEGRATION_DESCRIPTION',
-'工业区的 [ICON_Production] 生产力相邻加成也能提供 [ICON_Science] 科技值。'),
+('zh_Hans_CN', 'LOC_POLICY_FOUR_YEAR_PLAN_DESCRIPTION',
+"如果战略资源已经解锁，军营 +1 [ICON_RESOURCE_OIL] 石油。[NEWLINE]港口 +1 [ICON_RESOURCE_COAL] 煤。[NEWLINE]航空港 +1 [ICON_RESOURCE_ALUMINUM] 铝。"),
 ('zh_Hans_CN', 'LOC_POLICY_BREAD_AND_CIRCUSES_DESCRIPTION',
 '每位 [ICON_Citizen] 公民将提供0.6点 [ICON_Culture] 文化值，但所有城市-1 [ICON_AMENITIES] 宜居度。');
