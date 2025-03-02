@@ -12,14 +12,15 @@
     <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
   </Dependencies>
   <InGameActions>
-    <!-- <UpdateDatabase id="test">
-      <File>test.sql</File>
-    </UpdateDatabase> -->
+
     <UpdateDatabase id="MapYieldUpdate">
       <File>MapYieldUpdate.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="GeneralUpdate">
       <File>GeneralUpdate.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="GreatPersonUpdate">
+      <File>GreatPersonUpdate.sql</File>
     </UpdateDatabase>
     <UpdateDatabase id="PoliciesUpdate">
       <File>PoliciesUpdate.sql</File>
@@ -42,6 +43,6 @@
     <File>PoliciesUpdate.sql</File>
     <File>DistrictsandBuilding.sql</File>
     <File>GovernerUpdate.sql</File>
-    <File>test.sql</File>
+    <File>GreatPersonUpdate.sql</File>
   </Files>
 </Mod>
