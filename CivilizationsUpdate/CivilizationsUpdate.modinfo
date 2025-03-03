@@ -29,6 +29,13 @@
   <InGameActions>
     <UpdateDatabase id="CivsBalance">
       <File>CivsBalance.sql</File>
+      <File>ChinaRework.sql</File>
+			<File>EgyptRework.sql</File>
+			<File>FranceRework.sql</File>
+			<File>GeorgiaRework.sql</File>
+			<File>IndonesiaRework.sql</File>
+			<File>PersiaRework.sql</File>
+			<File>PolandRework.sql</File>
     </UpdateDatabase>
 
     <UpdateText id="TEXT_CivsUpdate">
@@ -43,9 +50,14 @@
 
   <Files>
     <File>CivsBalance.sql</File>
-    
+    <File>ChinaRework.sql</File>
+    <File>EgyptRework.sql</File>
+    <File>FranceRework.sql</File>
+    <File>GeorgiaRework.sql</File>
+    <File>IndonesiaRework.sql</File>
+    <File>PersiaRework.sql</File>
+    <File>PolandRework.sql</File>
     <File>TEXT_CivsUpdate.sql</File>
-
     <File>CivsBalance.lua</File>
   </Files>
 </Mod>
