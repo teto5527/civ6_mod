@@ -1,6 +1,7 @@
 UPDATE GreatPersonIndividuals SET ActionEffectTextOverride = 'MIMAR_SINAN_DESCRIPTION_ZJ' WHERE GreatPersonIndividualType = 'GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
 
 UPDATE GreatPersonIndividuals SET ActionCharges = 2 WHERE GreatPersonIndividualType = 'GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
+UPDATE GreatPersonIndividuals SET ActionRequiresCompletedDistrictType = 'DISTRICT_INDUSTRIAL_ZONE' WHERE GreatPersonIndividualType = 'GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN';
 
 INSERT OR REPLACE INTO GreatPersonIndividualActionModifiers (GreatPersonIndividualType, ModifierId, AttachmentTargetType) VALUES
 ('GREAT_PERSON_INDIVIDUAL_MIMAR_SINAN', 'GREATPERSON_INDUSTRIAL_ZONE_ADJACENCY_AS_SCIENCE', 'GREAT_PERSON_ACTION_ATTACHMENT_TARGET_DISTRICT_IN_TILE');
