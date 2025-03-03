@@ -123,17 +123,6 @@ UPDATE Buildings
     SET Entertainment = 1 
     WHERE BuildingType = 'BUILDING_SEWER';
 
---military_engineer can build Dam, Canal, and Aqueduct faster
- UPDATE District_BuildChargeProductions SET PercentProductionPerCharge='35' WHERE UnitType='UNIT_MILITARY_ENGINEER';
-
---reduce DISTRICT_AQUEDUCT cost
--- UPDATE Districts
---     SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =18
---     WHERE DistrictType='DISTRICT_AQUEDUCT';
--- UPDATE Districts
---     SET CostProgressionModel ='COST_PROGRESSION_PREVIOUS_COPIES', CostProgressionParam1 =9
---     WHERE DistrictType='DISTRICT_BATH';
-
 --Dam cost reduce
 UPDATE Districts SET Cost = 36 WHERE DistrictType='DISTRICT_DAM';
 

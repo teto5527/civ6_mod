@@ -183,7 +183,11 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('TECH_SAILING_SCOUT_EMBARK', 'UnitType', 'UNIT_SCOUT');
 
 --MILITARY_ENGINEER buff
-UPDATE Units SET BaseMoves='3', Cost='100', Description='LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION_ZJ', PrereqTech='TECH_ENGINEERING' WHERE UnitType='UNIT_MILITARY_ENGINEER';
+UPDATE Units SET Description = 'LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION_ZJ' WHERE UnitType = 'UNIT_MILITARY_ENGINEER';
+UPDATE Units SET BuildCharges = 4 WHERE UnitType = 'UNIT_MILITARY_ENGINEER';
+--military_engineer can build Dam, Canal, and Aqueduct faster
+UPDATE District_BuildChargeProductions SET PercentProductionPerCharge = '25' WHERE UnitType = 'UNIT_MILITARY_ENGINEER';
+
 INSERT OR REPLACE INTO Unit_BuildingPrereqs (Unit, PrereqBuilding, NumSupported) VALUES 
 ('UNIT_MILITARY_ENGINEER', 'BUILDING_BARRACKS', -1),
 ('UNIT_MILITARY_ENGINEER', 'BUILDING_STABLE', -1);
