@@ -16,4 +16,4 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_LINCOLN_DESCRIPTION_ZJ',
 'Builds Industrial Zone districts and its buildings in half the time. Industrial Zones give +3 Loyalty per turn, +2 [ICON_Housing] housing, and +2 [ICON_Amenities] Amenity but your Plantations give -2 Loyalty per turn. Receive a free Melee unit after constructing Industrial Zones and their buildings. The free unit does not require resources when created or to maintain and recevices +5 [ICON_Strength] Combat Strength.'),
 ('LOC_TRAIT_LEADER_QIN_DESCRIPTION_ZJ',
-'Each time you change government, [ICON_Science] Science and [ICON_Culture] Culture output increase by 1%. And triggers the [ICON_TECHBOOSTED] Eureka moment for a technologies and the [ICON_CIVICBOOSTED] Inspiration moment a civic from the current era.');
+'Each time you change government, Your cities [ICON_Science] Science and [ICON_Culture] Culture output increase by 1%. And triggers the [ICON_TECHBOOSTED] Eureka moment for a technologies and the [ICON_CIVICBOOSTED] Inspiration moment a civic from the current era.');
