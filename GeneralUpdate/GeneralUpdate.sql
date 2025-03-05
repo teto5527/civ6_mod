@@ -69,7 +69,7 @@ UPDATE Improvements SET MinimumAppeal = 3 WHERE ImprovementType = 'IMPROVEMENT_B
 --More Boost
 INSERT OR REPLACE INTO Boosts(BoostID, TechnologyType, CivicType, Boost, TriggerDescription, TriggerLongDescription, Unit1Type, BoostClass, BuildingType, NumItems, BoostingTechType, BoostingCivicType) VALUES
 (91, 'TECH_STEEL', NULL, 40, 'LOC_BOOST_TRIGGER_STEEL_ZJ', 'LOC_BOOST_TRIGGER_LONGDESC_STEEL_ZJ', NULL, 'BOOST_TRIGGER_HAVE_X_BUILDINGS', 'BUILDING_STAR_FORT', 3, NULL, NULL),
-(127, NULL, 'CIVIC_IDEOLOGY', 90, 'LOC_BOOST_TRIGGER_IDEOLOGY_ZJ', 'LOC_BOOST_TRIGGER_LONGDESC_IDEOLOGY_ZJ', NULL, 'BOOST_TRIGGER_EMPIRE_POPULATION', NULL, 60, NULL, NULL);
+(127, NULL, 'CIVIC_IDEOLOGY', 40, 'LOC_BOOST_TRIGGER_IDEOLOGY_ZJ', 'LOC_BOOST_TRIGGER_LONGDESC_IDEOLOGY_ZJ', NULL, 'BOOST_TRIGGER_EMPIRE_POPULATION', NULL, 60, NULL, NULL);
 
 --LV 4 GOVERNMENT cost more
 UPDATE Civics SET Cost = 6200 WHERE CivicType='CIVIC_DIGITAL_DEMOCRACY';
@@ -87,8 +87,8 @@ insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType
 insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType, NumSlots) values
 ('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_MILITARY', 1),
 ('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_ECONOMIC', 1),
-('GOVERNMENT_MERCHANT_REPUBLIC',	'SLOT_DIPLOMATIC', 1),
-('GOVERNMENT_MERCHANT_REPUBLIC',	'SLOT_WILDCARD', 3);
+('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_DIPLOMATIC', 1),
+('GOVERNMENT_MERCHANT_REPUBLIC', 'SLOT_WILDCARD', 3);
 
 --Communism slots change to 2411 (from 3311)
 insert or replace into Government_SlotCounts (GovernmentType, GovernmentSlotType, NumSlots) values

@@ -41,7 +41,8 @@ INSERT OR REPLACE INTO Building_CitizenYieldChanges (BuildingType, YieldType, Yi
 ('BUILDING_ELECTRONICS_FACTORY', 'YIELD_PRODUCTION', '1'),
 ('BUILDING_FACTORY', 'YIELD_PRODUCTION', '1');
 
---BUILDING_FACTORY COST REDUCED
+--Industrial zone Buildings COST REDUCED
+UPDATE Buildings SET Cost=160 WHERE BuildingType='BUILDING_WORKSHOP';
 UPDATE Buildings SET Cost=300 WHERE BuildingType='BUILDING_FACTORY';
 UPDATE Buildings SET Cost=300 WHERE BuildingType='BUILDING_ELECTRONICS_FACTORY';
 
@@ -82,7 +83,7 @@ INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
 ('AIRPORT_DOUBLE_NATIONAL_PARK_TOURISM', 'MODIFIER_SINGLE_CITY_ADJUST_NATIONAL_PARK_TOURISM', 0, 0, 0, NULL, NULL),
 ('AIRPORT_DOUBLE_IMPROVEMENT_TOURISM', 'MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_TOURISM', 0, 0, 0, NULL, NULL),
-('AIRPORT_DOUBLE_WONDER_TOURISM', 'MODIFIER_PLAYER_CITIES_ADJUST_TOURISM', 0, 0, 0, NULL, NULL);
+('AIRPORT_DOUBLE_WONDER_TOURISM', 'MODIFIER_SINGLE_CITY_ADJUST_TOURISM', 0, 0, 0, NULL, NULL);
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
 ('AIRPORT_DOUBLE_NATIONAL_PARK_TOURISM', 'Amount', '100'),
@@ -91,7 +92,7 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('AIRPORT_DOUBLE_WONDER_TOURISM', 'Amount', '200');
 
 --SHOPPING MALL TOURISM From 4
-UPDATE ModifierArguments SET Value = 20 WHERE BuildingType = 'SHOPPING_MALL_TOURISM';
+-- UPDATE ModifierArguments SET Value = 20 WHERE BuildingType = 'SHOPPING_MALL_TOURISM';
 
 --Water Mill: farm buid on resouce gain +1 Food, pasture +1 production and no longer needs to adjacent to a River
 UPDATE Buildings SET Description = 'LOC_BUILDING_WATER_MILL_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_WATER_MILL';
