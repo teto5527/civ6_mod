@@ -21,6 +21,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
 'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.'),
 
+('LOC_BELIEF_INITIATION_RITES_DESCRIPTION_ZJ',
+'Grant a relic when you founded a Religion.'),
+
 ('LOC_BELIEF_MAZU_WORSHIP_NAME',
 'Mazu Worship'),
 
