@@ -8,7 +8,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_TRAIT_LEADER_SEJONG_DESCRIPTION_ZJ',
 '+2 [ICON_Science] Science and +2 [ICON_Culture] Culture from each [ICON_GREATWORK_WRITING] Great Work of Writing. Library provide +1 [ICON_GREATWRITER] Great Writer point. Library +1 slot for [ICON_GREATWORK_WRITING] Great Work of Writing.'),
 ('LOC_TRAIT_LEADER_SUNDIATA_KEITA_DESCRIPTION_ZJ',
-'+2 [ICON_Science] Science (Every time enter Gold Ages or every building in the market of [ICON_TRADEROUTE] Trade Routes start city will increase the number by 2) from international [ICON_TRADEROUTE] Trade Routes.'),
+'+2 [ICON_Science] Science (Every time enter Gold Ages or every building in the Commercial Hub of [ICON_TRADEROUTE] Trade Routes start city will increase the number by 2) from international [ICON_TRADEROUTE] Trade Routes.'),
 ('LOC_TRAIT_LEADER_TOKUGAWA_DESCRIPTION_ZJ',
 "Builds Government Plaza districts and its buildings in half the time. City with Government Plaza can build an extra district. International [ICON_TRADEROUTE] Trade Routes receive -25% yields and Tourism [ICON_Tourism] Tourism, but domestic [ICON_TRADEROUTE] Trade Routes gain +1 [ICON_Culture] Culture, +1 [ICON_Science] Science, and +3 [ICON_Gold] Gold for every specialty district at the destination. Cities within 6 tiles of Japan's [ICON_Capital] Capital are 100% loyal and, after researching Flight, gain +1 [ICON_Tourism] Tourism for every specialty district."),
 ('LOC_TRAIT_LEADER_NADER_SHAH_DESCRIPTION_ZJ',
