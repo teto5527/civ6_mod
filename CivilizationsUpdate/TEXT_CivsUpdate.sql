@@ -59,9 +59,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_CAMPUS_FAITH',
 '+{1_num} [ICON_FAITH] Faith from an adjacent Campus district.'),
 
-('LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ',
-'[ICON_TECHBOOSTED] Eurekas provide all of the [ICON_SCIENCE] Science for technologies. -50% [ICON_SCIENCE] Science per turn. [ICON_GREATSCIENTIST] Great Scientist cannot be earned.'),
-
 ('LOC_DISTRICT_HANSA_GOLD_ZJ', --Germany
 '+{1_num} [ICON_Gold] Gold from the adjacent Hansa {1_Num : plural 1?tile; other?district;}.'),
 
@@ -87,6 +84,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'A district unique to Zulu which replaces the Encampment. Provides +1 [ICON_Housing] Housing. Once the Civic or Technology prerequisite is met, Corps and Armies can be built outright. Buildings in the Ikanda receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture. Faster Corps and Army creation.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Rework
+('LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION_ZJ', --Babylon
+'Begin the game with every [ICON_TECHBOOSTED] Eurekas.'),
+
 ('LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION_ZJ', --China
 '[ICON_TECHBOOSTED] Eurekas and [ICON_CIVICBOOSTED] Inspirations provide 50% of civics and technologies instead of 40%. Builders receive an additional charge.'),
 ('LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION_ZJ',
@@ -135,4 +135,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Rework
 ('LOC_TRAIT_CIVILIZATION_GOLDEN_AGE_QUESTS_DESCRIPTION_ZJ', --Georgia
 'When making Dedications at the beginning of a Golden Age or Heroic Age, receive the Normal Age bonus towards improving Era Score in addition to the other bonus. All the cities you build will grant the highest level wall.'),
 ('LOC_BUILDING_TSIKHE_DESCRIPTION_XP2_ZJ',
-'A building unique to Georgia. Higher outer defenses than Renaissance Walls. Provides +3 [ICON_Tourism] Tourism after advancing to the Conservation Civic. Provides +4 [ICON_Faith] Faith, +1 [ICON_Culture] Culture. When in a Golden Age the [ICON_Tourism] Tourism, [ICON_Faith] Faith and [ICON_Culture] Culture are +100%.');
+'A building unique to Georgia. Higher outer defenses than Renaissance Walls. Provides +3 [ICON_Tourism] Tourism after advancing to the Conservation Civic. Provides +4 [ICON_Faith] Faith, +1 [ICON_Culture] Culture. When in a Golden Age the [ICON_Tourism] Tourism, [ICON_Faith] Faith and [ICON_Culture] Culture are +100%.'),
+
+('LOC_DISTRICT_LAVRA_DESCRIPTION_ZJ', --Russia
+'A district unique to Russia for religious activity. Replaces the Holy Site district and cheaper to build. [NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is expended in this city. The Lavra provides +1 [ICON_GREATWRITER] Great Writer point per turn with a Temple, +1 [ICON_GREATARTIST] Great Artist point per turn with a Worship building.');

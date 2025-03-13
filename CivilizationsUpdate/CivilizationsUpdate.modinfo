@@ -29,6 +29,7 @@
   <InGameActions>
     <UpdateDatabase id="CivsBalance">
       <File>CivsBalance.sql</File>
+      <File>BabylonRework.sql</File>
       <File>ChinaRework.sql</File>
 			<File>EgyptRework.sql</File>
 			<File>FranceRework.sql</File>
@@ -50,6 +51,7 @@
 
   <Files>
     <File>CivsBalance.sql</File>
+    <File>BabylonRework.sql</File>
     <File>ChinaRework.sql</File>
     <File>EgyptRework.sql</File>
     <File>FranceRework.sql</File>
