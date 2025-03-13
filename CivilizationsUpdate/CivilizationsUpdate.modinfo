@@ -37,6 +37,7 @@
 			<File>IndonesiaRework.sql</File>
 			<File>PersiaRework.sql</File>
 			<File>PolandRework.sql</File>
+      <File>RussiaRework.sql</File>
     </UpdateDatabase>
 
     <UpdateText id="TEXT_CivsUpdate">
@@ -59,6 +60,7 @@
     <File>IndonesiaRework.sql</File>
     <File>PersiaRework.sql</File>
     <File>PolandRework.sql</File>
+    <File>RussiaRework.sql</File>
     <File>TEXT_CivsUpdate.sql</File>
     <File>CivsBalance.lua</File>
   </Files>
