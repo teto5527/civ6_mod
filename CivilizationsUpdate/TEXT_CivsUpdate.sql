@@ -124,10 +124,13 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Rework
 'A building unique to Poland. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Commercial Hub district. International [ICON_TRADEROUTE] Trade Routes from this city gain +2 [ICON_Production] Production; domestic [ICON_TRADEROUTE] Trade Routes gain +4 [ICON_Gold] Gold. +1 [ICON_TRADEROUTE] Trade Route capacity, if this city does not yet have a Lighthouse building.'),
 
 ('LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION_ZJ', --France
-'+20% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is +100%. +15% [ICON_Culture] Culture in Cities for every Theater Square building in that city.'),
+'+20% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is +100%. +10% [ICON_Culture] Culture in Cities for every Theater Square building in that city.'),
 
 ('LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION_ZJ', --black queen
 'Has 1 level of [ICON_VISLIMITED] Diplomatic Visibility greater than normal with every civilization that she has met. Receives a free Spy (and extra spy capacity) with Castles technology. +2 sight range for spies and traders. All spies start with a free promotion.'),
+
+('LOC_TRAIT_LEADER_CATHERINE_DE_MEDICI_ALT_DESCRIPTION_ZJ', --Magnificence
+'Improved Luxury resources adjacent to Theater Square districts or Châteaux receive +2 [ICON_Culture] Culture. May initiate the Court Festival project in any city with a Theater Square district. Unlock Drama and Poetry Civic when Foreign Trade is discovered.'),
 
 ('LOC_TECH_CASTLES_DESCRIPTION_ZJ',
 'Bonus [ICON_Culture] Culture for the Great Wall improvement for adjacency.'),

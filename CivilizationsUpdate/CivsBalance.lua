@@ -7,12 +7,7 @@ function HasCivilizationTrait(civilizationType, traitType)
 	return false;
 end
 
-
-
-
-
-
-
+-------------------------------------------
 --Phoenicia
 local WRITING_PROGRESS = 0;
 local WRITING_INDEX = GameInfo.Technologies['TECH_WRITING'].Index;
@@ -52,31 +47,24 @@ function NetherlandsBuildingAddedToMap (playerId, cityID, buildingID, plotID, bO
 end
 GameEvents.BuildingConstructed.Add(NetherlandsBuildingAddedToMap);
 
---Aztec (version 2)
--- local GAMES_RECREATION_INDEX = GameInfo.Civics['CIVIC_GAMES_RECREATION'].Index;
--- local bAztecCivicGranted = false;
+--Medici (Magnificence): "civic_foreign_trade" unlock "civic_drama_poetry"
+local DRAMA_POETRY_INDEX = GameInfo.Civics['CIVIC_DRAMA_POETRY'].Index;
+local FOREIGN_TRADE_INDEX = GameInfo.Civics['CIVIC_FOREIGN_TRADE'].Index;
 
--- function AztecStartingCivic()
---     if bAztecCivicGranted then return end
-    
---     if Game.GetCurrentGameTurn() ~= GameConfiguration.GetStartTurn() then return end
-    
---     for _, player in ipairs(Players) do
---         if player and player:IsAlive() and player:IsMajor() then
---             local playerConfig = PlayerConfigurations[player:GetID()];
---             local civilization = playerConfig:GetCivilizationTypeName();
---             if HasCivilizationTrait(civilization, 'TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS') then
---                 if not player:GetCulture():HasCivic(GAMES_RECREATION_INDEX) then
---                     local cost = player:GetCulture():GetCultureCost(GAMES_RECREATION_INDEX);
---                     player:GetCulture():SetCulturalProgress(GAMES_RECREATION_INDEX, cost);
---                     bAztecCivicGranted = true;
---                 end
---             end
---         end
---     end
--- end
+function MediciCivicUnlock(playerId, civicIndex)
+	local player = Players[playerId];
+	local playerConfig = PlayerConfigurations[playerId];
+	if playerConfig:GetLeaderTypeName() == "LEADER_CATHERINE_DE_MEDICI_ALT" then
+		if civicIndex == FOREIGN_TRADE_INDEX then
+			if not player:GetCulture():HasCivic(DRAMA_POETRY_INDEX) then
+				local cost = player:GetCulture():GetCultureCost(DRAMA_POETRY_INDEX);
+				player:GetCulture():SetCulturalProgress(DRAMA_POETRY_INDEX, cost);
+			end
+		end
+	end
+end
 
--- GameEvents.OnGameTurnStarted.Add(AztecStartingCivic);
+Events.CivicCompleted.Add(MediciCivicUnlock);
 
 --Cree
 function OnGoodyHutReward(playerId, unitId, type, subType)
