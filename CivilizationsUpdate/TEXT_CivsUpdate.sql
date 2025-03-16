@@ -77,9 +77,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_BUILDING_STAVE_CHURCH_DESCRIPTION_ZJ', --Norway
 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get an additional standard adjacency bonus from Woods. +1 [ICON_Production] Production to each coastal resource tile in this city. Once Flight is researched receive +10 [ICON_Tourism] Tourism if Holy Site has at least +4 adjacency bonus, and +20 [ICON_Tourism] Tourism if Holy Site has at least +8 adjacency bonus.'),
 
-('LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION_ZJ', --Cree
-'+1 [ICON_TRADEROUTE] Trade Route capacity and a free Trader with the Pottery technology. Unclaimed tiles within 3 tiles of a Cree city come under Cree control when a Trader first moves into them. +50 [ICON_Gold] Gold from goodyhunt.'),
-
 ('LOC_DISTRICT_IKANDA_DESCRIPTION_ZJ', --Zulu
 'A district unique to Zulu which replaces the Encampment. Provides +1 [ICON_Housing] Housing. Once the Civic or Technology prerequisite is met, Corps and Armies can be built outright. Buildings in the Ikanda receive +2 [ICON_Gold] Gold and +1 [ICON_Culture] Culture. Faster Corps and Army creation.');
 

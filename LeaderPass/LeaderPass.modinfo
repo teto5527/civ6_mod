@@ -22,14 +22,16 @@
     <UpdateDatabase id="LeaderPass">
       <File>LeaderPass.sql</File>
     </UpdateDatabase>
+    <AddGameplayScripts id="LUA_LeaderPass">
+			<File>LeaderPass.lua</File>
+		</AddGameplayScripts>
     <UpdateText id="TextLeaderPass">
       <File>TEXT_LeaderPass.sql</File>
     </UpdateText>
   </InGameActions>
   <Files>
-    <File>TEXT_LeaderPass.sql</File>
-    <File>Saesar.sql</File>
     <File>LeaderPass.sql</File>
     <File>LeaderPass.lua</File>
+    <File>TEXT_LeaderPass.sql</File>
   </Files>
 </Mod>

@@ -65,18 +65,3 @@ function MediciCivicUnlock(playerId, civicIndex)
 end
 
 Events.CivicCompleted.Add(MediciCivicUnlock);
-
---Cree
-function OnGoodyHutReward(playerId, unitId, type, subType)
-    if playerId ~= Game.GetLocalPlayer() then
-        return;
-    end
-    local player = Players[playerId];
-    local playerConfig = PlayerConfigurations[playerId];
-	local civilization = playerConfig:GetCivilizationTypeName();
-    if HasCivilizationTrait(civilization, 'CIVILIZATION_CREE') then
-        player:GetTreasury():ChangeGoldBalance(50);
-    end
-end
-
-Events.GoodyHutReward.Add(OnGoodyHutReward);
