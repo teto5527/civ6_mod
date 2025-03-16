@@ -12,7 +12,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Non capital cities within 6 tiles of the [ICON_CAPITAL] Capital gain +20% to all yields. Other non capital cities receive -20% to all yields. +7 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_CAPITAL] Capital.'),
 
 ('LOC_LEADER_ELEANOR_LOYALTY_DESCRIPTION_ZJ', -- Eleanor of Aquitaine
-"Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. Grant Drama and poetry civic when player unlock thier first civic. One Economic policy slot in the current government is converted to a Wildcard slot."),
+"Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. Completing a Theater trigger Culture Bomb. One Economic policy slot in the current government is converted to a Wildcard slot."),
 
 ('LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION_ZJ', -- Kublai Khan
 'One extra Economic policy slot in any government. Receive a random [ICON_CIVICBOOSTED] Eureka and [ICON_TECHBOOSTED] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilizations city for the first time. Encampment +1 [ICON_TRADEROUTE] Trade Route capacity. Each Encampment in your empire make the outgoing international [ICON_TRADEROUTE] Trade Routes +3 [ICON_Gold] Gold.'),
