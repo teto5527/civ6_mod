@@ -71,7 +71,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES -- District and Buildings
 '+{1_num} [ICON_Gold] Gold from the adjacent Aerodrome {1_Num : plural 1?tile; other?district;}.'),
 
 ('LOC_BUILDING_GOV_TALL_DESCRIPTION_ZJ',
-'All cities +80% yield, but every additional city will decrease this number by 20%. All cities +3 [ICON_HOUSING] Housing. [NEWLINE]Awards +1 [ICON_GOVERNOR] Governor Title.'),
+'Your cities gain +40% yield, but this bonus decreases by 10% for each additional city (down to a minimum of 0%). All cities +1 [ICON_HOUSING] Housing. [NEWLINE]Awards +1 [ICON_GOVERNOR] Governor Title.'),
 
 ('LOC_BUILDING_GROVE_DESCRIPTION_ZJ',
 'Grants +1 [ICON_FOOD] Food and +1 [ICON_FAITH] Faith to adjacent unimproved Charming tiles. Increased to +2 [ICON_FOOD] Food, +2 [ICON_FAITH] Faith, +2 [ICON_Culture] Culture for adjacent unimproved Breathtaking tiles, and half yield to adjacent Water tiles.'),
