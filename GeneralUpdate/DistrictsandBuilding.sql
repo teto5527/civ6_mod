@@ -211,11 +211,6 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('CHANCERY_ALLIANCE_POINTS', 'Amount', '1');
 
 
---reduce DISTRICT_SPACEPORT cost
-UPDATE Districts
-    SET Cost =900
-    WHERE DistrictType='DISTRICT_SPACEPORT';
-
 
 --Preserve
 --========================================================================

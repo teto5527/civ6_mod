@@ -52,7 +52,13 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Technologies
 'Most Unique Improvements can build on floodplains.'),
 
 ('LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ',
-"Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Food] Food as well.");
+"Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Food] Food as well."),
+
+('LOC_TECH_TELECOMMUNICATIONS_DESCRIPTION_ZJ',
+'Grants +100% [ICON_Production] Production towards the Spaceport district.'),
+
+('LOC_TECH_NANOTECHNOLOGY_DESCRIPTION_ZJ',
+'Grants +100% [ICON_Production] Production towards the Spaceport district.');
 
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES -- District and Buildings
 ('LOC_DISTRICT_CULTURE_CITY_CENTER_MAJOR_ZJ',
