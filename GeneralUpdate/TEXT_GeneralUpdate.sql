@@ -30,6 +30,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Govs
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Technologies
 ('LOC_TECH_SAILING_DESCRIPTION_ZJ',
 'Allows Builders and Scouts to embark.'),
+
 ('LOC_TECH_IRRIGATION_DESCRIPTION_ZJ',
 'Allows clearing and farming of Marsh, and harvesting of [ICON_RESOURCE_Bananas] Bananas.'),
 
@@ -42,14 +43,17 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Technologies
 ('LOC_TECH_MINING_DESCRIPTION_ZJ',
 'Allows chopping of Woods, and harvesting of [ICON_RESOURCE_Copper] Copper.'),
 
-('LOC_CIVIC_COLONIALISM_DESCRIPTION_ZJ',
-'The Fishing Boats improvement receives +2 [ICON_Production] Production.'),
-
 ('LOC_TECH_CELESTIAL_NAVIGATION_DESCRIPTION_ZJ',
 'Allows Traders to embark, and allows harvesting of [ICON_RESOURCE_Fish] Fish and [ICON_RESOURCE_Crabs] Crabs. Fishing Boats improvements receive +1 [ICON_GOLD] Gold.'),
 
 ('LOC_TECH_BUTTRESS_DESCRIPTION_ZJ',
 'Most Unique Improvements can build on floodplains.'),
+
+('LOC_BOOST_TRIGGER_STEEL_ZJ',
+'Build 3 Renaissance Walls.'),
+
+('LOC_BOOST_TRIGGER_LONGDESC_STEEL_ZJ',
+'Behind towering walls, your people seek not just defense, but the strength to forge an unbreakable future.'),
 
 ('LOC_TECH_CHEMISTRY_DESCRIPTION_ZJ',
 "Industrial Zone district's [ICON_Production] Production adjacency bonus provides [ICON_Food] Food as well."),
@@ -107,14 +111,11 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Civics
 ('LOC_DISTRICT_CANAL_GOLD_ZJ',
 '+2 [ICON_Gold] Gold from the adjacent Canal.'),
 
-('LOC_BOOST_TRIGGER_STEEL_ZJ',
-'Build 3 Renaissance Walls.'),
-
-('LOC_BOOST_TRIGGER_LONGDESC_STEEL_ZJ',
-'Behind towering walls, your people seek not just defense, but the strength to forge an unbreakable future.'),
+('LOC_CIVIC_COLONIALISM_DESCRIPTION_ZJ',
+'The Fishing Boats improvement receives +2 [ICON_Production] Production.'),
 
 ('LOC_BOOST_TRIGGER_IDEOLOGY_ZJ',
-'Grow your civilization to at least 60 population.'),
+'Grow your civilization to at least 80 population.'),
 
 ('LOC_BOOST_TRIGGER_LONGDESC_IDEOLOGY_ZJ',
 'As society advances and cultures evolve, the people stand at a crossroads — what path will they choose?');
