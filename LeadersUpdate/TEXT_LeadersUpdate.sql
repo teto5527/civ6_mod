@@ -15,7 +15,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 "Great Works in Eleanor's cities each cause -1 Loyalty per turn in foreign cities within 9 tiles. A city that leaves another civilization due to a loss of Loyalty and is currently receiving the most Loyalty per turn from Eleanor's civilization skips the Free City step to join this civilization. +15% [ICON_Culture] Culture in Cities for every Theater Square building in that city."),
 
 ('LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION_ZJ', -- Kublai Khan
-'One extra Economic policy slot in any government. Receive a random [ICON_CIVICBOOSTED] Eureka and [ICON_TECHBOOSTED] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilizations city for the first time. Encampment +1 [ICON_TRADEROUTE] Trade Route capacity. Each Encampment in your empire make the outgoing international [ICON_TRADEROUTE] Trade Routes +3 [ICON_Gold] Gold.'),
+"One extra Economic policy slot in any government. Receive a random [ICON_CIVICBOOSTED] Eureka and [ICON_TECHBOOSTED] Inspiration when establishing a [ICON_TradingPost] Trading Post in another Civilizations city for the first time. The first Encampment grants +1 [ICON_TRADEROUTE] Trade Route capacity. Each Encampment in your empire provides outgoing [ICON_TRADEROUTE] Trade Routes with +3 [ICON_Gold] Gold if international, or +2 [ICON_Gold] Gold if domestic."),
 
 ('LOC_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ', -- Saladin
 "Automatically receive the final [ICON_GREATPROPHET] Great Prophet when the next-to-last one is claimed (if you have not earned a [ICON_GREATPROPHET] Great Prophet already). +1 [ICON_Science] Science for each foreign city following Arabia's Religion. Holy Site give Culture Bomb.");
