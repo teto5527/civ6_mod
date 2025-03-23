@@ -49,8 +49,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 
 ('LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION_ZJ', --Ottoman
 '+50% [ICON_Production] Production toward siege units. All siege units gain +5 [ICON_STRENGTH] Combat Strength against district defenses. Conquered cities do not lose [ICON_CITIZEN] Population. Cities not founded by the Ottomans gain +1 [ICON_AMENITIES] Amenity and +4 Loyalty per turn. Exclusive unique Governor with military and diplomatic abilities.'),
-('LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION_ZJ',
-'Gain the Janissary unique unit and a [ICON_GOVERNOR] Governor Title when the Gunpowder technology is researched.'),
 
 ('LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION_ZJ', --Arabia
 "Automatically receive the final [ICON_GreatProphet] Great Prophet when the next-to-last one is claimed (if you have not earned a [ICON_GreatProphet] Great Prophet already). +1 [ICON_Science] Science for each foreign city following Arabia's Religion. Campuses and Holy Sites receive a standard adjacency bonus from each other."),
@@ -73,6 +71,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 
 ('LOC_CIVILIZATION_PEARL_DANUBE_DESCRIPTION_ZJ', --Hungary
 '+50% [ICON_Production] Production to Districts and Buildings constructed across a river from a City Center. The city build on Geothermal Fissure +2 [ICON_Food] Food , +2 [ICON_Production] Production, +1 [ICON_Housing] Housing. Constructs the first Sukiennice grant a free trader.'),
+
+('LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION_ZJ', --Mongolia
+'The first Encampment grants +1 [ICON_TRADEROUTE] Trade Route capacity. Starting a [ICON_TRADEROUTE] Trade Route immediately creates a [ICON_TRADINGPOST] Trading Post in the destination city. Receive an extra level of [ICON_VISLIMITED] Diplomatic Visibility for possessing a [ICON_TRADINGPOST] Trading Post in any city of a civilization. All Mongolian units double the usual [ICON_STRENGTH] Combat Bonus for having a higher level of [ICON_VISLIMITED] Diplomatic Visibility than their opponent.'),
 
 ('LOC_BUILDING_STAVE_CHURCH_DESCRIPTION_ZJ', --Norway
 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get an additional standard adjacency bonus from Woods. +1 [ICON_Production] Production to each coastal resource tile in this city. Once Flight is researched receive +10 [ICON_Tourism] Tourism if Holy Site has at least +4 adjacency bonus, and +20 [ICON_Tourism] Tourism if Holy Site has at least +8 adjacency bonus.'),

@@ -1,7 +1,7 @@
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_SUKIENNICE', 'YIELD_PRODUCTION', '2');
 
---varsion 1: faith
+--varsion 1: UB yield faith
 -- UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_V1_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY';
 -- UPDATE Buildings SET Description = 'LOC_BUILDING_SUKIENNICE_DESCRIPTION_ZJ' WHERE BuildingType='BUILDING_SUKIENNICE';
 
@@ -18,7 +18,7 @@ INSERT INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES
 -- ('TRAIT_GOLDEN_LIBERTY_PURCHASE_CIVILIAN', 'Tag', 'CLASS_LANDCIVILIAN');
 
 
---varsion 2: Population
+--varsion 2: Cities on plant extra Population
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION_V2_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY';
 
 INSERT INTO TraitModifiers(TraitType, ModifierId) VALUES
