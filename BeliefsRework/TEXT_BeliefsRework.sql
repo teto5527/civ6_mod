@@ -1,7 +1,7 @@
 -- Language: en_US
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 ('LOC_BELIEF_STONE_CIRCLES_DESCRIPTION_ZJ',
-'+1 [ICON_CULTURE] Culture, +2 [ICON_FAITH] Faith from Quarries.'),
+'+1 [ICON_PRODUCTION] Production, +2 [ICON_FAITH] Faith from Quarries.'),
 
 ('LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION_ZJ',
 '+1 [ICON_SCIENCE] Science, +2 [ICON_FAITH] Faith from Geothermal Fissures and Volcanic Soil.'),
@@ -20,9 +20,6 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 
 ('LOC_BELIEF_FERTILITY_RITES_DESCRIPTION_ZJ',
 'When chosen receive a Builder in your capital. Builder +2 Movement if starting turn in friendly territory. City growth rate is 10% higher.'),
-
-('LOC_BELIEF_INITIATION_RITES_DESCRIPTION_ZJ',
-'Grant a relic when you founded a Religion.'),
 
 ('LOC_BELIEF_MAZU_WORSHIP_NAME',
 'Mazu Worship'),
