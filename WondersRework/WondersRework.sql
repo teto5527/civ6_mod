@@ -33,10 +33,10 @@ from Buildings a, Features b where
 	a.BuildingType in ('BUILDING_GREAT_ZIMBABWE', 'BUILDING_BIOSPHERE', 'BUILDING_ANGKOR_WAT') and
 	b.FeatureType='FEATURE_JUNGLE';
 
---2.Wonders provides 1 Entertainment
+--2.Wonders provides Entertainment yield more Entertainment
 UPDATE Buildings 
-    SET Entertainment=Entertainment+1 
-    WHERE IsWonder=1;
+    SET Entertainment = Entertainment + 1 
+    WHERE Entertainment >= 1 AND IsWonder = 1;
 
 --3.machu picchu change to +2 food
 insert or replace into Building_YieldChanges (BuildingType, YieldType, YieldChange) values
