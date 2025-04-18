@@ -71,6 +71,10 @@ INSERT OR REPLACE INTO Boosts(BoostID, TechnologyType, CivicType, Boost, Trigger
 (91, 'TECH_STEEL', NULL, 40, 'LOC_BOOST_TRIGGER_STEEL_ZJ', 'LOC_BOOST_TRIGGER_LONGDESC_STEEL_ZJ', NULL, 'BOOST_TRIGGER_HAVE_X_BUILDINGS', 'BUILDING_STAR_FORT', 3, NULL, NULL),
 (127, NULL, 'CIVIC_IDEOLOGY', 40, 'LOC_BOOST_TRIGGER_IDEOLOGY_ZJ', 'LOC_BOOST_TRIGGER_LONGDESC_IDEOLOGY_ZJ', NULL, 'BOOST_TRIGGER_EMPIRE_POPULATION', NULL, 80, NULL, NULL);
 
+--Modern civics cost less, Atomic civics cost more
+UPDATE Civics SET Cost = ROUND(Cost / 5 * 0.9) * 5 WHERE EraType = 'ERA_MODERN';
+UPDATE Civics SET Cost = ROUND(Cost / 5 * 1.1) * 5 WHERE EraType = 'ERA_ATOMIC';
+
 --LV 4 GOVERNMENT cost more
 UPDATE Civics SET Cost = 6200 WHERE CivicType='CIVIC_DIGITAL_DEMOCRACY';
 UPDATE Civics SET Cost = 6200 WHERE CivicType='CIVIC_SYNTHETIC_TECHNOCRACY';
@@ -135,8 +139,8 @@ UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_C
 UPDATE ModifierArguments SET Value = '15' WHERE ModifierId = 'COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name = 'Amount';
 UPDATE ModifierArguments SET Value = '2' WHERE ModifierId = 'COMMEMORATION_CULTURAL_DISTRICTCULTURE' AND Name = 'Amount';
 
---Open borders gain more tourists
-UPDATE GlobalParameters SET Value = '50' WHERE Name='TOURISM_OPEN_BORDERS_BONUS';
+--Great work lock time reduce
+UPDATE GlobalParameters SET Value = '3' WHERE Name='GREATWORK_ART_LOCK_TIME';
 
 --More tourism from wonders
 UPDATE GlobalParameters SET Value = '5' WHERE Name = 'TOURISM_BASE_FROM_WONDER';
