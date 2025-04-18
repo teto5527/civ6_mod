@@ -157,3 +157,19 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('UNIVERSITY_SANKORE_TRAD_ROUTE_SCIENCE', 'YieldType', 'YIELD_SCIENCE'),
 ('UNIVERSITY_SANKORE_TRAD_ROUTE_FAITH', 'Amount', '1'),
 ('UNIVERSITY_SANKORE_TRAD_ROUTE_FAITH', 'YieldType', 'YIELD_FAITH');
+
+--Hermitage auto theme
+UPDATE Building_GreatWorks 
+SET ThemingUniquePerson = 1,
+    ThemingSameObjectType = 1,
+    ThemingYieldMultiplier = 100,
+    ThemingTourismMultiplier = 100,
+    ThemingBonusDescription = 'LOC_BUILDING_THEMINGBONUS_ART'
+WHERE BuildingType = 'BUILDING_HERMITAGE';
+
+INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+('BUILDING_HERMITAGE', 'HERMITAGE_AUTO_THEME');
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+('HERMITAGE_AUTO_THEME', 'MODIFIER_PLAYER_ADJUST_AUTO_THEMED_BUILDING', 0, 0, 0, NULL, NULL);
+INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
+('HERMITAGE_AUTO_THEME', 'BuildingType', 'BUILDING_HERMITAGE');

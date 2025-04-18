@@ -17,4 +17,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+1 [ICON_Movement] Movement for all naval units. Grant a lighthouse buidling in the city.[NEWLINE][NEWLINE]Must be built on the Coast, and adjacent to land and a Harbor district.'),
 
 ('LOC_BUILDING_UNIVERSITY_SANKORE_DESCRIPTION_ZJ',
-'+1 [ICON_Science] Science and +2 [ICON_Gold] Gold from [ICON_TRADEROUTE] Trade Routes, and +1 [ICON_Faith] Faith if it is domestic Trade Route.[NEWLINE][NEWLINE]Must be built on the Desert or Desert Hills, and adjacent to a Campus district with a University.');
+'+1 [ICON_Science] Science and +2 [ICON_Gold] Gold from [ICON_TRADEROUTE] Trade Routes, and +1 [ICON_Faith] Faith if it is domestic Trade Route.[NEWLINE][NEWLINE]Must be built on the Desert or Desert Hills, and adjacent to a Campus district with a University.'),
+
+('LOC_BUILDING_HERMITAGE_DESCRIPTION_ZJ',
+'Automatically themed when this wonder have all the slots filled.[NEWLINE][NEWLINE]Must be built along a River.');
