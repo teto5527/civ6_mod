@@ -31,7 +31,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 'Sweden gains 50 [ICON_FAVOR] Diplomatic Favor when earning a Great Person (on Standard Speed). Sweden receives +2 [ICON_GREATENGINEER] Great Engineer point from Factories, +2 [ICON_GREATARTIST] Great Artist point from Factories, and +2 [ICON_GREATSCIENTIST] Great Scientist point from Universities. Having Sweden in the game adds three unique World Congress competitions starting in the Industrial Era.'),
 
 ('LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION_ZJ', --Phoenicia
-'Meet two other civilization will unlock Writing Technologies. Receive 1 [ICON_ENVOY] Envoy every times you founded a coastal city (Exclude Capital City). Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.'),
+'Meeting a second civilization unlocks Writing Technologies. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal and Receive 1 [ICON_ENVOY] Envoy. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.'),
 
 ('LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION_ZJ', --Mali
 'City Centers gain +1 [ICON_Faith] Faith and +1 [ICON_Food] Food for every adjacent Desert and Desert Hills tiles. Mines receive -1 [ICON_Production] Production and +4 [ICON_Gold] Gold. May purchase Commercial Hub and Goverment Plaza district buildings with [ICON_Faith] Faith. -30% [ICON_Production] Production toward constructing buildings or training units.'),
@@ -90,19 +90,19 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Rework
 ('LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION_ZJ',
 'When building Ancient and Classical wonders you may spend Builder charges to complete 15% of the original wonder cost. When completing a wonder receive a random [ICON_TECHBOOSTED] Eureka and [ICON_CIVICBOOSTED] Inspiration from the era of the wonder, if available. Canals are unlocked with the Masonry technology.'),
 
-('LOC_DISTRICT_NUSANTARA_GOLD_ZJ', --Indonesia
-'+{1_num} [ICON_Gold] Gold from the adjacent Coast or Lake {1_Num : plural 1?tile; other?tiles;}.'),
-('LOC_CITY_CENTER_COAST_FAITH_ZJ',
-'+{1_num} [ICON_Faith] Faith from the adjacent Coast or Lake {1_Num : plural 1?tile; other?tiles;}.'),
-('LOC_CITY_CENTER_COAST_FOOD_ZJ',
-'+{1_num} [ICON_Food] Food from the adjacent Coast or Lake {1_Num : plural 1?tile; other?tiles;}.'),
-('LOC_CITY_CENTER_COAST_PRODUCTION_ZJ',
-'+{1_num} [ICON_Production] Production from the adjacent Coast or Reef {1_Num : plural 1?tile; other?tiles;}.'),
+('LOC_NUSANTARA_REEF_FAITH_ZJ', --Indonesia
+'+{1_num} [ICON_Faith] Faith from the adjacent Reef {1_Num : plural 1?tile; other?tiles;}(s).'),
+('LOC_NUSANTARA_REEF_SCIENCE_ZJ',
+'+{1_num} [ICON_Science] Science from the adjacent Reef {1_Num : plural 1?tile; other?tiles;}(s).'),
+('LOC_NUSANTARA_REEF_PRODUCTION_ZJ',
+'+{1_num} [ICON_Production] Production from the adjacent Reef {1_Num : plural 1?tile; other?tiles;}(s).'),
+('LOC_NUSANTARA_REEF_CULTURE_ZJ',
+'+{1_num} [ICON_Culture] Culture from the adjacent Reef {1_Num : plural 1?tile; other?tiles;}(s).'),
 
 ('LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION_ZJ',
-'Coast and Lake tiles provide a standard adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +1 [ICON_Amenities] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile. Celestial Navigation technologies will unlock Shipbuilding technologie.'),
+'Coast and Lake tiles provide a minor adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. These districts receive an additional standard adjacency bonus from Reef. +1 [ICON_Amenities] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile.'),
 ('LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION_ZJ',
-'Naval units can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. City Centers gain +1 [ICON_Food] Food for every adjacent Coast and Lake tiles, +2 [ICON_Production] Production for every adjacent reef.'),
+'Naval units and Harbor buildings can be purchased with [ICON_Faith] Faith. Religious units pay no movement to embark or disembark. +2 [ICON_Faith] Faith to City Centers that are adjacent to Coast or Lake tiles. Districts on or next to Coast or Lake tiles provide +2 [ICON_Faith] Faith.'),
 
 ('LOC_IMPROVEMENT_SPHINX_DESCRIPTION_ZJ', --Egypt
 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith and +2 [ICON_Culture] Culture. +2 Appeal. +2 [ICON_Faith] Faith and +1 [ICON_Culture] Culture if next to a wonder. +1 [ICON_Culture] Culture if built on Floodplains. Additional 2 [ICON_Culture] Culture once Natural History is discovered. Provides [ICON_Tourism] Tourism after researching Flight. Cannot be built next to another Sphinx. Cannot be built on Snow or Snow Hills.'),
