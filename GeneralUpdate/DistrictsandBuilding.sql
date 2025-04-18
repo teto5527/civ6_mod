@@ -17,7 +17,8 @@ UPDATE Districts SET Description = 'LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTIO
 INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_LIGHTHOUSE', 'YIELD_PRODUCTION', '1');
 
---Bank yiled more gold
+--Bank
+--Yiled more gold
 UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_BANK' AND YieldType = 'YIELD_GOLD';
 
 UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_GRAND_BAZAAR' AND YieldType = 'YIELD_GOLD'
@@ -25,6 +26,15 @@ AND EXISTS (SELECT 1 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_G
 
 UPDATE Building_YieldChanges SET YieldChange = 7 WHERE BuildingType = 'BUILDING_GILDED_VAULT' AND YieldType = 'YIELD_GOLD'
 AND EXISTS (SELECT 1 FROM Building_YieldChanges WHERE BuildingType = 'BUILDING_GILDED_VAULT');
+
+--Extra trade route if city has harbor
+-- INSERT OR REPLACE INTO BuildingModifiers (BuildingType, ModifierId) VALUES
+-- ('BUILDING_BANK', 'BUILDING_GILDED_VAULT_TRADE_ROUTE_CAPACITY');
+
+-- INSERT OR IGNORE INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
+-- ('BUILDING_GILDED_VAULT_TRADE_ROUTE_CAPACITY', 'MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY', 0, 0, 0, NULL, 'THIS_CITY_HAS_HARBOR');
+-- INSERT OR IGNORE INTO ModifierArguments (ModifierId, Name, Value) VALUES
+-- ('BUILDING_GILDED_VAULT_TRADE_ROUTE_CAPACITY', 'Amount', '1');
 
 --Industrial zone
 --more citizen slots
@@ -212,7 +222,23 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 
 
 
---Preserve
+-- Preserve
+UPDATE Districts 
+SET CostProgressionModel = 'COST_PROGRESSION_NUM_UNDER_AVG_PLUS_TECH' 
+WHERE DistrictType = 'DISTRICT_PRESERVE';
+
+UPDATE Districts 
+SET CostProgressionParam1 = 40 
+WHERE DistrictType = 'DISTRICT_PRESERVE';
+
+UPDATE Districts 
+SET CityStrengthModifier = 2 
+WHERE DistrictType = 'DISTRICT_PRESERVE';
+
+INSERT INTO District_TradeRouteYields(DistrictType, YieldType, YieldChangeAsDomesticDestination, YieldChangeAsInternationalDestination) VALUES
+('DISTRICT_PRESERVE', 'YIELD_FOOD', 1, 0),
+('DISTRICT_PRESERVE', 'YIELD_FAITH', 0, 1);
+
 --========================================================================
 -- To grant the yields to Water tiles, we'll have to use the Modifier system.
 --========================================================================
