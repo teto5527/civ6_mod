@@ -47,6 +47,7 @@ INSERT INTO RequirementArguments (RequirementId, Name, Value) VALUES
 
 --resources more Placement
 UPDATE Resources SET Frequency = '12' WHERE ResourceType = 'RESOURCE_STONE';
+UPDATE Resources SET Frequency = '30' WHERE ResourceType = 'RESOURCE_FISH'; --from 23
 
 INSERT INTO Resource_ValidFeatures(ResourceType, FeatureType) VALUES
 ('RESOURCE_COPPER', 'FEATURE_JUNGLE'),
