@@ -159,6 +159,8 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES
 ('UNIVERSITY_SANKORE_TRAD_ROUTE_FAITH', 'YieldType', 'YIELD_FAITH');
 
 --Hermitage auto theme
+UPDATE Buildings SET Description = 'LOC_BUILDING_HERMITAGE_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_HERMITAGE';
+
 UPDATE Building_GreatWorks 
 SET ThemingUniquePerson = 1,
     ThemingSameObjectType = 1,
