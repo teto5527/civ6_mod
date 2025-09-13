@@ -1,5 +1,10 @@
 -- Language: en_US
 INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
+('LOC_DISTRICT_PRODUCTION_ENCAMPMENT_TO_HANSA_ZJ', --Germany
+'+{1_Num} [ICON_Production] Production from adjacent Encampment district'),
+('LOC_DISTRICT_GOLD_HANSA_TO_COMMERCIAL_HUB_ZJ',
+'+{1_Num} [ICON_Gold] Gold from adjacent Hansa district'),
+
 ('LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION_ZJ', --Sumeria
 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+2 [ICON_Science] Science. Additional 1 [ICON_Culture] Culture if next to River. Cannot be built on Hills but may be built on Floodplains. Additional 1 [ICON_Culture] Culture and +1 [ICON_Science] Science once Education is discovered.'),
 ('LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION_ZJ',

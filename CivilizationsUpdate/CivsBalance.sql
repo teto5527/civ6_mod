@@ -3,6 +3,15 @@
 -- DateCreated: 4/30/2022 12:33:31 PM
 --------------------------------------------------------------
 
+--Germany
+INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
+('DISTRICT_HANSA', 'District_Production_Encampment_to_Hansa'),
+('DISTRICT_COMMERCIAL_HUB', 'District_Gold_Hansa_to_Commercial_Hub');
+
+INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, AdjacentDistrict) VALUES
+('District_Production_Encampment_to_Hansa', 'LOC_DISTRICT_PRODUCTION_ENCAMPMENT_TO_HANSA_ZJ', 'YIELD_PRODUCTION', '2', 'DISTRICT_ENCAMPMENT'),
+('District_Gold_Hansa_to_Commercial_Hub', 'LOC_DISTRICT_GOLD_HANSA_TO_COMMERCIAL_HUB_ZJ', 'YIELD_GOLD', '2', 'DISTRICT_HANSA');
+
 --Canada
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_FACES_OF_PEACE_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_FACES_OF_PEACE';
 
