@@ -3,6 +3,9 @@ UPDATE Districts
 SET CitizenSlots = 1
 WHERE DistrictType IN (SELECT DistrictType FROM District_CitizenYieldChanges GROUP BY DistrictType);
 
+--First Buildings unlocked by CIvics Cost as same as Library (90)
+UPDATE Buildings SET Cost = 90 WHERE BuildingType IN ('BUILDING_AMPHITHEATER', 'BUILDING_MARAE', 'BUILDING_ARENA', 'BUILDING_TLACHTLI');
+
 --Theater more ADJUSTMENT
 INSERT INTO District_Adjacencies (DistrictType, YieldChangeId) VALUES
 ('DISTRICT_THEATER', 'District_Culture_City_Center');
@@ -12,6 +15,17 @@ INSERT INTO Adjacency_YieldChanges (ID, Description, YieldType, YieldChange, Adj
 UPDATE District_Adjacencies SET YieldChangeId = 'DISTRICT_CULTURE_CITY_CENTER_MAJOR' WHERE DistrictType = 'DISTRICT_ACROPOLIS' AND YieldChangeId = 'District_Culture_City_Center'
 AND EXISTS (SELECT 1 FROM District_Adjacencies WHERE DistrictType = 'DISTRICT_ACROPOLIS');
 UPDATE Districts SET Description = 'LOC_DISTRICT_ACROPOLIS_EXPANSION2_DESCRIPTION' WHERE DistrictType = 'DISTRICT_ACROPOLIS';
+
+--Theater buildings great person yield change
+DELETE FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_MUSEUM_ART' AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER';
+DELETE FROM Building_GreatPersonPoints WHERE BuildingType = 'BUILDING_MUSEUM_ARTIFACT' AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER';
+
+INSERT OR REPLACE INTO Building_GreatPersonPoints (BuildingType, GreatPersonClassType, PointsPerTurn) VALUES
+('BUILDING_AMPHITHEATER', 'GREAT_PERSON_CLASS_ARTIST', 1),
+('BUILDING_MUSEUM_ART', 'GREAT_PERSON_CLASS_MUSICIAN', 1),
+('BUILDING_MUSEUM_ARTIFACT', 'GREAT_PERSON_CLASS_MUSICIAN', 1),
+('BUILDING_BROADCAST_CENTER', 'GREAT_PERSON_CLASS_WRITER', 1),
+('BUILDING_FILM_STUDIO', 'GREAT_PERSON_CLASS_WRITER', 1);
 
 --LightHouse yiled 1 production
 INSERT OR REPLACE INTO Building_YieldChanges(BuildingType, YieldType, YieldChange) VALUES
