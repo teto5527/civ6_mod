@@ -31,6 +31,9 @@
     <UpdateDatabase id="GovernerUpdate">
       <File>GovernerUpdate.sql</File>
     </UpdateDatabase>
+    <UpdateGameplay id="MinorCivsUpdate">
+      <File>MinorCivsUpdate.sql</File>
+    </UpdateGameplay>
     <UpdateText id="TextGeneralUpdate">
       <!-- <Properties><LoadOrder>1501</LoadOrder></Properties> -->
       <File>TEXT_GeneralUpdate.sql</File>
@@ -44,5 +47,6 @@
     <File>DistrictsandBuilding.sql</File>
     <File>GovernerUpdate.sql</File>
     <File>GreatPersonUpdate.sql</File>
+    <File>MinorCivsUpdate.sql</File>
   </Files>
 </Mod>
