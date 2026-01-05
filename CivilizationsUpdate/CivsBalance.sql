@@ -155,21 +155,14 @@ insert or replace into ModifierArguments    (ModifierId,    Name,        Value)
     from Districts where DistrictType != 'DISTRICT_CITY_CENTER';
 
 --Aztec
+UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS';
 UPDATE Buildings SET Description = 'LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_TLACHTLI';
 
 INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_TLACHTLI', 'YIELD_CULTURE', 2),
 ('BUILDING_TLACHTLI', 'YIELD_FAITH', 2);
 
-INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
-('BUILDING_TLACHTLI', 'TLACHTLI_GRANT_BUILDER');
-
-INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent, NewOnly, OwnerRequirementSetId, SubjectRequirementSetId) VALUES 
-('TLACHTLI_GRANT_BUILDER', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 0, 0, 0, NULL, NULL);
-
-INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES 
-('TLACHTLI_GRANT_BUILDER', 'Amount', '1'), 
-('TLACHTLI_GRANT_BUILDER', 'UnitType', 'UNIT_BUILDER');
+UPDATE ModifierArguments SET Value = 30 WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT' AND Name = 'Amount';
 
 UPDATE Units SET Combat = 32 WHERE UnitType = 'UNIT_AZTEC_EAGLE_WARRIOR';
 

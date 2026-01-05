@@ -10,7 +10,9 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 ('LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION_ZJ',
 'Sumerian unique Ancient era unit. Stronger than all other starting units. No penalties against anti-cavalry units. 4 [ICON_MOVEMENT] Movement if this unit starts in open terrain. +7 [ICON_Strength] Combat Strength when fighting Barbarians.'),
 
-('LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ', --Aztec
+('LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION_ZJ', --Aztec
+'Spend Builder charges to complete 30% of the original district cost.'),
+('LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ',
 'A building unique to the Aztecs. Provides 2 [ICON_Amenities] Amenities, +2 [ICON_Culture] Culture, +2 [ICON_Faith] Faith (duplicate yield each era since constructed or last repaired.), and a [ICON_GREATGENERAL] Great General Point. Provides +1 [ICON_Tourism] Tourism after advancing to the Conservation Civic.'),
 
 ('LOC_IMPROVEMENT_PYRAMID_DESCRIPTION_ZJ', --Nubia
