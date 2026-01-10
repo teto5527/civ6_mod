@@ -76,10 +76,9 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES
 ('REQUIREMENT_UNIT_IS_SETTLER', 'UNIT_IS_SETTLER');
 
---6.Chichen Itza: Rainforest no longer -1 appeal, rainforest +2 culture to all cities, cost from 710 to 920, no longer +1 production for the city
-UPDATE Buildings SET Cost = 920 WHERE BuildingType = 'BUILDING_CHICHEN_ITZA';
-DELETE FROM BuildingModifiers WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_PRODUCTION';
+--6.Chichen Itza: Rainforest no longer -1 appeal, rainforest +1 culture to all cities
 UPDATE Modifiers SET ModifierType = 'MODIFIER_PLAYER_ADJUST_PLOT_YIELD' WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_CULTURE_MODIFIER';
+UPDATE ModifierArguments SET Value = 1 WHERE ModifierId = 'CHICHEN_ITZA_JUNGLE_CULTURE_MODIFIER' AND Name = 'Amount';
 
 INSERT INTO BuildingModifiers (BuildingType, ModifierId) VALUES 
 ('BUILDING_CHICHEN_ITZA', 'CHICHEN_ITZA_ADJUST_APPEAL_RAINFOREST');

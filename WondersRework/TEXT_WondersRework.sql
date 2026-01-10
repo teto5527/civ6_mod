@@ -3,7 +3,7 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES
 '+1 Era Score from Historic Moment earned after this wonder is complete if that Moment is usually worth 2 or more Era Score. When you at Golden age, +10% [ICON_TOURISM] Tourism across your empire. Must be built next to a River.'),
 
 ('LOC_BUILDING_CHICHEN_ITZA_DESCRIPTION_ZJ',
-'+2 [ICON_Culture] Culture to all Rainforest tiles nationwide. Rainforest no longer -1 appeal to the adjacent tiles. Must be built on Rainforest.'),
+'+1 [ICON_Production] Production to all Rainforest tiles in this city. +1 [ICON_Culture] Culture to all Rainforest tiles nationwide. Rainforest no longer -1 appeal to the adjacent tiles. Must be built on Rainforest.'),
 
 ('LOC_BUILDING_RUHR_VALLEY_DESCRIPTION_ZJ',
 '+20% [ICON_Production] Production in this city, and +1 [ICON_Production] Production for each Mine and Quarry nationwide. Must be built along a River adjacent to an Industrial Zone district with a Factory.'),
