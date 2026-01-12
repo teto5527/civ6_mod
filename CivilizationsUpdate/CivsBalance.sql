@@ -158,11 +158,14 @@ insert or replace into ModifierArguments    (ModifierId,    Name,        Value)
 UPDATE Traits SET Description = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION_ZJ' WHERE TraitType = 'TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS';
 UPDATE Buildings SET Description = 'LOC_BUILDING_TLACHTLI_DESCRIPTION_ZJ' WHERE BuildingType = 'BUILDING_TLACHTLI';
 
+INSERT INTO Building_YieldChanges (BuildingType, YieldType, YieldChange) VALUES
+('BUILDING_TLACHTLI', 'YIELD_GOLD', 2);
 INSERT INTO Building_YieldsPerEra (BuildingType, YieldType, YieldChange) VALUES
 ('BUILDING_TLACHTLI', 'YIELD_CULTURE', 2),
-('BUILDING_TLACHTLI', 'YIELD_FAITH', 2);
+('BUILDING_TLACHTLI', 'YIELD_FAITH', 2),
+('BUILDING_TLACHTLI', 'YIELD_GOLD', 2);
 
-UPDATE ModifierArguments SET Value = 30 WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT' AND Name = 'Amount';
+UPDATE ModifierArguments SET Value = 25 WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT' AND Name = 'Amount';
 
 UPDATE Units SET Combat = 32 WHERE UnitType = 'UNIT_AZTEC_EAGLE_WARRIOR';
 
