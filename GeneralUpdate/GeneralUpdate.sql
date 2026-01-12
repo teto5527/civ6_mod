@@ -138,10 +138,10 @@ UPDATE GlobalParameters
 
 --Dedications change
 UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_INFRASTRUCTURE_BONUS_GOLDEN_AGE_ZJ' WHERE CommemorationType = 'COMMEMORATION_INFRASTRUCTURE';
-UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE_ZJ' WHERE CommemorationType = 'COMMEMORATION_CULTURAL';
+--UPDATE CommemorationTypes SET GoldenAgeBonusDescription = 'LOC_MOMENT_CATEGORY_CULTURAL_BONUS_GOLDEN_AGE_ZJ' WHERE CommemorationType = 'COMMEMORATION_CULTURAL';
 
 UPDATE ModifierArguments SET Value = '15' WHERE ModifierId = 'COMMEMORATION_INFRASTRUCTURE_BUILDER_DISCOUNT_MODIFIER' AND Name = 'Amount';
-UPDATE ModifierArguments SET Value = '2' WHERE ModifierId = 'COMMEMORATION_CULTURAL_DISTRICTCULTURE' AND Name = 'Amount';
+--UPDATE ModifierArguments SET Value = '2' WHERE ModifierId = 'COMMEMORATION_CULTURAL_DISTRICTCULTURE' AND Name = 'Amount';
 
 --Great work lock time reduce
 UPDATE GlobalParameters SET Value = '3' WHERE Name='GREATWORK_ART_LOCK_TIME';
