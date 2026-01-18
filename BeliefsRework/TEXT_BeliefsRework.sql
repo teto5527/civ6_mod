@@ -4,13 +4,10 @@ INSERT OR REPLACE INTO EnglishText (Tag,Text) VALUES --Pantheons
 '+1 [ICON_PRODUCTION] Production, +2 [ICON_FAITH] Faith from Quarries.'),
 
 ('LOC_BELIEF_GODDESS_OF_FIRE_DESCRIPTION_ZJ',
-'+1 [ICON_SCIENCE] Science, +2 [ICON_FAITH] Faith from Geothermal Fissures and Volcanic Soil.'),
+'+1 [ICON_SCIENCE] Science, +1 [ICON_CULTURE] Culture from Geothermal Fissures and Volcanic Soil.'),
 
 ('LOC_BELIEF_RELIGIOUS_IDOLS_DESCRIPTION_ZJ',
 '+4 [ICON_GOLD] Gold from Mines over Luxury and Bonus resources.'),
-
-('LOC_BELIEF_BELIEF_GOD_OF_THE_OPEN_SKY_DESCRIPTION_ZJ',
-'+1 [ICON_CULTURE] Culture, +1 [ICON_FAITH] Faith from Pastures.'),
 
 ('LOC_BELIEF_CITY_PATRON_GODDESS_DESCRIPTION_ZJ',
 '+50% [ICON_Production] Production toward districts in cities without a specialty district.'),
