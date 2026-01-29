@@ -27,7 +27,7 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 'Public Festival'),
 
 ('LOC_POLICY_PUBLIC_FESTIVAL_DESCRIPTION',
-'Entertainment Complex +4 [ICON_Gold] Gold.'),
+'Entertainment Complex with Charming appeal receive +4 [ICON_Gold] Gold, Breathtaking Entertainment Complex receive +8 [ICON_Gold] Gold. All Entertainment Complex receive +1 [ICON_Amenities] Amenities.'),
 
 ('LOC_POLICY_RELIGIOUS_INDUSTRIALIZATION_NAME',
 'Religious Industrialization'),
@@ -61,9 +61,6 @@ INSERT OR REPLACE INTO EnglishText (Tag, Text) VALUES --Policeis
 
 ('LOC_POLICY_GRAND_OPERA_DESCRIPTION_ZJ',
 'Extra [ICON_Culture] Culture from buildings in Theaters: +50% if city [ICON_Citizen] population is 10 or higher, +50% if district has at least +4 adjacency bonus.'),
-
-('LOC_POLICY_SPORTS_MEDIA_DESCRIPTION_ZJ',
-'+100% Theater Square district adjacency bonuses, Entertainment Complex +4 [ICON_Gold] Gold, and Stadiums generate +1 [ICON_AMENITIES] Amenity.'),
 
 ('LOC_POLICY_INTEGRATED_SPACE_CELL_DESCRIPTION_ZJ',
 '+15% [ICON_Production] Production toward Space Race projects if a city has a Military Academy or a Hangar, or a Seaport.'),
@@ -109,9 +106,7 @@ INSERT OR REPLACE INTO LocalizedText (Language, Tag, Text) VALUES
 ("zh_Hans_CN",  'LOC_POLICY_PUBLIC_FESTIVAL_NAME',
 '公共节日'),
 ("zh_Hans_CN",  'LOC_POLICY_PUBLIC_FESTIVAL_DESCRIPTION',
-'娱乐中心 +4 [ICON_Gold] 金币。'),
-("zh_Hans_CN",  'LOC_POLICY_SPORTS_MEDIA_DESCRIPTION_ZJ',
-'+100%剧院广场区相邻加成，娱乐中心 +4 [ICON_Gold] 金币，体育场+1 [ICON_AMENITIES] 宜居度。'),
+'拥有迷人魅力的娱乐中心 +4 [ICON_Gold] 金币；拥有惊艳魅力的娱乐中心 +8 [ICON_Gold] 金币。所有娱乐中心 +1 [ICON_Amenities] 宜居度。'),
 ("zh_Hans_CN",  'LOC_POLICY_VETERANCY_DESCRIPTION_ZJ',
 '建造军营、港口、航空港和这些区域中的建筑时+30% [ICON_Production] 生产力。'),
 ('zh_Hans_CN', 'LOC_POLICY_SCI_TECH_PROSPERITY_DESCRIPTION',
